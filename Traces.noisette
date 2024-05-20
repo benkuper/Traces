@@ -172,32 +172,32 @@
   "layout": {
     "mainLayout": {
       "type": 1,
-      "width": 1294,
-      "height": 816,
+      "width": 1920,
+      "height": 989,
       "direction": 2,
       "shifters": [
         {
           "type": 1,
-          "width": 1294,
-          "height": 816,
+          "width": 1920,
+          "height": 989,
           "direction": 2,
           "shifters": [
             {
               "type": 1,
-              "width": 1294,
-              "height": 549,
+              "width": 1920,
+              "height": 635,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 364,
-                  "height": 549,
+                  "height": 635,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 364,
-                      "height": 303,
+                      "height": 346,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -208,7 +208,7 @@
                     {
                       "type": 0,
                       "width": 364,
-                      "height": 240,
+                      "height": 282,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -220,8 +220,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 355,
-                  "height": 549,
+                  "width": 981,
+                  "height": 635,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -241,7 +241,7 @@
                 {
                   "type": 0,
                   "width": 563,
-                  "height": 549,
+                  "height": 635,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -253,14 +253,14 @@
             },
             {
               "type": 1,
-              "width": 1294,
-              "height": 261,
+              "width": 1920,
+              "height": 347,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 295,
-                  "height": 261,
+                  "height": 347,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -270,8 +270,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 699,
-                  "height": 261,
+                  "width": 1325,
+                  "height": 347,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -282,7 +282,7 @@
                 {
                   "type": 0,
                   "width": 288,
-                  "height": 261,
+                  "height": 347,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -2853,7 +2853,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -2865,7 +2865,7 @@
                             "jarDebug": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -4633,7 +4633,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4902,7 +4902,7 @@
                             "debugBack": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -5076,7 +5076,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5088,7 +5088,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -5425,7 +5425,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5437,7 +5437,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -5875,7 +5875,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -6153,7 +6153,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -6323,7 +6323,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -6335,7 +6335,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": true,
+                                  "value": false,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -44624,7 +44624,7 @@
             {
               "parameters": [
                 {
-                  "value": 163.28,
+                  "value": 0.0,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -44642,7 +44642,7 @@
             {
               "parameters": [
                 {
-                  "value": true,
+                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -45774,7 +45774,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -45919,7 +45919,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 163.28,
+                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -46556,6 +46556,10 @@
           "items": [
             {
               "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                },
                 {
                   "value": 80.0,
                   "controlAddress": "/listSize"
