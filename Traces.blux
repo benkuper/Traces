@@ -4,6 +4,12 @@
     "versionNumber": 66049
   },
   "projectSettings": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/saveLayoutInFile"
+      }
+    ],
     "containers": {
       "dashboardSettings": {
         "parameters": [
