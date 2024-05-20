@@ -178,7 +178,7 @@
   "modules": {
     "items": [
       {
-        "niceName": "Tuya TD",
+        "niceName": "Tapo TD",
         "type": "OSCQuery",
         "scripts": {
           "viewOffset": [
@@ -198,7 +198,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -12760,7 +12760,7 @@
                   {
                     "niceName": "Consequence 1",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -12777,7 +12777,7 @@
                   {
                     "niceName": "Consequence 2",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -12801,7 +12801,7 @@
                     "niceName": "Consequence 3",
                     "editorIsCollapsed": true,
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -12825,7 +12825,7 @@
                     "niceName": "Consequence 4",
                     "editorIsCollapsed": true,
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -14695,7 +14695,7 @@
                   {
                     "niceName": "Consequence 1",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -14758,7 +14758,7 @@
                   {
                     "niceName": "Consequence 1",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -14929,7 +14929,7 @@
                   {
                     "niceName": "Consequence",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
@@ -14986,7 +14986,7 @@
                   {
                     "niceName": "Consequence",
                     "type": "Consequence",
-                    "commandModule": "tuyaTD",
+                    "commandModule": "tapoTD",
                     "commandPath": "",
                     "commandType": "Trigger",
                     "command": {
