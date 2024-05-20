@@ -327,7 +327,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": false,
+              "value": true,
               "controlAddress": "/isConnected"
             }
           ],
@@ -369,10 +369,14 @@
         "values": {
           "containers": {
             "P100_Control_1": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
-                  "editorIsCollapsed": true,
+                  "parameters": [
+                    {
+                      "value": "192.168.1.184",
+                      "controlAddress": "/Ip"
+                    }
+                  ],
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -381,10 +385,14 @@
               "niceName": "P100_Control_1"
             },
             "P100_Control_2": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
-                  "editorIsCollapsed": true,
+                  "parameters": [
+                    {
+                      "value": "192.168.1.199",
+                      "controlAddress": "/Ip"
+                    }
+                  ],
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -393,10 +401,8 @@
               "niceName": "P100_Control_2"
             },
             "P100_Control_3": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -405,10 +411,8 @@
               "niceName": "P100_Control_3"
             },
             "P100_Control_4": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -430,7 +434,7 @@
                       "DESCRIPTION": "Ip",
                       "FULL_PATH": "/P100_Control_1/Custom/Ip",
                       "VALUE": [
-                        "192.168.1.184"
+                        "192.168.1.107"
                       ],
                       "ACCESS": 3
                     },
@@ -465,7 +469,7 @@
                       "DESCRIPTION": "Ip",
                       "FULL_PATH": "/P100_Control_2/Custom/Ip",
                       "VALUE": [
-                        "192.168.1.199"
+                        "192.168.1.107"
                       ],
                       "ACCESS": 3
                     },
@@ -563,7 +567,7 @@
             }
           }
         },
-        "hasListenExtension": false
+        "hasListenExtension": true
       },
       {
         "niceName": "Sablier",
@@ -1057,7 +1061,7 @@
                   "TYPE": "f",
                   "FULL_PATH": "/servo/position",
                   "VALUE": [
-                    10
+                    150
                   ]
                 }
               }
@@ -37781,8 +37785,8 @@
         "parameters": [
           {
             "value": [
-              90.0,
-              59.0
+              -153.0,
+              49.0
             ],
             "controlAddress": "/viewUIPosition"
           },
