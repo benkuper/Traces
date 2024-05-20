@@ -3256,6 +3256,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -3264,7 +3270,7 @@
                             "jarDebug": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -4992,6 +4998,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -5245,7 +5257,7 @@
                             "debugBack": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -5407,6 +5419,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -5415,7 +5433,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -5736,6 +5754,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -5744,7 +5768,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -6158,6 +6182,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -6424,7 +6454,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -6586,6 +6616,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 70.04000000000001,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -6594,7 +6630,7 @@
                             "debug": {
                               "parameters": [
                                 {
-                                  "value": false,
+                                  "value": true,
                                   "controlAddress": "/enabled"
                                 },
                                 {
@@ -44879,6 +44915,7 @@
             {
               "parameters": [
                 {
+                  "value": 70.04000000000001,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -44896,6 +44933,7 @@
             {
               "parameters": [
                 {
+                  "value": true,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -46116,6 +46154,7 @@
                           "controlAddress": "/operator"
                         },
                         {
+                          "value": 70.04000000000001,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -46260,6 +46299,7 @@
                           "controlAddress": "/operator"
                         },
                         {
+                          "value": 70.04000000000001,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",

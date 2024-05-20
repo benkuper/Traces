@@ -92,7 +92,7 @@
                     {
                       "type": 0,
                       "width": 962,
-                      "height": 565,
+                      "height": 530,
                       "currentContent": "Screen Editor",
                       "tabs": [
                         {
@@ -103,7 +103,7 @@
                     {
                       "type": 0,
                       "width": 962,
-                      "height": 418,
+                      "height": 453,
                       "currentContent": "Sequence Editor",
                       "tabs": [
                         {
@@ -509,22 +509,18 @@
             "controlAddress": "/height"
           }
         ],
-        "niceName": "Sequence Jar",
+        "niceName": "Perf Jar",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 215.8867340087891,
-                "controlAddress": "/viewStartTime"
-              },
-              {
-                "value": 509.0384521484375,
+                "value": 1800.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -535,10 +531,6 @@
               "items": [
                 {
                   "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 59.0,
                       "controlAddress": "/listSize"
@@ -689,8 +681,17 @@
                 {
                   "parameters": [
                     {
+                      "value": true,
+                      "controlAddress": "/miniMode"
+                    },
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 22,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
                     },
                     {
                       "value": [
@@ -725,7 +726,7 @@
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 414,
+                          "value": 422,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
@@ -991,8 +992,17 @@
                 {
                   "parameters": [
                     {
+                      "value": true,
+                      "controlAddress": "/miniMode"
+                    },
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 22,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
                     },
                     {
                       "value": [
@@ -1018,7 +1028,7 @@
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 451,
+                          "value": 460,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
@@ -1177,9 +1187,9 @@
                               "enabled": true
                             },
                             {
-                              "value": 0.0,
+                              "value": 1.199999928474426,
                               "controlAddress": "/fadeOut",
-                              "enabled": false
+                              "enabled": true
                             }
                           ],
                           "niceName": "Video",
@@ -1298,8 +1308,17 @@
                 {
                   "parameters": [
                     {
+                      "value": true,
+                      "controlAddress": "/miniMode"
+                    },
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 22,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
                     },
                     {
                       "value": [
@@ -1325,12 +1344,12 @@
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 415,
+                          "value": 426,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
                         {
-                          "value": 153,
+                          "value": 146,
                           "hexMode": false,
                           "controlAddress": "/width"
                         },
@@ -1360,7 +1379,7 @@
                               "enabled": true
                             },
                             {
-                              "value": 0.0,
+                              "value": 0.08001708984375,
                               "controlAddress": "/fadeOut",
                               "enabled": false
                             }
@@ -1471,17 +1490,22 @@
                         {
                           "parameters": [
                             {
-                              "value": 288.8999938964844,
+                              "value": 288.6599731445312,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 68.63999938964844,
+                              "value": 11.85999870300293,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 0.0,
+                              "value": 0.08001708984375,
                               "controlAddress": "/fadeIn",
                               "enabled": false
+                            },
+                            {
+                              "value": 1.900000214576721,
+                              "controlAddress": "/fadeOut",
+                              "enabled": true
                             }
                           ],
                           "niceName": "Video",
@@ -1600,8 +1624,17 @@
                 {
                   "parameters": [
                     {
+                      "value": true,
+                      "controlAddress": "/miniMode"
+                    },
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 22,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
                     },
                     {
                       "value": [
@@ -1627,7 +1660,7 @@
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 636,
+                          "value": 650,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
@@ -1911,7 +1944,7 @@
                       "controlAddress": "/listSize"
                     }
                   ],
-                  "niceName": "Bal",
+                  "niceName": "Mur Jar Front",
                   "containers": {
                     "positionning": {
                       "parameters": [
@@ -1940,7 +1973,7 @@
                               "controlAddress": "/length"
                             }
                           ],
-                          "niceName": "Video",
+                          "niceName": "Bal",
                           "editorIsCollapsed": true,
                           "containers": {
                             "fadeCurve": {
@@ -2056,6 +2089,159 @@
                 {
                   "parameters": [
                     {
+                      "value": false,
+                      "controlAddress": "/enabled"
+                    },
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    }
+                  ],
+                  "niceName": "Full Surface",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/enabled"
+                        },
+                        {
+                          "value": 2364,
+                          "hexMode": false,
+                          "controlAddress": "/width"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 454.0,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 26.57999992370605,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Videos/Papier Peint/PP01_Jar_01.mp4",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                },
+                {
+                  "parameters": [
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
                     },
@@ -2087,7 +2273,7 @@
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 444,
+                          "value": 459,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
@@ -2242,17 +2428,17 @@
                           "controlAddress": "/enabled"
                         },
                         {
-                          "value": 288,
+                          "value": 287,
                           "hexMode": false,
                           "controlAddress": "/x"
                         },
                         {
-                          "value": 476,
+                          "value": 483,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
                         {
-                          "value": 121,
+                          "value": 127,
                           "hexMode": false,
                           "controlAddress": "/width"
                         },
@@ -2586,22 +2772,18 @@
             "controlAddress": "/height"
           }
         ],
-        "niceName": "Sequence Back",
+        "niceName": "Perf Back",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 101.4264526367188,
-                "controlAddress": "/viewStartTime"
-              },
-              {
-                "value": 559.0327758789062,
+                "value": 630.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -2743,6 +2925,138 @@
                             }
                           },
                           "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": false,
+                              "controlAddress": "/enabled"
+                            },
+                            {
+                              "value": 453.8399963378906,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 32.02000045776367,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/fadeIn",
+                              "enabled": true
+                            },
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/fadeOut",
+                              "enabled": true
+                            }
+                          ],
+                          "niceName": "Video 1",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Videos/Papier Peint/PP01_Back_01.mp4",
+                                  "controlAddress": "/filePath"
+                                },
+                                {
+                                  "value": true,
+                                  "controlAddress": "/loop"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
                         }
                       ],
                       "viewOffset": [
@@ -2756,10 +3070,6 @@
                 },
                 {
                   "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 59.0,
                       "controlAddress": "/listSize"
@@ -2923,18 +3233,22 @@
         "type": "Sequence"
       },
       {
-        "niceName": "Sequence TV",
+        "niceName": "Perf TV",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 630.0,
+                "value": 302.4159851074219,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 1489.463623046875,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -2945,10 +3259,6 @@
               "items": [
                 {
                   "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -3230,6 +3540,120 @@
                             }
                           },
                           "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 668.0,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 1203.0,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Trace 2024 Ressources/MEDIA_PUB interperf/Montage pub interperf V1.mov",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
                         }
                       ],
                       "viewOffset": [
@@ -3285,20 +3709,21 @@
                 0
               ],
               "viewZoom": 1.0
-            }
+            },
+            "editing": true
           }
         },
         "type": "Sequence"
       },
       {
-        "niceName": "Sequence Retro Projection",
+        "niceName": "Perf Retro Projection",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
@@ -3313,10 +3738,6 @@
               "items": [
                 {
                   "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -3823,14 +4244,14 @@
             "controlAddress": "/height"
           }
         ],
-        "niceName": "Sequence Furniture",
+        "niceName": "Perf Furniture",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
@@ -4193,10 +4614,6 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
-                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
                     }
@@ -4354,14 +4771,14 @@
         "type": "Sequence"
       },
       {
-        "niceName": "Sequence Xiaomi",
+        "niceName": "Perf Xiaomi",
         "containers": {
           "mediaParameters": {
           },
           "sequence": {
             "parameters": [
               {
-                "value": 630.0,
+                "value": 1800.0,
                 "controlAddress": "/totalTime"
               },
               {
@@ -4376,10 +4793,6 @@
               "items": [
                 {
                   "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -4523,11 +4936,6 @@
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
                     }
                   ],
                   "niceName": "Bal",
@@ -4542,6 +4950,122 @@
                     },
                     "blocks": {
                       "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 354.0,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 61.86000061035156,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Cour_01.mp4",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -4565,8 +5089,7 @@
                 0
               ],
               "viewZoom": 1.0
-            },
-            "editing": true
+            }
           }
         },
         "type": "Sequence"
@@ -4577,18 +5100,14 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/sequenceXiaomi"
+    "editingSequenceMedia": "/media/perfTV"
   },
   "screen": {
     "items": [
       {
         "parameters": [
           {
-            "value": false,
-            "controlAddress": "/enabled"
-          },
-          {
-            "value": 4,
+            "value": 5,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -4609,7 +5128,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/sequenceRetroProjection",
+                    "value": "/perfRetroProjection",
                     "controlAddress": "/media"
                   }
                 ],
@@ -4626,22 +5145,22 @@
                       },
                       {
                         "value": [
-                          0.8517789840698242,
-                          0.05670728161931038
+                          0.8590705394744873,
+                          0.05300358310341835
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.1305396258831024,
-                          0.9617073535919189
+                          0.1190812289714813,
+                          0.9626332521438599
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.1315750330686569,
-                          0.06195191666483879
+                          0.1248041167855263,
+                          0.05547044426202774
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -4685,6 +5204,13 @@
         "type": "Screen"
       },
       {
+        "parameters": [
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/screenNumber"
+          }
+        ],
         "niceName": "2-TV",
         "containers": {
           "positionning": {
@@ -4701,7 +5227,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/sequenceTV",
+                    "value": "/perfTV",
                     "controlAddress": "/media"
                   }
                 ],
@@ -4763,7 +5289,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/sequenceFurniture",
+                    "value": "/perfFurniture",
                     "controlAddress": "/media"
                   }
                 ],
@@ -4773,29 +5299,29 @@
                     "parameters": [
                       {
                         "value": [
-                          0.2130854427814484,
-                          0.6180816888809204
+                          0.2910806238651276,
+                          0.6152915954589844
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.2552719414234161,
-                          0.6242001056671143
+                          0.3332671225070953,
+                          0.6214100122451782
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.2095635831356049,
-                          0.4847387373447418
+                          0.2875587642192841,
+                          0.4819487035274506
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.2531203627586365,
-                          0.4998300969600677
+                          0.3311155140399933,
+                          0.4970400631427765
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -4803,6 +5329,64 @@
                     "editorIsCollapsed": true,
                     "containers": {
                       "bezier": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.41132852435112,
+                              0.997209906578064
+                            ],
+                            "controlAddress": "/handleTopLeft"
+                          },
+                          {
+                            "value": [
+                              0.744661808013916,
+                              0.997209906578064
+                            ],
+                            "controlAddress": "/handleTopRight"
+                          },
+                          {
+                            "value": [
+                              0.41132852435112,
+                              -0.002790048718452454
+                            ],
+                            "controlAddress": "/handleBottomLeft"
+                          },
+                          {
+                            "value": [
+                              0.744661808013916,
+                              -0.002790048718452454
+                            ],
+                            "controlAddress": "/handleBottomRight"
+                          },
+                          {
+                            "value": [
+                              0.07799515873193741,
+                              0.6638766527175903
+                            ],
+                            "controlAddress": "/handleLeftTop"
+                          },
+                          {
+                            "value": [
+                              0.07799515873193741,
+                              0.3305433094501495
+                            ],
+                            "controlAddress": "/handleLeftBottom"
+                          },
+                          {
+                            "value": [
+                              1.077995181083679,
+                              0.6638766527175903
+                            ],
+                            "controlAddress": "/handleRightTop"
+                          },
+                          {
+                            "value": [
+                              1.077995181083679,
+                              0.3305433094501495
+                            ],
+                            "controlAddress": "/handleRightBottom"
+                          }
+                        ],
                         "editorIsCollapsed": true
                       }
                     }
@@ -4839,6 +5423,10 @@
               {
                 "parameters": [
                   {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
                     "value": "/black",
                     "controlAddress": "/media"
                   }
@@ -4850,29 +5438,156 @@
                     "parameters": [
                       {
                         "value": [
-                          0.1633573770523071,
-                          0.6097031235694885
+                          0.3465674817562103,
+                          0.3706889152526855
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.2182796001434326,
-                          0.6174259781837463
+                          0.4234748780727386,
+                          0.3812018632888794
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.1615909337997437,
-                          0.4485477805137634
+                          0.3463714122772217,
+                          0.1741929650306702
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.2123523503541946,
-                          0.4636747539043427
+                          0.4222587645053864,
+                          0.180019810795784
+                        ],
+                        "controlAddress": "/bottomRight"
+                      }
+                    ],
+                    "editorIsCollapsed": true,
+                    "containers": {
+                      "bezier": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.4458766877651215,
+                              0.7674959301948547
+                            ],
+                            "controlAddress": "/handleTopLeft"
+                          },
+                          {
+                            "value": [
+                              0.7792100310325623,
+                              0.7674959301948547
+                            ],
+                            "controlAddress": "/handleTopRight"
+                          },
+                          {
+                            "value": [
+                              0.4458766877651215,
+                              -0.2325040698051453
+                            ],
+                            "controlAddress": "/handleBottomLeft"
+                          },
+                          {
+                            "value": [
+                              0.7792100310325623,
+                              -0.2325040698051453
+                            ],
+                            "controlAddress": "/handleBottomRight"
+                          },
+                          {
+                            "value": [
+                              0.1125433519482613,
+                              0.4341626167297363
+                            ],
+                            "controlAddress": "/handleLeftTop"
+                          },
+                          {
+                            "value": [
+                              0.1125433519482613,
+                              0.1008292734622955
+                            ],
+                            "controlAddress": "/handleLeftBottom"
+                          },
+                          {
+                            "value": [
+                              1.112543344497681,
+                              0.4341626167297363
+                            ],
+                            "controlAddress": "/handleRightTop"
+                          },
+                          {
+                            "value": [
+                              1.112543344497681,
+                              0.1008292734622955
+                            ],
+                            "controlAddress": "/handleRightBottom"
+                          }
+                        ],
+                        "editorIsCollapsed": true
+                      }
+                    }
+                  },
+                  "adjustments": {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/mask"
+                      }
+                    ],
+                    "editorIsCollapsed": true
+                  },
+                  "aspectRatio": {
+                  },
+                  "pins": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Surface"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": "/black",
+                    "controlAddress": "/media"
+                  }
+                ],
+                "niceName": "Mask 1",
+                "editorIsCollapsed": true,
+                "containers": {
+                  "positionning": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2340241372585297,
+                          0.6031929850578308
+                        ],
+                        "controlAddress": "/topLeft"
+                      },
+                      {
+                        "value": [
+                          0.2915636301040649,
+                          0.6155659556388855
+                        ],
+                        "controlAddress": "/topRight"
+                      },
+                      {
+                        "value": [
+                          0.2380157113075256,
+                          0.4736582040786743
+                        ],
+                        "controlAddress": "/bottomLeft"
+                      },
+                      {
+                        "value": [
+                          0.2893005907535553,
+                          0.4776250123977661
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -4912,36 +5627,35 @@
                     "controlAddress": "/media"
                   }
                 ],
-                "niceName": "Mask Furniture",
-                "editorIsCollapsed": true,
+                "niceName": "Mask Window",
                 "containers": {
                   "positionning": {
                     "parameters": [
                       {
                         "value": [
-                          0.4520065784454346,
-                          0.7164254784584045
+                          0.5241677761077881,
+                          0.720378041267395
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.5496917366981506,
-                          0.712123692035675
+                          0.6346095204353333,
+                          0.7101473808288574
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.4447168707847595,
-                          0.3844799995422363
+                          0.5192441344261169,
+                          0.3809007108211517
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.5528838038444519,
-                          0.3756529986858368
+                          0.626298725605011,
+                          0.387386292219162
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -4977,44 +5691,43 @@
               {
                 "parameters": [
                   {
-                    "value": true,
+                    "value": false,
                     "controlAddress": "/locked"
                   },
                   {
-                    "value": "/sequenceJar",
+                    "value": "/perfJar",
                     "controlAddress": "/media"
                   }
                 ],
                 "niceName": "Jardin",
-                "editorIsCollapsed": true,
                 "containers": {
                   "positionning": {
                     "parameters": [
                       {
                         "value": [
-                          0.1655958890914917,
-                          0.9641090631484985
+                          0.2472473978996277,
+                          0.9655873775482178
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.2890518605709076,
-                          0.9253707528114319
+                          0.3663953542709351,
+                          0.92351895570755
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.1580488234758377,
-                          0.1085290312767029
+                          0.238137811422348,
+                          0.1081557497382164
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.2821776866912842,
-                          0.1994165331125259
+                          0.3592656552791595,
+                          0.2057830095291138
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -5025,57 +5738,57 @@
                         "parameters": [
                           {
                             "value": [
-                              0.3333333432674408,
-                              1.0
+                              0.4134223461151123,
+                              0.9940711259841919
                             ],
                             "controlAddress": "/handleTopLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              1.0
+                              0.7467556595802307,
+                              0.9940711259841919
                             ],
                             "controlAddress": "/handleTopRight"
                           },
                           {
                             "value": [
-                              0.3333333432674408,
-                              0.0
+                              0.4134223461151123,
+                              -0.005928853526711464
                             ],
                             "controlAddress": "/handleBottomLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              0.0
+                              0.7467556595802307,
+                              -0.005928853526711464
                             ],
                             "controlAddress": "/handleBottomRight"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.6666666865348816
+                              0.08008898794651031,
+                              0.6607378125190735
                             ],
                             "controlAddress": "/handleLeftTop"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.3333333432674408
+                              0.08008898794651031,
+                              0.3274044990539551
                             ],
                             "controlAddress": "/handleLeftBottom"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.6666666865348816
+                              1.080088973045349,
+                              0.6607378125190735
                             ],
                             "controlAddress": "/handleRightTop"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.3333333432674408
+                              1.080088973045349,
+                              0.3274044990539551
                             ],
                             "controlAddress": "/handleRightBottom"
                           }
@@ -5150,7 +5863,7 @@
                     "controlAddress": "/locked"
                   },
                   {
-                    "value": "/sequenceBack",
+                    "value": "/perfBack",
                     "controlAddress": "/media"
                   }
                 ],
@@ -5161,29 +5874,29 @@
                     "parameters": [
                       {
                         "value": [
-                          0.288090318441391,
-                          0.8918960094451904
+                          0.3658132255077362,
+                          0.8905966281890869
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.8483122587203979,
-                          0.86149001121521
+                          0.9317642450332642,
+                          0.8638942241668701
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.2821776866912842,
-                          0.1994165331125259
+                          0.3588589429855347,
+                          0.2073765993118286
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.8304761052131653,
-                          0.1984316259622574
+                          0.9087198376655579,
+                          0.1860212683677673
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -5194,57 +5907,57 @@
                         "parameters": [
                           {
                             "value": [
-                              0.3333333432674408,
-                              1.0
+                              0.4089729487895966,
+                              0.9940711259841919
                             ],
                             "controlAddress": "/handleTopLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              1.0
+                              0.7423062920570374,
+                              0.9940711259841919
                             ],
                             "controlAddress": "/handleTopRight"
                           },
                           {
                             "value": [
-                              0.3333333432674408,
-                              0.0
+                              0.4089729487895966,
+                              -0.005928853526711464
                             ],
                             "controlAddress": "/handleBottomLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              0.0
+                              0.7423062920570374,
+                              -0.005928853526711464
                             ],
                             "controlAddress": "/handleBottomRight"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.6666666865348816
+                              0.07563959807157516,
+                              0.6607378125190735
                             ],
                             "controlAddress": "/handleLeftTop"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.3333333432674408
+                              0.07563959807157516,
+                              0.3274044990539551
                             ],
                             "controlAddress": "/handleLeftBottom"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.6666666865348816
+                              1.075639605522156,
+                              0.6607378125190735
                             ],
                             "controlAddress": "/handleRightTop"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.3333333432674408
+                              1.075639605522156,
+                              0.3274044990539551
                             ],
                             "controlAddress": "/handleRightBottom"
                           }
@@ -5325,7 +6038,7 @@
       {
         "parameters": [
           {
-            "value": 3,
+            "value": 4,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -5346,11 +6059,12 @@
               {
                 "parameters": [
                   {
-                    "value": "/sequenceFurniture",
+                    "value": "/perfFurniture",
                     "controlAddress": "/media"
                   }
                 ],
                 "niceName": "Furniture",
+                "editorIsCollapsed": true,
                 "containers": {
                   "positionning": {
                     "parameters": [
@@ -5379,86 +6093,6 @@
                         "value": [
                           0.9889011979103088,
                           0.2316185384988785
-                        ],
-                        "controlAddress": "/bottomRight"
-                      }
-                    ],
-                    "editorIsCollapsed": true,
-                    "containers": {
-                      "bezier": {
-                        "editorIsCollapsed": true
-                      }
-                    }
-                  },
-                  "adjustments": {
-                    "parameters": [
-                      {
-                        "value": 0.1538461446762085,
-                        "controlAddress": "/softEdgeRight"
-                      },
-                      {
-                        "value": 0.1177884638309479,
-                        "controlAddress": "/cropRight"
-                      },
-                      {
-                        "value": "",
-                        "controlAddress": "/mask"
-                      }
-                    ],
-                    "editorIsCollapsed": true
-                  },
-                  "aspectRatio": {
-                  },
-                  "pins": {
-                    "viewOffset": [
-                      0,
-                      0
-                    ],
-                    "viewZoom": 1.0
-                  }
-                },
-                "type": "Surface"
-              },
-              {
-                "parameters": [
-                  {
-                    "value": true,
-                    "controlAddress": "/locked"
-                  },
-                  {
-                    "value": "/sequenceJar",
-                    "controlAddress": "/media"
-                  }
-                ],
-                "niceName": "Devant Scene",
-                "containers": {
-                  "positionning": {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.01844432577490807,
-                          0.8662890195846558
-                        ],
-                        "controlAddress": "/topLeft"
-                      },
-                      {
-                        "value": [
-                          0.6730124950408936,
-                          0.9331172108650208
-                        ],
-                        "controlAddress": "/topRight"
-                      },
-                      {
-                        "value": [
-                          0.02383317053318024,
-                          0.1618572473526001
-                        ],
-                        "controlAddress": "/bottomLeft"
-                      },
-                      {
-                        "value": [
-                          0.6566133499145508,
-                          -0.04846876487135887
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -5531,6 +6165,144 @@
                   "adjustments": {
                     "parameters": [
                       {
+                        "value": 0.1538461446762085,
+                        "controlAddress": "/softEdgeRight"
+                      },
+                      {
+                        "value": 0.1177884638309479,
+                        "controlAddress": "/cropRight"
+                      },
+                      {
+                        "value": "",
+                        "controlAddress": "/mask"
+                      }
+                    ],
+                    "editorIsCollapsed": true
+                  },
+                  "aspectRatio": {
+                  },
+                  "pins": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Surface"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/locked"
+                  },
+                  {
+                    "value": "/perfJar",
+                    "controlAddress": "/media"
+                  }
+                ],
+                "niceName": "Devant Scene",
+                "containers": {
+                  "positionning": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.01844432577490807,
+                          0.8820992708206177
+                        ],
+                        "controlAddress": "/topLeft"
+                      },
+                      {
+                        "value": [
+                          0.6730124950408936,
+                          0.9489274621009827
+                        ],
+                        "controlAddress": "/topRight"
+                      },
+                      {
+                        "value": [
+                          0.02383317053318024,
+                          0.1776675283908844
+                        ],
+                        "controlAddress": "/bottomLeft"
+                      },
+                      {
+                        "value": [
+                          0.6566133499145508,
+                          -0.03265848755836487
+                        ],
+                        "controlAddress": "/bottomRight"
+                      }
+                    ],
+                    "editorIsCollapsed": true,
+                    "containers": {
+                      "bezier": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              1.015810251235962
+                            ],
+                            "controlAddress": "/handleTopLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              1.015810251235962
+                            ],
+                            "controlAddress": "/handleTopRight"
+                          },
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              0.015810277312994
+                            ],
+                            "controlAddress": "/handleBottomLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              0.015810277312994
+                            ],
+                            "controlAddress": "/handleBottomRight"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.6824769377708435
+                            ],
+                            "controlAddress": "/handleLeftTop"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.3491436243057251
+                            ],
+                            "controlAddress": "/handleLeftBottom"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.6824769377708435
+                            ],
+                            "controlAddress": "/handleRightTop"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.3491436243057251
+                            ],
+                            "controlAddress": "/handleRightBottom"
+                          }
+                        ],
+                        "editorIsCollapsed": true
+                      }
+                    }
+                  },
+                  "adjustments": {
+                    "parameters": [
+                      {
                         "value": 0.0,
                         "controlAddress": "/softEdgeTop"
                       },
@@ -5584,11 +6356,11 @@
               {
                 "parameters": [
                   {
-                    "value": true,
+                    "value": false,
                     "controlAddress": "/locked"
                   },
                   {
-                    "value": "/sequenceJar",
+                    "value": "/perfJar",
                     "controlAddress": "/media"
                   }
                 ],
@@ -5599,28 +6371,28 @@
                       {
                         "value": [
                           0.6716759204864502,
-                          0.9336384534835815
+                          0.9494487047195435
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
                           0.9979653358459473,
-                          0.9841839075088501
+                          0.999994158744812
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
                           0.6601967215538025,
-                          0.1635164171457291
+                          0.1793266981840134
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
                           0.9896734952926636,
-                          0.003307802136987448
+                          0.01911807991564274
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -5632,56 +6404,56 @@
                           {
                             "value": [
                               0.3333333432674408,
-                              1.0
+                              1.015810251235962
                             ],
                             "controlAddress": "/handleTopLeft"
                           },
                           {
                             "value": [
                               0.6666666865348816,
-                              1.0
+                              1.015810251235962
                             ],
                             "controlAddress": "/handleTopRight"
                           },
                           {
                             "value": [
                               0.3333333432674408,
-                              0.0
+                              0.015810277312994
                             ],
                             "controlAddress": "/handleBottomLeft"
                           },
                           {
                             "value": [
                               0.6666666865348816,
-                              0.0
+                              0.015810277312994
                             ],
                             "controlAddress": "/handleBottomRight"
                           },
                           {
                             "value": [
                               0.0,
-                              0.6666666865348816
+                              0.6824769377708435
                             ],
                             "controlAddress": "/handleLeftTop"
                           },
                           {
                             "value": [
                               0.0,
-                              0.3333333432674408
+                              0.3491436243057251
                             ],
                             "controlAddress": "/handleLeftBottom"
                           },
                           {
                             "value": [
                               1.0,
-                              0.6666666865348816
+                              0.6824769377708435
                             ],
                             "controlAddress": "/handleRightTop"
                           },
                           {
                             "value": [
                               1.0,
-                              0.3333333432674408
+                              0.3491436243057251
                             ],
                             "controlAddress": "/handleRightBottom"
                           }
@@ -5756,11 +6528,7 @@
       {
         "parameters": [
           {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
-            "value": 4,
+            "value": 3,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -5786,7 +6554,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/sequenceXiaomi",
+                    "value": "/perfXiaomi",
                     "controlAddress": "/media"
                   }
                 ],
@@ -5867,6 +6635,6 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingScreen": "5_Xiaomi"
+    "editingScreen": "4_Jar"
   }
 }
