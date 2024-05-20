@@ -4,6 +4,12 @@
     "versionNumber": 67858
   },
   "projectSettings": {
+    "parameters": [
+      {
+        "value": false,
+        "controlAddress": "/saveLayoutInFile"
+      }
+    ],
     "containers": {
       "dashboardSettings": {
         "parameters": [
@@ -169,141 +175,6 @@
     ],
     "viewZoom": 1.0
   },
-  "layout": {
-    "mainLayout": {
-      "type": 1,
-      "width": 1920,
-      "height": 989,
-      "direction": 2,
-      "shifters": [
-        {
-          "type": 1,
-          "width": 1920,
-          "height": 989,
-          "direction": 2,
-          "shifters": [
-            {
-              "type": 1,
-              "width": 1920,
-              "height": 635,
-              "direction": 1,
-              "shifters": [
-                {
-                  "type": 1,
-                  "width": 364,
-                  "height": 635,
-                  "direction": 2,
-                  "shifters": [
-                    {
-                      "type": 0,
-                      "width": 364,
-                      "height": 346,
-                      "currentContent": "Modules",
-                      "tabs": [
-                        {
-                          "name": "Modules"
-                        }
-                      ]
-                    },
-                    {
-                      "type": 0,
-                      "width": 364,
-                      "height": 282,
-                      "currentContent": "Custom Variables",
-                      "tabs": [
-                        {
-                          "name": "Custom Variables"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": 0,
-                  "width": 981,
-                  "height": 635,
-                  "currentContent": "State Machine",
-                  "tabs": [
-                    {
-                      "name": "State Machine"
-                    },
-                    {
-                      "name": "Module Router"
-                    },
-                    {
-                      "name": "Morpher"
-                    },
-                    {
-                      "name": "Dashboard"
-                    }
-                  ]
-                },
-                {
-                  "type": 0,
-                  "width": 563,
-                  "height": 635,
-                  "currentContent": "Inspector",
-                  "tabs": [
-                    {
-                      "name": "Inspector"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": 1,
-              "width": 1920,
-              "height": 347,
-              "direction": 1,
-              "shifters": [
-                {
-                  "type": 0,
-                  "width": 295,
-                  "height": 347,
-                  "currentContent": "Sequences",
-                  "tabs": [
-                    {
-                      "name": "Sequences"
-                    }
-                  ]
-                },
-                {
-                  "type": 0,
-                  "width": 1325,
-                  "height": 347,
-                  "currentContent": "Sequence Editor",
-                  "tabs": [
-                    {
-                      "name": "Sequence Editor"
-                    }
-                  ]
-                },
-                {
-                  "type": 0,
-                  "width": 288,
-                  "height": 347,
-                  "currentContent": "Logger",
-                  "tabs": [
-                    {
-                      "name": "Help"
-                    },
-                    {
-                      "name": "Logger"
-                    },
-                    {
-                      "name": "Warnings"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "windows": null
-  },
   "modules": {
     "items": [
       {
@@ -325,6 +196,10 @@
             {
               "value": "TD OSC Query Server",
               "controlAddress": "/serverName"
+            },
+            {
+              "value": true,
+              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -365,7 +240,6 @@
         "values": {
           "containers": {
             "P100_Control_1": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
@@ -374,7 +248,6 @@
                       "controlAddress": "/Ip"
                     }
                   ],
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -383,7 +256,6 @@
               "niceName": "P100_Control_1"
             },
             "P100_Control_2": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
@@ -392,7 +264,6 @@
                       "controlAddress": "/Ip"
                     }
                   ],
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -438,7 +309,7 @@
                       "DESCRIPTION": "Ip",
                       "FULL_PATH": "/P100_Control_1/Custom/Ip",
                       "VALUE": [
-                        "192.168.1.107"
+                        "192.168.1.184"
                       ],
                       "ACCESS": 3
                     },
@@ -473,7 +344,7 @@
                       "DESCRIPTION": "Ip",
                       "FULL_PATH": "/P100_Control_2/Custom/Ip",
                       "VALUE": [
-                        "192.168.1.107"
+                        "192.168.1.199"
                       ],
                       "ACCESS": 3
                     },
@@ -571,7 +442,7 @@
             }
           }
         },
-        "hasListenExtension": false
+        "hasListenExtension": true
       },
       {
         "niceName": "Sablier",
@@ -644,12 +515,6 @@
                   "niceName": "Serial"
                 },
                 "osc": {
-                  "parameters": [
-                    {
-                      "value": "192.168.1.44",
-                      "controlAddress": "/remoteHost"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Osc"
@@ -694,7 +559,7 @@
             "servo": {
               "parameters": [
                 {
-                  "value": 10.0,
+                  "value": 150.0,
                   "controlAddress": "/position"
                 }
               ],
@@ -1071,7 +936,7 @@
                   "TYPE": "f",
                   "FULL_PATH": "/servo/position",
                   "VALUE": [
-                    10
+                    150
                   ]
                 }
               }
@@ -1694,10 +1559,6 @@
             {
               "value": "Ringer",
               "controlAddress": "/serverName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -1759,6 +1620,7 @@
               "niceName": "Comm"
             },
             "settings": {
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Settings"
             },
@@ -1768,52 +1630,27 @@
               "niceName": "Server"
             },
             "gpio": {
-              "parameters": [
-                {
-                  "value": 2,
-                  "hexMode": false,
-                  "controlAddress": "/count"
-                }
-              ],
+              "editorIsCollapsed": true,
               "containers": {
                 "gpio1": {
                   "parameters": [
                     {
                       "value": "Digital Oscillator",
                       "controlAddress": "/mode"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/value"
                     }
                   ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Gpio 1"
                 },
                 "gpio2": {
                   "parameters": [
                     {
-                      "value": false,
-                      "controlAddress": "/listen"
-                    },
-                    {
-                      "value": 25,
-                      "hexMode": false,
-                      "controlAddress": "/pin"
-                    },
-                    {
                       "value": "Digital Input Pullup",
                       "controlAddress": "/mode"
-                    },
-                    {
-                      "value": false,
-                      "controlAddress": "/inverted"
-                    },
-                    {
-                      "value": 1.0,
-                      "controlAddress": "/value"
                     }
                   ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Gpio 2"
                 }
@@ -2332,7 +2169,7 @@
             }
           }
         },
-        "hasListenExtension": true
+        "hasListenExtension": false
       },
       {
         "parameters": [
@@ -2353,20 +2190,12 @@
         "params": {
           "parameters": [
             {
-              "value": false,
-              "controlAddress": "/keepValuesOnSync"
-            },
-            {
               "value": "Tiroir",
               "controlAddress": "/serverName"
             },
             {
               "value": false,
               "controlAddress": "/onlySyncFromSameName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -2411,44 +2240,15 @@
         "values": {
           "containers": {
             "comm": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/listen"
-                }
-              ],
               "editorIsCollapsed": true,
               "containers": {
                 "serial": {
-                  "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/listen"
-                    },
-                    {
-                      "value": false,
-                      "controlAddress": "/sendFeedback"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Serial"
                 },
                 "osc": {
-                  "parameters": [
-                    {
-                      "value": false,
-                      "controlAddress": "/listen"
-                    },
-                    {
-                      "value": "",
-                      "controlAddress": "/remoteHost"
-                    },
-                    {
-                      "value": false,
-                      "controlAddress": "/sendFeedback"
-                    }
-                  ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Osc"
                 }
@@ -2457,54 +2257,17 @@
               "niceName": "Comm"
             },
             "settings": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/listen"
-                },
-                {
-                  "value": "Tiroir",
-                  "controlAddress": "/deviceName"
-                }
-              ],
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Settings"
             },
             "server": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/listen"
-                }
-              ],
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Server"
             },
             "stepper": {
               "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/listen"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/enabled"
-                },
-                {
-                  "value": 26,
-                  "hexMode": false,
-                  "controlAddress": "/stepPin"
-                },
-                {
-                  "value": 25,
-                  "hexMode": false,
-                  "controlAddress": "/dirPin"
-                },
-                {
-                  "value": 12,
-                  "hexMode": false,
-                  "controlAddress": "/enPin"
-                },
                 {
                   "value": 500.0,
                   "controlAddress": "/accel"
@@ -2518,16 +2281,12 @@
                   "controlAddress": "/position"
                 }
               ],
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Stepper"
             },
             "wifi": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/listen"
-                }
-              ],
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Wifi"
             }
@@ -2865,7 +2624,7 @@
             }
           }
         },
-        "hasListenExtension": true
+        "hasListenExtension": false
       },
       {
         "niceName": "Lamp",
@@ -2941,10 +2700,6 @@
         "parameters": [
           {
             "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
-            "value": true,
             "controlAddress": "/logIncoming"
           }
         ],
@@ -2970,18 +2725,6 @@
             {
               "value": true,
               "controlAddress": "/firstValueIsTheName"
-            },
-            {
-              "value": "",
-              "controlAddress": "/port"
-            },
-            {
-              "value": false,
-              "controlAddress": "/dtr"
-            },
-            {
-              "value": false,
-              "controlAddress": "/rts"
             }
           ],
           "containers": {
@@ -3001,7 +2744,7 @@
         "portID": ""
       },
       {
-        "niceName": "WebSocket Server",
+        "niceName": "Tube Lights",
         "type": "WebSocket Server",
         "scripts": {
           "viewOffset": [
@@ -3127,7 +2870,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -3493,12 +3236,6 @@
                   "niceName": "Test Pattern Jar Back"
                 },
                 "black": {
-                  "parameters": [
-                    {
-                      "value": 0.000415029528085142,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -3511,12 +3248,6 @@
                   "niceName": "Black"
                 },
                 "perfJar": {
-                  "parameters": [
-                    {
-                      "value": 58.54183959960938,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -3525,12 +3256,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -3867,10 +3592,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.558030128479,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -4103,10 +3824,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 13.00743770599365,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -4341,10 +4058,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 14.08016967773438,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -4578,10 +4291,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.60311603546143,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -4710,10 +4419,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 13.7277364730835,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -4848,10 +4553,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.55837345123291,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -4980,10 +4681,6 @@
                                         },
                                         "picture": {
                                           "parameters": [
-                                            {
-                                              "value": 0.0,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -5218,10 +4915,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.05547618865967,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -5291,12 +4984,6 @@
                   "niceName": "Perf Jar"
                 },
                 "perfBack": {
-                  "parameters": [
-                    {
-                      "value": 58.55572128295898,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -5305,12 +4992,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -5424,16 +5105,8 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.42666625976562,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
-                                            },
-                                            {
-                                              "value": 0.0,
-                                              "controlAddress": "/seek"
                                             }
                                           ],
                                           "editorIsCollapsed": true,
@@ -5541,10 +5214,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 29.77889442443848,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -5685,10 +5354,6 @@
                                         "picture": {
                                           "parameters": [
                                             {
-                                              "value": 0.0,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -5734,12 +5399,6 @@
                   "niceName": "Perf Back"
                 },
                 "perfTV": {
-                  "parameters": [
-                    {
-                      "value": 58.57091522216797,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -5748,12 +5407,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -5870,10 +5523,6 @@
                                         },
                                         "picture": {
                                           "parameters": [
-                                            {
-                                              "value": 0.0,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -6010,10 +5659,6 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 13.80313491821289,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
                                             }
@@ -6083,12 +5728,6 @@
                   "niceName": "Perf TV"
                 },
                 "perfRetroProjection": {
-                  "parameters": [
-                    {
-                      "value": 58.28731918334961,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -6097,12 +5736,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -6355,16 +5988,8 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 24.0658130645752,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
-                                            },
-                                            {
-                                              "value": 0.0,
-                                              "controlAddress": "/seek"
                                             }
                                           ],
                                           "editorIsCollapsed": true,
@@ -6467,16 +6092,8 @@
                                         "video": {
                                           "parameters": [
                                             {
-                                              "value": 25.9671459197998,
-                                              "controlAddress": "/currentFPS"
-                                            },
-                                            {
                                               "value": "File",
                                               "controlAddress": "/source"
-                                            },
-                                            {
-                                              "value": 0.0,
-                                              "controlAddress": "/seek"
                                             }
                                           ],
                                           "editorIsCollapsed": true,
@@ -6533,12 +6150,6 @@
                   "niceName": "Perf Retro Projection"
                 },
                 "perfFurniture": {
-                  "parameters": [
-                    {
-                      "value": 58.33880233764648,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -6547,12 +6158,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -6659,10 +6264,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 13.69161701202393,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -6792,10 +6393,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 13.72867679595947,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -6981,12 +6578,6 @@
                   "niceName": "Perf Furniture"
                 },
                 "perfXiaomi": {
-                  "parameters": [
-                    {
-                      "value": 58.33921051025391,
-                      "controlAddress": "/currentFPS"
-                    }
-                  ],
                   "editorIsCollapsed": true,
                   "containers": {
                     "mediaParameters": {
@@ -6995,12 +6586,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -7252,10 +6837,6 @@
                                         },
                                         "video": {
                                           "parameters": [
-                                            {
-                                              "value": 13.57039165496826,
-                                              "controlAddress": "/currentFPS"
-                                            },
                                             {
                                               "value": "File",
                                               "controlAddress": "/source"
@@ -45060,7 +44641,7 @@
           },
           "TYPE": "Container"
         },
-        "hasListenExtension": true
+        "hasListenExtension": false
       },
       {
         "niceName": "General",
@@ -45298,7 +44879,6 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -45316,7 +44896,6 @@
             {
               "parameters": [
                 {
-                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -45359,7 +44938,6 @@
             {
               "parameters": [
                 {
-                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -45403,9 +44981,9 @@
               "parameters": [
                 {
                   "value": [
-                    0.6576941609382629,
-                    0.4765725433826447,
-                    0.1492470502853394,
+                    0.0,
+                    0.0,
+                    0.0,
                     1.0
                   ],
                   "alwaysNotify": true,
@@ -45438,13 +45016,13 @@
                   "value": [
                     0.0,
                     1.0,
-                    0.5120289325714111,
+                    0.8963327407836914,
                     1.0
                   ],
                   "controlAddress": "/color"
                 }
               ],
-              "niceName": "Preset",
+              "niceName": "Off",
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -45452,9 +45030,9 @@
                     "parameters": [
                       {
                         "value": [
-                          0.699999988079071,
-                          0.5499568581581116,
-                          0.04038431495428085,
+                          0.0,
+                          0.0,
+                          0.0,
                           1.0
                         ],
                         "controlAddress": "/lampColor"
@@ -45472,13 +45050,13 @@
                   "value": [
                     0.0,
                     1.0,
-                    0.8963327407836914,
+                    0.5120289325714111,
                     1.0
                   ],
                   "controlAddress": "/color"
                 }
               ],
-              "niceName": "Preset 1",
+              "niceName": "Light",
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -45486,9 +45064,9 @@
                     "parameters": [
                       {
                         "value": [
-                          0.0,
-                          0.0,
-                          0.0,
+                          0.5307685732841492,
+                          0.4847804009914398,
+                          0.1612705886363983,
                           1.0
                         ],
                         "controlAddress": "/lampColor"
@@ -45824,9 +45402,9 @@
                             "parameters": [
                               {
                                 "value": [
-                                  0.6576941609382629,
-                                  0.4765725433826447,
-                                  0.1492470502853394,
+                                  0.0,
+                                  0.0,
+                                  0.0,
                                   1.0
                                 ],
                                 "controlAddress": "/#1"
@@ -45836,9 +45414,9 @@
                             "type": "Color",
                             "param": {
                               "value": [
-                                0.6576941609382629,
-                                0.4765725433826447,
-                                0.1492470502853394,
+                                0.0,
+                                0.0,
+                                0.0,
                                 1.0
                               ],
                               "controlAddress": "/states/objects/processors/lampColor/outputs/mappingOutput/command/arguments/#1/#1"
@@ -46006,6 +45584,95 @@
               },
               "consequencesOff": {
                 "editorIsCollapsed": true,
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Allo",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/ringer/values/gpio/gpio2/value",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 0.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "sequences",
+                    "commandPath": "Playback",
+                    "commandType": "Play Sequence",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/sequences/allo",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": true,
+                          "controlAddress": "/playFromStart"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "sequences",
+                    "commandPath": "Playback",
+                    "commandType": "Stop Sequence",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/sequences/allo",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -46449,7 +46116,6 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -46594,7 +46260,6 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -47187,22 +46852,29 @@
         "parameters": [
           {
             "value": [
-              -153.0,
+              107.0,
               -161.0
             ],
             "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              256.0,
+              260.0
+            ],
+            "controlAddress": "/viewUISize"
           },
           {
             "value": true,
             "controlAddress": "/active"
           }
         ],
-        "niceName": "State",
+        "niceName": "Conduite",
         "type": "State",
         "processors": {
           "items": [
             {
-              "niceName": "Action",
+              "niceName": "Tube Lights On",
               "editorIsCollapsed": true,
               "type": "Action",
               "conditions": {
@@ -47210,21 +46882,12 @@
                   {
                     "parameters": [
                       {
-                        "value": "/modules/ringer/values/gpio/gpio2/value",
+                        "value": "",
                         "controlAddress": "/inputValue"
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
+                    "type": "From Input Value"
                   }
                 ],
                 "viewOffset": [
@@ -47238,18 +46901,39 @@
                   {
                     "niceName": "Consequence",
                     "type": "Consequence",
-                    "commandModule": "sequences",
-                    "commandPath": "Playback",
-                    "commandType": "Play Sequence",
+                    "commandModule": "tubeLights",
+                    "commandPath": "",
+                    "commandType": "Send string",
                     "command": {
                       "parameters": [
                         {
-                          "value": "/sequences/allo",
-                          "controlAddress": "/target"
+                          "value": "light1mid",
+                          "controlAddress": "/value"
                         },
                         {
-                          "value": true,
-                          "controlAddress": "/playFromStart"
+                          "value": false,
+                          "controlAddress": "/appendNL"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "tubeLights",
+                    "commandPath": "",
+                    "commandType": "Send string",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "light2mid",
+                          "controlAddress": "/value"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/appendNL"
                         }
                       ],
                       "paramLinks": {
@@ -47264,17 +46948,229 @@
                 "viewZoom": 1.0
               },
               "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Tube Lights Off",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
                 "items": [
                   {
                     "niceName": "Consequence",
                     "type": "Consequence",
-                    "commandModule": "sequences",
-                    "commandPath": "Playback",
-                    "commandType": "Stop Sequence",
+                    "commandModule": "tubeLights",
+                    "commandPath": "",
+                    "commandType": "Send string",
                     "command": {
                       "parameters": [
                         {
-                          "value": "/sequences/allo",
+                          "value": "off",
+                          "controlAddress": "/value"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/appendNL"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Disc Lamp On",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/stagger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Go to preset",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/discLamp/presets/light",
+                          "controlAddress": "/targetPreset"
+                        },
+                        {
+                          "value": 5.0,
+                          "controlAddress": "/interpolationTime",
+                          "enabled": true
+                        }
+                      ],
+                      "containers": {
+                        "interpolationCurve": {
+                          "parameters": [
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": [
+                                0.0,
+                                1.0
+                              ],
+                              "controlAddress": "/viewValueRange"
+                            },
+                            {
+                              "value": [
+                                0.0,
+                                1.0
+                              ],
+                              "controlAddress": "/range",
+                              "enabled": true
+                            },
+                            {
+                              "value": false,
+                              "controlAddress": "/enabled"
+                            }
+                          ],
+                          "editorIsCollapsed": true,
+                          "hideInRemoteControl": false,
+                          "items": [
+                            {
+                              "parameters": [
+                                {
+                                  "value": "Bezier",
+                                  "controlAddress": "/easingType"
+                                }
+                              ],
+                              "niceName": "Key",
+                              "containers": {
+                                "easing": {
+                                  "parameters": [
+                                    {
+                                      "value": [
+                                        0.300000011920929,
+                                        0.0
+                                      ],
+                                      "controlAddress": "/anchor1"
+                                    },
+                                    {
+                                      "value": [
+                                        -0.300000011920929,
+                                        0.0
+                                      ],
+                                      "controlAddress": "/anchor2"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Key"
+                            },
+                            {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/position"
+                                },
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/value"
+                                },
+                                {
+                                  "value": "Bezier",
+                                  "controlAddress": "/easingType"
+                                }
+                              ],
+                              "niceName": "Key 1",
+                              "containers": {
+                                "easing": {
+                                }
+                              },
+                              "type": "Key"
+                            }
+                          ],
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0,
+                          "owned": true,
+                          "niceName": "Interpolation Curve"
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "tuyaTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_2/Custom/Open",
                           "controlAddress": "/target"
                         }
                       ],
@@ -47283,6 +47179,304 @@
                     }
                   }
                 ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Disc Lamp Off",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/stagger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "tuyaTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_2/Custom/Close",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Go to preset",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/discLamp/presets/off",
+                          "controlAddress": "/targetPreset"
+                        },
+                        {
+                          "value": 5.0,
+                          "controlAddress": "/interpolationTime",
+                          "enabled": true
+                        }
+                      ],
+                      "containers": {
+                        "interpolationCurve": {
+                          "parameters": [
+                            {
+                              "value": 1.0,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": [
+                                0.0,
+                                1.0
+                              ],
+                              "controlAddress": "/viewValueRange"
+                            },
+                            {
+                              "value": [
+                                0.0,
+                                1.0
+                              ],
+                              "controlAddress": "/range",
+                              "enabled": true
+                            },
+                            {
+                              "value": false,
+                              "controlAddress": "/enabled"
+                            }
+                          ],
+                          "editorIsCollapsed": true,
+                          "hideInRemoteControl": false,
+                          "items": [
+                            {
+                              "parameters": [
+                                {
+                                  "value": "Bezier",
+                                  "controlAddress": "/easingType"
+                                }
+                              ],
+                              "niceName": "Key",
+                              "containers": {
+                                "easing": {
+                                  "parameters": [
+                                    {
+                                      "value": [
+                                        0.300000011920929,
+                                        0.0
+                                      ],
+                                      "controlAddress": "/anchor1"
+                                    },
+                                    {
+                                      "value": [
+                                        -0.300000011920929,
+                                        0.0
+                                      ],
+                                      "controlAddress": "/anchor2"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Key"
+                            },
+                            {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/position"
+                                },
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/value"
+                                },
+                                {
+                                  "value": "Bezier",
+                                  "controlAddress": "/easingType"
+                                }
+                              ],
+                              "niceName": "Key 1",
+                              "containers": {
+                                "easing": {
+                                }
+                              },
+                              "type": "Key"
+                            }
+                          ],
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0,
+                          "owned": true,
+                          "niceName": "Interpolation Curve"
+                        }
+                      },
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "TV On",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "tuyaTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_1/Custom/Open",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "TV Off",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "tuyaTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_1/Custom/Close",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
                 "viewOffset": [
                   0,
                   0
@@ -47300,8 +47494,8 @@
       }
     ],
     "viewOffset": [
-      216,
-      -108
+      -22,
+      -34
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -47315,8 +47509,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        216,
-        -108
+        -22,
+        -34
       ],
       "viewZoom": 1.0
     }
@@ -47449,10 +47643,6 @@
                 "items": [
                   {
                     "parameters": [
-                      {
-                        "value": 0.0,
-                        "controlAddress": "/startTime"
-                      },
                       {
                         "value": "D:/Downloads/yeah-boiii-i-i-i.mp3",
                         "controlAddress": "/filePath"
