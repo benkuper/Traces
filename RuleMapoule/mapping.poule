@@ -92,7 +92,7 @@
                     {
                       "type": 0,
                       "width": 1048,
-                      "height": 249,
+                      "height": 565,
                       "currentContent": "Screen Editor",
                       "tabs": [
                         {
@@ -103,7 +103,7 @@
                     {
                       "type": 0,
                       "width": 1048,
-                      "height": 734,
+                      "height": 418,
                       "currentContent": "Sequence Editor",
                       "tabs": [
                         {
@@ -159,6 +159,10 @@
       {
         "parameters": [
           {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
             "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1920x1080.png",
             "controlAddress": "/filePath"
           }
@@ -172,6 +176,10 @@
       },
       {
         "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
           {
             "value": "Image/Golden Gang Ultreia_1024x768.png",
             "controlAddress": "/filePath"
@@ -187,6 +195,10 @@
       {
         "parameters": [
           {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
             "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1080x1920.png",
             "controlAddress": "/filePath"
           }
@@ -200,6 +212,10 @@
       },
       {
         "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
           {
             "value": "D:/Documents/Trace 2024/Image/_650x186.png",
             "controlAddress": "/filePath"
@@ -520,10 +536,6 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 0.0,
-                "controlAddress": "/viewStartTime"
-              },
-              {
                 "value": 469.7382202148438,
                 "controlAddress": "/viewEndTime"
               }
@@ -536,7 +548,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -688,10 +700,6 @@
                 },
                 {
                   "parameters": [
-                    {
-                      "value": true,
-                      "controlAddress": "/enabled"
-                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -1304,11 +1312,6 @@
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
                     },
                     {
                       "value": [
@@ -2457,7 +2460,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -2634,10 +2637,6 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 0.0,
-                "controlAddress": "/viewStartTime"
-              },
-              {
                 "value": 630.0,
                 "controlAddress": "/viewEndTime"
               }
@@ -2650,17 +2649,12 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
                     }
                   ],
                   "niceName": "Debug",
@@ -2678,10 +2672,6 @@
                       "items": [
                         {
                           "parameters": [
-                            {
-                              "value": 0.0,
-                              "controlAddress": "/startTime"
-                            },
                             {
                               "value": 710.0400390625,
                               "controlAddress": "/length"
@@ -3015,10 +3005,6 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 0.0,
-                "controlAddress": "/viewStartTime"
-              },
-              {
                 "value": 630.0,
                 "controlAddress": "/viewEndTime"
               }
@@ -3031,17 +3017,12 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
                     }
                   ],
                   "niceName": "Debug",
@@ -3915,7 +3896,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -4070,6 +4051,203 @@
                 0
               ],
               "viewZoom": 1.0
+            }
+          }
+        },
+        "type": "Sequence"
+      },
+      {
+        "niceName": "Sequence Xiaomi",
+        "containers": {
+          "mediaParameters": {
+          },
+          "sequence": {
+            "parameters": [
+              {
+                "value": 630.0,
+                "controlAddress": "/totalTime"
+              },
+              {
+                "value": 0.0,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 630.0,
+                "controlAddress": "/viewEndTime"
+              }
+            ],
+            "niceName": "Sequence",
+            "type": "Sequence",
+            "layers": {
+              "hideInEditor": true,
+              "items": [
+                {
+                  "parameters": [
+                    {
+                      "value": true,
+                      "controlAddress": "/enabled"
+                    },
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 60,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
+                    }
+                  ],
+                  "niceName": "Debug",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/enabled"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 629.3999633789062,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Picture",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "picture": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Git/Traces/Image/Mire_Cour.png",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Picture",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Picture"
+                            }
+                          },
+                          "type": "Picture"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                }
+              ],
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "cues": {
+              "hideInEditor": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
             },
             "editing": true
           }
@@ -4082,14 +4260,14 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/sequenceFurniture"
+    "editingSequenceMedia": "/media/sequenceXiaomi"
   },
   "screen": {
     "items": [
       {
         "parameters": [
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/enabled"
           },
           {
@@ -4168,12 +4346,6 @@
                     "editorIsCollapsed": true
                   },
                   "aspectRatio": {
-                    "parameters": [
-                      {
-                        "value": "Stretch",
-                        "controlAddress": "/fillType"
-                      }
-                    ]
                   },
                   "pins": {
                     "viewOffset": [
@@ -4198,9 +4370,8 @@
       {
         "parameters": [
           {
-            "value": 1,
-            "hexMode": false,
-            "controlAddress": "/screenNumber"
+            "value": true,
+            "controlAddress": "/enabled"
           }
         ],
         "niceName": "2-TV",
@@ -4267,7 +4438,11 @@
       {
         "parameters": [
           {
-            "value": 3,
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": 1,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -4850,7 +5025,11 @@
       {
         "parameters": [
           {
-            "value": 2,
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": 3,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -5281,22 +5460,32 @@
       {
         "parameters": [
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/enabled"
           },
           {
-            "value": 2,
+            "value": 4,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
         ],
-        "niceName": "Xiaomi",
+        "niceName": "5-Xiaomi",
         "containers": {
           "positionning": {
             "parameters": [
               {
                 "value": false,
                 "controlAddress": "/enabled"
+              },
+              {
+                "value": 0,
+                "hexMode": false,
+                "controlAddress": "/screenY"
+              },
+              {
+                "value": 720,
+                "hexMode": false,
+                "controlAddress": "/screenHeight"
               }
             ],
             "editorIsCollapsed": true
@@ -5306,7 +5495,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/testPatternCour",
+                    "value": "/sequenceXiaomi",
                     "controlAddress": "/media"
                   }
                 ],
@@ -5316,29 +5505,29 @@
                     "parameters": [
                       {
                         "value": [
-                          0.10260409116745,
-                          0.9768525362014771
+                          0.08378768712282181,
+                          1.000609636306763
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          1.0,
-                          0.9944446086883545
+                          0.9350308775901794,
+                          0.9464577436447144
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.275521993637085,
-                          0.0
+                          0.2693814337253571,
+                          0.003596022259443998
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.7859407663345337,
-                          0.0
+                          0.7481290698051453,
+                          0.001198674435727298
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -5387,6 +5576,6 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingScreen": "4_Jar"
+    "editingScreen": "3_FondDeScne"
   }
 }
