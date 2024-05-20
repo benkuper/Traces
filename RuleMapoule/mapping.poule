@@ -49,19 +49,19 @@
           "shifters": [
             {
               "type": 1,
-              "width": 1433,
+              "width": 1262,
               "height": 989,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
-                  "width": 379,
+                  "width": 294,
                   "height": 989,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
-                      "width": 379,
+                      "width": 294,
                       "height": 284,
                       "currentContent": "Screens",
                       "tabs": [
@@ -72,7 +72,7 @@
                     },
                     {
                       "type": 0,
-                      "width": 379,
+                      "width": 294,
                       "height": 699,
                       "currentContent": "Medias",
                       "tabs": [
@@ -85,13 +85,13 @@
                 },
                 {
                   "type": 1,
-                  "width": 1048,
+                  "width": 962,
                   "height": 989,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
-                      "width": 1048,
+                      "width": 962,
                       "height": 565,
                       "currentContent": "Screen Editor",
                       "tabs": [
@@ -102,7 +102,7 @@
                     },
                     {
                       "type": 0,
-                      "width": 1048,
+                      "width": 962,
                       "height": 418,
                       "currentContent": "Sequence Editor",
                       "tabs": [
@@ -120,13 +120,13 @@
             },
             {
               "type": 1,
-              "width": 481,
+              "width": 652,
               "height": 989,
               "direction": 2,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 481,
+                  "width": 652,
                   "height": 713,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -137,7 +137,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 481,
+                  "width": 652,
                   "height": 270,
                   "currentContent": "Logger",
                   "tabs": [
@@ -159,10 +159,6 @@
       {
         "parameters": [
           {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
             "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1920x1080.png",
             "controlAddress": "/filePath"
           }
@@ -176,10 +172,6 @@
       },
       {
         "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
           {
             "value": "Image/Golden Gang Ultreia_1024x768.png",
             "controlAddress": "/filePath"
@@ -195,10 +187,6 @@
       {
         "parameters": [
           {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
             "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1080x1920.png",
             "controlAddress": "/filePath"
           }
@@ -212,10 +200,6 @@
       },
       {
         "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
           {
             "value": "D:/Documents/Trace 2024/Image/_650x186.png",
             "controlAddress": "/filePath"
@@ -536,7 +520,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 469.7382202148438,
+                "value": 215.8867340087891,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 509.0384521484375,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -548,7 +536,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -1487,7 +1475,7 @@
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 134.9199981689453,
+                              "value": 68.63999938964844,
                               "controlAddress": "/length"
                             },
                             {
@@ -1893,6 +1881,155 @@
                               "parameters": [
                                 {
                                   "value": "D:/Documents/Trace 2024/Videos/Album de famille_01.mp4",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                },
+                {
+                  "parameters": [
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    }
+                  ],
+                  "niceName": "Bal",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/enabled"
+                        },
+                        {
+                          "value": 1400,
+                          "hexMode": false,
+                          "controlAddress": "/width"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 354.0,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 54.34000015258789,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Jar_02.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2437,6 +2574,18 @@
         "type": "Sequence"
       },
       {
+        "parameters": [
+          {
+            "value": 1350,
+            "hexMode": false,
+            "controlAddress": "/width"
+          },
+          {
+            "value": 954,
+            "hexMode": false,
+            "controlAddress": "/height"
+          }
+        ],
         "niceName": "Sequence Back",
         "containers": {
           "mediaParameters": {
@@ -2448,7 +2597,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 630.0,
+                "value": 101.4264526367188,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 559.0327758789062,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -2460,7 +2613,151 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    }
+                  ],
+                  "niceName": "Media",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/enabled"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 352.9599914550781,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 62.45999908447266,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Back_02.mp4",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                },
+                {
+                  "parameters": [
+                    {
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -2649,7 +2946,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -3017,7 +3314,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -3896,7 +4193,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -4068,10 +4365,6 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 0.0,
-                "controlAddress": "/viewStartTime"
-              },
-              {
                 "value": 630.0,
                 "controlAddress": "/viewEndTime"
               }
@@ -4084,17 +4377,12 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
                     }
                   ],
                   "niceName": "Debug",
@@ -4112,10 +4400,6 @@
                       "items": [
                         {
                           "parameters": [
-                            {
-                              "value": 0.0,
-                              "controlAddress": "/startTime"
-                            },
                             {
                               "value": 629.3999633789062,
                               "controlAddress": "/length"
@@ -4225,6 +4509,39 @@
                           "type": "Picture"
                         }
                       ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                },
+                {
+                  "parameters": [
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": 60,
+                      "hexMode": false,
+                      "controlAddress": "/uiHeight"
+                    }
+                  ],
+                  "niceName": "Bal",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/enabled"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
                       "viewOffset": [
                         0,
                         0
@@ -4368,12 +4685,6 @@
         "type": "Screen"
       },
       {
-        "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          }
-        ],
         "niceName": "2-TV",
         "containers": {
           "positionning": {
@@ -4436,17 +4747,6 @@
         "type": "Screen"
       },
       {
-        "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
-            "value": 1,
-            "hexMode": false,
-            "controlAddress": "/screenNumber"
-          }
-        ],
         "niceName": "3-Fond De sc\u00e8ne",
         "containers": {
           "positionning": {
@@ -5025,10 +5325,6 @@
       {
         "parameters": [
           {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
             "value": 3,
             "hexMode": false,
             "controlAddress": "/screenNumber"
@@ -5478,11 +5774,6 @@
                 "controlAddress": "/enabled"
               },
               {
-                "value": 0,
-                "hexMode": false,
-                "controlAddress": "/screenY"
-              },
-              {
                 "value": 720,
                 "hexMode": false,
                 "controlAddress": "/screenHeight"
@@ -5576,6 +5867,6 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingScreen": "3_FondDeScne"
+    "editingScreen": "5_Xiaomi"
   }
 }
