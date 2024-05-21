@@ -266,12 +266,11 @@
         "values": {
           "containers": {
             "P100_Control_1": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
                     {
-                      "value": "192.168.1.107",
+                      "value": "192.168.1.184",
                       "controlAddress": "/Ip"
                     }
                   ],
@@ -283,12 +282,11 @@
               "niceName": "P100_Control_1"
             },
             "P100_Control_2": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
                     {
-                      "value": "192.168.1.107",
+                      "value": "192.168.1.199",
                       "controlAddress": "/Ip"
                     }
                   ],
@@ -300,6 +298,7 @@
               "niceName": "P100_Control_2"
             },
             "P100_Control_3": {
+              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "editorIsCollapsed": true,
@@ -311,6 +310,7 @@
               "niceName": "P100_Control_3"
             },
             "P100_Control_4": {
+              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "editorIsCollapsed": true,
@@ -585,7 +585,7 @@
             "servo": {
               "parameters": [
                 {
-                  "value": 146.0,
+                  "value": 5.0,
                   "controlAddress": "/position"
                 }
               ],
@@ -962,7 +962,7 @@
                   "TYPE": "f",
                   "FULL_PATH": "/servo/position",
                   "VALUE": [
-                    5
+                    146
                   ]
                 }
               }
@@ -1574,12 +1574,6 @@
         "hasListenExtension": true
       },
       {
-        "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          }
-        ],
         "niceName": "Ringer",
         "type": "OSCQuery",
         "scripts": {
@@ -1594,14 +1588,6 @@
             {
               "value": "Ringer",
               "controlAddress": "/serverName"
-            },
-            {
-              "value": true,
-              "controlAddress": "/onlySyncFromSameName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -1663,12 +1649,7 @@
               "niceName": "Comm"
             },
             "settings": {
-              "parameters": [
-                {
-                  "value": "Ringer",
-                  "controlAddress": "/deviceName"
-                }
-              ],
+              "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Settings"
             },
@@ -1678,64 +1659,37 @@
               "niceName": "Server"
             },
             "gpio": {
-              "parameters": [
-                {
-                  "value": 2,
-                  "hexMode": false,
-                  "controlAddress": "/count"
-                }
-              ],
+              "editorIsCollapsed": true,
               "containers": {
                 "gpio1": {
                   "parameters": [
                     {
-                      "value": 4,
-                      "hexMode": false,
-                      "controlAddress": "/pin"
-                    },
-                    {
                       "value": "Digital Oscillator",
                       "controlAddress": "/mode"
-                    },
-                    {
-                      "value": 0.05000000074505806,
-                      "controlAddress": "/value"
-                    }
-                  ],
-                  "owned": true,
-                  "niceName": "Gpio 1"
-                },
-                "gpio2": {
-                  "parameters": [
-                    {
-                      "value": 25,
-                      "hexMode": false,
-                      "controlAddress": "/pin"
-                    },
-                    {
-                      "value": "Digital Input Pullup",
-                      "controlAddress": "/mode"
-                    },
-                    {
-                      "value": false,
-                      "controlAddress": "/inverted"
                     },
                     {
                       "value": 0.0,
                       "controlAddress": "/value"
                     }
                   ],
+                  "editorIsCollapsed": true,
+                  "owned": true,
+                  "niceName": "Gpio 1"
+                },
+                "gpio2": {
+                  "parameters": [
+                    {
+                      "value": "Digital Input Pullup",
+                      "controlAddress": "/mode"
+                    }
+                  ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Gpio 2"
                 }
               },
               "owned": true,
               "niceName": "Gpio"
-            },
-            "wifi": {
-              "editorIsCollapsed": true,
-              "owned": true,
-              "niceName": "Wifi"
             },
             "buttons": {
               "editorIsCollapsed": true,
@@ -1747,12 +1701,18 @@
                       "controlAddress": "/mode"
                     }
                   ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Button 1"
                 }
               },
               "owned": true,
               "niceName": "Buttons"
+            },
+            "wifi": {
+              "editorIsCollapsed": true,
+              "owned": true,
+              "niceName": "Wifi"
             }
           }
         },
@@ -3107,6 +3067,7 @@
               "niceName": "Server"
             },
             "gpio": {
+              "editorIsCollapsed": true,
               "containers": {
                 "gpio1": {
                   "parameters": [
@@ -3115,14 +3076,11 @@
                       "controlAddress": "/mode"
                     },
                     {
-                      "value": false,
-                      "controlAddress": "/inverted"
-                    },
-                    {
                       "value": 1.0,
                       "controlAddress": "/value"
                     }
                   ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Gpio 1"
                 }
@@ -3564,7 +3522,7 @@
       {
         "parameters": [
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/enabled"
           }
         ],
@@ -3582,6 +3540,10 @@
             {
               "value": "RuleMaPool - mapping.poule",
               "controlAddress": "/serverName"
+            },
+            {
+              "value": true,
+              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -3631,7 +3593,7 @@
                 "perfJar": {
                   "parameters": [
                     {
-                      "value": 54.7683219909668,
+                      "value": 38.81012725830078,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -3645,12 +3607,8 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
-                        },
-                        {
-                          "value": 1191.57861328125,
-                          "controlAddress": "/viewEndTime"
                         }
                       ],
                       "editorIsCollapsed": true,
@@ -3688,6 +3646,10 @@
                             },
                             "jarSpout": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4009,7 +3971,7 @@
                 "perfBack": {
                   "parameters": [
                     {
-                      "value": 54.70635986328125,
+                      "value": 40.35471725463867,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4023,12 +3985,8 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
-                        },
-                        {
-                          "value": 1167.329833984375,
-                          "controlAddress": "/viewEndTime"
                         }
                       ],
                       "editorIsCollapsed": true,
@@ -4090,6 +4048,10 @@
                             },
                             "media1": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4194,6 +4156,12 @@
                                           "niceName": "Fade Curve"
                                         },
                                         "sharedTexture": {
+                                          "parameters": [
+                                            {
+                                              "value": 40.33372116088867,
+                                              "controlAddress": "/currentFPS"
+                                            }
+                                          ],
                                           "editorIsCollapsed": true,
                                           "containers": {
                                             "mediaParameters": {
@@ -4237,7 +4205,7 @@
                 "perfTV": {
                   "parameters": [
                     {
-                      "value": 54.65532302856445,
+                      "value": 40.34944152832031,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4251,7 +4219,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4262,6 +4230,10 @@
                           "containers": {
                             "debug": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4352,7 +4324,7 @@
                 "perfRetroProjection": {
                   "parameters": [
                     {
-                      "value": 54.60136795043945,
+                      "value": 40.34942626953125,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4366,7 +4338,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4377,6 +4349,10 @@
                           "containers": {
                             "debug": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4456,7 +4432,7 @@
                 "perfFurniture": {
                   "parameters": [
                     {
-                      "value": 54.50841903686523,
+                      "value": 40.34709930419922,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4470,7 +4446,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4518,6 +4494,10 @@
                             "debug": {
                               "parameters": [
                                 {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
+                                {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
                                 }
@@ -4559,7 +4539,7 @@
                 "perfXiaomi": {
                   "parameters": [
                     {
-                      "value": 54.46566772460938,
+                      "value": 40.33207702636719,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4573,15 +4553,11 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlAddress": "/currentTime"
                         },
                         {
-                          "value": 0.0,
-                          "controlAddress": "/viewStartTime"
-                        },
-                        {
-                          "value": 842.8853149414062,
+                          "value": 918.3239135742188,
                           "controlAddress": "/viewEndTime"
                         }
                       ],
@@ -4592,6 +4568,10 @@
                           "containers": {
                             "debug": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4640,6 +4620,10 @@
                             },
                             "media": {
                               "parameters": [
+                                {
+                                  "value": false,
+                                  "controlAddress": "/enabled"
+                                },
                                 {
                                   "value": "Standard Transparency",
                                   "controlAddress": "/blendFunction"
@@ -4744,6 +4728,12 @@
                                           "niceName": "Fade Curve"
                                         },
                                         "sharedTexture": {
+                                          "parameters": [
+                                            {
+                                              "value": 40.33551025390625,
+                                              "controlAddress": "/currentFPS"
+                                            }
+                                          ],
                                           "editorIsCollapsed": true,
                                           "containers": {
                                             "mediaParameters": {
@@ -4895,7 +4885,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.7683219909668
+                        38.81012725830078
                       ],
                       "RANGE": [
                         {
@@ -5281,7 +5271,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    false
+                                    true
                                   ],
                                   "RANGE": [
                                     {
@@ -5507,7 +5497,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -8529,7 +8519,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.70635986328125
+                        40.35471725463867
                       ],
                       "RANGE": [
                         {
@@ -9141,7 +9131,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    false
+                                    true
                                   ],
                                   "RANGE": [
                                     {
@@ -9367,7 +9357,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -10086,7 +10076,7 @@
                                               "ACCESS": 3,
                                               "TYPE": "f",
                                               "VALUE": [
-                                                54.43524932861328
+                                                40.33372116088867
                                               ],
                                               "RANGE": [
                                                 {
@@ -10245,7 +10235,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.65532302856445
+                        40.34944152832031
                       ],
                       "RANGE": [
                         {
@@ -11327,7 +11317,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.60136795043945
+                        40.34942626953125
                       ],
                       "RANGE": [
                         {
@@ -12332,7 +12322,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.50841903686523
+                        40.34709930419922
                       ],
                       "RANGE": [
                         {
@@ -13486,7 +13476,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        54.46566772460938
+                        40.33207702636719
                       ],
                       "RANGE": [
                         {
@@ -13619,7 +13609,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            0.0
+                            137.52
                           ],
                           "RANGE": [
                             {
@@ -13802,7 +13792,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            842.8853149414062
+                            918.3239135742188
                           ],
                           "RANGE": [
                             {
@@ -14324,7 +14314,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -14606,7 +14596,7 @@
                                           "ACCESS": 1,
                                           "TYPE": "T",
                                           "VALUE": [
-                                            false
+                                            true
                                           ],
                                           "RANGE": [
                                             {
@@ -15043,7 +15033,7 @@
                                               "ACCESS": 3,
                                               "TYPE": "f",
                                               "VALUE": [
-                                                0.0
+                                                40.33551025390625
                                               ],
                                               "RANGE": [
                                                 {
@@ -15467,11 +15457,19 @@
                 "sequence": {
                   "parameters": [
                     {
-                      "value": 0.0,
+                      "value": 450.08,
                       "controlAddress": "/currentTime"
                     },
                     {
-                      "value": 605.3599853515625,
+                      "value": 1800.02,
+                      "controlAddress": "/totalTime"
+                    },
+                    {
+                      "value": 345.7999877929688,
+                      "controlAddress": "/viewStartTime"
+                    },
+                    {
+                      "value": 474.0599975585938,
                       "controlAddress": "/viewEndTime"
                     }
                   ],
@@ -15656,12 +15654,12 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        421.12
+                        0.0
                       ],
                       "RANGE": [
                         {
                           "MIN": 0,
-                          "MAX": 1800.0
+                          "MAX": 1800.02001953125
                         }
                       ],
                       "EXTENDED_TYPE": [
@@ -15674,7 +15672,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        1800.0
+                        1800.02
                       ],
                       "EXTENDED_TYPE": [
                         "Float"
@@ -15821,12 +15819,12 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        0.0
+                        345.7999877929688
                       ],
                       "RANGE": [
                         {
                           "MIN": 0,
-                          "MAX": 1799.0
+                          "MAX": 1799.02001953125
                         }
                       ],
                       "EXTENDED_TYPE": [
@@ -15839,12 +15837,12 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        605.3599853515625
+                        474.0599975585938
                       ],
                       "RANGE": [
                         {
-                          "MIN": 1.0,
-                          "MAX": 1800.0
+                          "MIN": 346.7999877929688,
+                          "MAX": 1800.02001953125
                         }
                       ],
                       "EXTENDED_TYPE": [
@@ -16120,10 +16118,6 @@
             {
               "value": true,
               "controlAddress": "/firstValueIsTheName"
-            },
-            {
-              "value": "",
-              "controlAddress": "/port"
             }
           ],
           "containers": {
@@ -16161,7 +16155,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 450.08,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -16179,7 +16173,7 @@
             {
               "parameters": [
                 {
-                  "value": true,
+                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -16222,7 +16216,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0,
@@ -16334,7 +16328,7 @@
             {
               "parameters": [
                 {
-                  "value": true,
+                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -17309,12 +17303,6 @@
               }
             },
             {
-              "parameters": [
-                {
-                  "value": true,
-                  "controlAddress": "/enabled"
-                }
-              ],
               "niceName": "Decroche Tel",
               "editorIsCollapsed": true,
               "type": "Action",
@@ -17927,7 +17915,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -18089,7 +18077,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.0,
+                          "value": 450.08,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -18776,7 +18764,6 @@
                 "items": [
                   {
                     "niceName": "Consequence",
-                    "editorIsCollapsed": true,
                     "type": "Consequence",
                     "commandModule": "os",
                     "commandPath": "Process",
@@ -19795,6 +19782,30 @@
           ],
           "viewZoom": 1.0
         }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              342.0,
+              -238.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "State",
+        "type": "State",
+        "processors": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
       }
     ],
     "viewOffset": [
@@ -19826,10 +19837,6 @@
           {
             "value": 1800.0,
             "controlAddress": "/totalTime"
-          },
-          {
-            "value": 0.0,
-            "controlAddress": "/viewStartTime"
           },
           {
             "value": 1800.0,
@@ -20842,10 +20849,6 @@
                   {
                     "parameters": [
                       {
-                        "value": false,
-                        "controlAddress": "/locked"
-                      },
-                      {
                         "value": [
                           0.1499647051095963,
                           0.2747803926467896,
@@ -20890,10 +20893,6 @@
                   },
                   {
                     "parameters": [
-                      {
-                        "value": false,
-                        "controlAddress": "/locked"
-                      },
                       {
                         "value": [
                           0.1478705853223801,
@@ -21131,10 +21130,6 @@
                   {
                     "parameters": [
                       {
-                        "value": false,
-                        "controlAddress": "/locked"
-                      },
-                      {
                         "value": [
                           0.1284901946783066,
                           0.2713097929954529,
@@ -21248,10 +21243,6 @@
                   },
                   {
                     "parameters": [
-                      {
-                        "value": false,
-                        "controlAddress": "/locked"
-                      },
                       {
                         "value": [
                           0.1006509810686111,
@@ -21795,10 +21786,6 @@
                               {
                                 "value": "Equals",
                                 "controlAddress": "/operator"
-                              },
-                              {
-                                "value": false,
-                                "controlAddress": "/value"
                               }
                             ],
                             "paramLinks": {
@@ -22045,6 +22032,7 @@
                                     "controlAddress": "/enabled"
                                   }
                                 ],
+                                "editorIsCollapsed": true,
                                 "hideInRemoteControl": false,
                                 "items": [
                                   {
@@ -22698,10 +22686,6 @@
             {
               "parameters": [
                 {
-                  "value": true,
-                  "controlAddress": "/enabled"
-                },
-                {
                   "value": 80.0,
                   "controlAddress": "/listSize"
                 },
@@ -22718,10 +22702,6 @@
                 "items": [
                   {
                     "parameters": [
-                      {
-                        "value": 0.0,
-                        "controlAddress": "/startTime"
-                      },
                       {
                         "value": "Audio/Traces.mp3",
                         "relative": true,
@@ -22783,7 +22763,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       },
       {
         "parameters": [
@@ -22961,7 +22942,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 21.94000053405762,
+                      "value": 5.260000228881836,
                       "controlAddress": "/position"
                     },
                     {
@@ -23295,8 +23276,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       }
     ],
     "viewOffset": [
