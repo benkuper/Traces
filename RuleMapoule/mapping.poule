@@ -98,7 +98,7 @@
                     {
                       "type": 0,
                       "width": 983,
-                      "height": 530,
+                      "height": 574,
                       "currentContent": "Screen Editor",
                       "tabs": [
                         {
@@ -109,7 +109,7 @@
                     {
                       "type": 0,
                       "width": 983,
-                      "height": 453,
+                      "height": 409,
                       "currentContent": "Sequence Editor",
                       "tabs": [
                         {
@@ -536,11 +536,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 3.551063537597656,
+                "value": 69.14551544189453,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 699.5581665039062,
+                "value": 366.5494995117188,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -770,7 +770,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 29.8799991607666,
+                              "value": 88.59999847412109,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -896,7 +896,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 183.0,
+                              "value": 241.7200012207031,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1073,7 +1073,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 29.8799991607666,
+                              "value": 88.44000244140625,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1197,7 +1197,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 270.4399719238281,
+                              "value": 328.9999694824219,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1390,7 +1390,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 29.8799991607666,
+                              "value": 88.44000244140625,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1514,7 +1514,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 288.6599731445312,
+                              "value": 347.219970703125,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1707,7 +1707,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 29.8799991607666,
+                              "value": 88.44000244140625,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1831,7 +1831,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 194.1200103759766,
+                              "value": 252.6800079345703,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1969,7 +1969,7 @@
                       "controlAddress": "/listSize"
                     }
                   ],
-                  "niceName": "Mur Jar Front",
+                  "niceName": "Full Surface",
                   "containers": {
                     "positionning": {
                       "parameters": [
@@ -1978,7 +1978,7 @@
                           "controlAddress": "/enabled"
                         },
                         {
-                          "value": 1400,
+                          "value": 2364,
                           "hexMode": false,
                           "controlAddress": "/width"
                         }
@@ -1991,12 +1991,17 @@
                         {
                           "parameters": [
                             {
-                              "value": 354.0,
+                              "value": 345.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 54.34000015258789,
+                              "value": 61.88000106811523,
                               "controlAddress": "/length"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/fadeOut",
+                              "enabled": false
                             }
                           ],
                           "niceName": "Bal",
@@ -2088,7 +2093,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Jar_02.mp4",
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Jar_04r.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2101,43 +2106,7 @@
                             }
                           },
                           "type": "Video"
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  "type": "Media"
-                },
-                {
-                  "parameters": [
-                    {
-                      "value": 60.0,
-                      "controlAddress": "/listSize"
-                    }
-                  ],
-                  "niceName": "Full Surface",
-                  "containers": {
-                    "positionning": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/enabled"
                         },
-                        {
-                          "value": 2364,
-                          "hexMode": false,
-                          "controlAddress": "/width"
-                        }
-                      ]
-                    },
-                    "blocks": {
-                      "hideInEditor": true,
-                      "hideInRemoteControl": true,
-                      "items": [
                         {
                           "parameters": [
                             {
@@ -2147,6 +2116,11 @@
                             {
                               "value": 56.31999206542969,
                               "controlAddress": "/length"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/fadeIn",
+                              "enabled": false
                             }
                           ],
                           "niceName": "Video 1",
@@ -2779,8 +2753,7 @@
                 0
               ],
               "viewZoom": 1.0
-            },
-            "editing": true
+            }
           }
         },
         "type": "Sequence"
@@ -2809,11 +2782,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 327.946044921875,
+                "value": 266.3749694824219,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 618.5811767578125,
+                "value": 603.81005859375,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -2846,15 +2819,15 @@
                         {
                           "parameters": [
                             {
-                              "value": 352.9599914550781,
+                              "value": 345.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 62.45999908447266,
+                              "value": 70.05999755859375,
                               "controlAddress": "/length"
                             }
                           ],
-                          "niceName": "Video",
+                          "niceName": "Bal",
                           "editorIsCollapsed": true,
                           "containers": {
                             "fadeCurve": {
@@ -2943,121 +2916,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Back_02.mp4",
-                                  "controlAddress": "/filePath"
-                                }
-                              ],
-                              "niceName": "Video",
-                              "containers": {
-                                "mediaParameters": {
-                                }
-                              },
-                              "type": "Video"
-                            }
-                          },
-                          "type": "Video"
-                        },
-                        {
-                          "parameters": [
-                            {
-                              "value": 421.6799926757812,
-                              "controlAddress": "/startTime"
-                            },
-                            {
-                              "value": 37.74000549316406,
-                              "controlAddress": "/length"
-                            }
-                          ],
-                          "niceName": "Video 1",
-                          "editorIsCollapsed": true,
-                          "containers": {
-                            "fadeCurve": {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/length"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/viewValueRange"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/range",
-                                  "enabled": true
-                                }
-                              ],
-                              "hideInRemoteControl": false,
-                              "items": [
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key",
-                                  "containers": {
-                                    "easing": {
-                                      "parameters": [
-                                        {
-                                          "value": [
-                                            0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor1"
-                                        },
-                                        {
-                                          "value": [
-                                            -0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor2"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "type": "Key"
-                                },
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/position"
-                                    },
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/value"
-                                    },
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key 1",
-                                  "containers": {
-                                    "easing": {
-                                    }
-                                  },
-                                  "type": "Key"
-                                }
-                              ],
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            },
-                            "video": {
-                              "parameters": [
-                                {
-                                  "value": "D:/Documents/Trace 2024/Videos/Paysage 02_2_H264.mp4",
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Back_03.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -3262,7 +3121,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 1800.0,
+                "value": 63.02036666870117,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 217.132568359375,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -3445,7 +3308,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 112.3600006103516,
+                              "value": 92.31999969482422,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -3458,7 +3321,7 @@
                               "enabled": true
                             },
                             {
-                              "value": 15.89999961853027,
+                              "value": 6.499997138977051,
                               "controlAddress": "/fadeOut",
                               "enabled": true
                             }
@@ -3751,7 +3614,7 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 630.0,
+                "value": 277.4091491699219,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -3953,8 +3816,7 @@
                           "hexMode": false,
                           "controlAddress": "/height"
                         }
-                      ],
-                      "editorIsCollapsed": true
+                      ]
                     },
                     "blocks": {
                       "hideInEditor": true,
@@ -3963,15 +3825,15 @@
                         {
                           "parameters": [
                             {
-                              "value": 109.4800033569336,
+                              "value": 112.2200012207031,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 64.52000427246094,
+                              "value": 47.74000549316406,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 9.437836647033691,
+                              "value": 8.037836074829102,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
@@ -4070,7 +3932,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Ruine et deuil_landscape.mp4",
+                                  "value": "D:/Documents/Trace 2024/Videos/Ruine et deuil_landscape_02.mp4",
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -4256,7 +4118,8 @@
                 0
               ],
               "viewZoom": 1.0
-            }
+            },
+            "editing": true
           }
         },
         "type": "Sequence"
@@ -4819,11 +4682,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 341.9947509765625,
+                "value": 243.2418823242188,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 636.543701171875,
+                "value": 696.1907958984375,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -5001,15 +4864,15 @@
                         {
                           "parameters": [
                             {
-                              "value": 354.0,
+                              "value": 345.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 61.86000061035156,
+                              "value": 83.45999908447266,
                               "controlAddress": "/length"
                             }
                           ],
-                          "niceName": "Video",
+                          "niceName": "Bal Cour",
                           "editorIsCollapsed": true,
                           "containers": {
                             "fadeCurve": {
@@ -5098,121 +4961,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal_Cour_01.mp4",
-                                  "controlAddress": "/filePath"
-                                }
-                              ],
-                              "niceName": "Video",
-                              "containers": {
-                                "mediaParameters": {
-                                }
-                              },
-                              "type": "Video"
-                            }
-                          },
-                          "type": "Video"
-                        },
-                        {
-                          "parameters": [
-                            {
-                              "value": 418.3800048828125,
-                              "controlAddress": "/startTime"
-                            },
-                            {
-                              "value": 108.1199951171875,
-                              "controlAddress": "/length"
-                            }
-                          ],
-                          "niceName": "Video 1",
-                          "editorIsCollapsed": true,
-                          "containers": {
-                            "fadeCurve": {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/length"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/viewValueRange"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/range",
-                                  "enabled": true
-                                }
-                              ],
-                              "hideInRemoteControl": false,
-                              "items": [
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key",
-                                  "containers": {
-                                    "easing": {
-                                      "parameters": [
-                                        {
-                                          "value": [
-                                            0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor1"
-                                        },
-                                        {
-                                          "value": [
-                                            -0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor2"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "type": "Key"
-                                },
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/position"
-                                    },
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/value"
-                                    },
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key 1",
-                                  "containers": {
-                                    "easing": {
-                                    }
-                                  },
-                                  "type": "Key"
-                                }
-                              ],
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            },
-                            "video": {
-                              "parameters": [
-                                {
-                                  "value": "D:/Documents/Trace 2024/Videos/Paysage 02_2_H264.mp4",
+                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Cour_03.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -5258,7 +5007,7 @@
       {
         "parameters": [
           {
-            "value": "D:/Documents/Trace 2024/Videos/Paysage 01.mp4",
+            "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Jar_04r.mp4",
             "controlAddress": "/filePath"
           }
         ],
@@ -5275,7 +5024,7 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/perfJar"
+    "editingSequenceMedia": "/media/perfRetroProjection"
   },
   "screen": {
     "hideInRemoteControl": true,
@@ -5873,64 +5622,6 @@
                     "editorIsCollapsed": true,
                     "containers": {
                       "bezier": {
-                        "parameters": [
-                          {
-                            "value": [
-                              0.3333333432674408,
-                              1.0
-                            ],
-                            "controlAddress": "/handleTopLeft"
-                          },
-                          {
-                            "value": [
-                              0.6666666865348816,
-                              1.0
-                            ],
-                            "controlAddress": "/handleTopRight"
-                          },
-                          {
-                            "value": [
-                              0.3333333432674408,
-                              0.0
-                            ],
-                            "controlAddress": "/handleBottomLeft"
-                          },
-                          {
-                            "value": [
-                              0.6666666865348816,
-                              0.0
-                            ],
-                            "controlAddress": "/handleBottomRight"
-                          },
-                          {
-                            "value": [
-                              0.0,
-                              0.6666666865348816
-                            ],
-                            "controlAddress": "/handleLeftTop"
-                          },
-                          {
-                            "value": [
-                              0.0,
-                              0.3333333432674408
-                            ],
-                            "controlAddress": "/handleLeftBottom"
-                          },
-                          {
-                            "value": [
-                              1.0,
-                              0.6666666865348816
-                            ],
-                            "controlAddress": "/handleRightTop"
-                          },
-                          {
-                            "value": [
-                              1.0,
-                              0.3333333432674408
-                            ],
-                            "controlAddress": "/handleRightBottom"
-                          }
-                        ],
                         "editorIsCollapsed": true
                       }
                     }
@@ -5959,16 +5650,11 @@
               {
                 "parameters": [
                   {
-                    "value": false,
-                    "controlAddress": "/enabled"
-                  },
-                  {
                     "value": "/perfJar",
                     "controlAddress": "/media"
                   }
                 ],
                 "niceName": "Jardin",
-                "editorIsCollapsed": true,
                 "containers": {
                   "positionning": {
                     "parameters": [
@@ -6103,10 +5789,6 @@
               },
               {
                 "parameters": [
-                  {
-                    "value": true,
-                    "controlAddress": "/enabled"
-                  },
                   {
                     "value": true,
                     "controlAddress": "/locked"
@@ -6286,11 +5968,7 @@
       {
         "parameters": [
           {
-            "value": false,
-            "controlAddress": "/enabled"
-          },
-          {
-            "value": 4,
+            "value": 3,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -6835,6 +6513,6 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingScreen": "3_FondDeScne"
+    "editingScreen": "1_RetroProjection"
   }
 }
