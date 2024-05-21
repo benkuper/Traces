@@ -530,7 +530,7 @@
               {
                 "parameters": [
                   {
-                    "value": 0.0,
+                    "value": 0.4749999940395355,
                     "controlAddress": "/value"
                   }
                 ],
@@ -689,7 +689,7 @@
               {
                 "parameters": [
                   {
-                    "value": 0.0,
+                    "value": 0.5350000262260437,
                     "controlAddress": "/value"
                   }
                 ],
@@ -988,7 +988,7 @@
               {
                 "parameters": [
                   {
-                    "value": 0.0,
+                    "value": 1.0,
                     "controlAddress": "/value"
                   }
                 ],
