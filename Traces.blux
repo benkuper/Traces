@@ -4,12 +4,6 @@
     "versionNumber": 66049
   },
   "projectSettings": {
-    "parameters": [
-      {
-        "value": true,
-        "controlAddress": "/saveLayoutInFile"
-      }
-    ],
     "containers": {
       "dashboardSettings": {
         "parameters": [
@@ -283,12 +277,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "editorIsCollapsed": true,
                 "containers": {
@@ -537,12 +525,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -696,12 +678,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1130,7 +1106,7 @@
             "controlAddress": "/interface"
           }
         ],
-        "niceName": "Spot Light",
+        "niceName": "Horloge",
         "editorIsCollapsed": true,
         "hideInEditor": true,
         "containers": {
@@ -1339,12 +1315,6 @@
   "groups": {
     "items": [
       {
-        "parameters": [
-          {
-            "value": true,
-            "controlAddress": "/enabled"
-          }
-        ],
         "niceName": "Four",
         "containers": {
           "objects": {
@@ -1480,7 +1450,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/spotLight",
+                    "value": "/horloge",
                     "controlAddress": "/target"
                   }
                 ],
@@ -1545,7 +1515,7 @@
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 800.6016845703125,
+            "value": 339.6765747070312,
             "controlAddress": "/viewEndTime"
           }
         ],
@@ -1559,11 +1529,6 @@
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
-                },
-                {
-                  "value": 60,
-                  "hexMode": false,
-                  "controlAddress": "/uiHeight"
                 }
               ],
               "niceName": "Horloge",
@@ -1754,11 +1719,6 @@
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
-                },
-                {
-                  "value": 60,
-                  "hexMode": false,
-                  "controlAddress": "/uiHeight"
                 }
               ],
               "niceName": "Four",
@@ -1949,11 +1909,6 @@
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
-                },
-                {
-                  "value": 60,
-                  "hexMode": false,
-                  "controlAddress": "/uiHeight"
                 }
               ],
               "niceName": "Fond",
@@ -2144,11 +2099,6 @@
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
-                },
-                {
-                  "value": 60,
-                  "hexMode": false,
-                  "controlAddress": "/uiHeight"
                 }
               ],
               "niceName": "Lemp",
@@ -2339,11 +2289,6 @@
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
-                },
-                {
-                  "value": 60,
-                  "hexMode": false,
-                  "controlAddress": "/uiHeight"
                 }
               ],
               "niceName": "Meuble",
