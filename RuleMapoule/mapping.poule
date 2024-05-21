@@ -536,11 +536,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 117.563850402832,
+                "value": 315.9483337402344,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 428.51123046875,
+                "value": 474.4580688476562,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -5109,7 +5109,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/miniMode"
                     },
                     {
@@ -5117,7 +5117,7 @@
                       "controlAddress": "/listSize"
                     },
                     {
-                      "value": 22,
+                      "value": 60,
                       "hexMode": false,
                       "controlAddress": "/uiHeight"
                     }
@@ -5144,11 +5144,11 @@
                         {
                           "parameters": [
                             {
-                              "value": 345.0,
+                              "value": 344.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 61.88000106811523,
+                              "value": 115.0200042724609,
                               "controlAddress": "/length"
                             },
                             {
@@ -5259,6 +5259,284 @@
                             }
                           },
                           "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 441.9600219726562,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 17.05999755859375,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": "/media/perfJar/sequence/layers/fullSurface/blocks/bal",
+                              "controlAddress": "/clipIn"
+                            },
+                            {
+                              "value": "/media/perfJar/sequence/layers/fullSurface/blocks/solidColor",
+                              "controlAddress": "/clipOut"
+                            }
+                          ],
+                          "niceName": "Transition",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "shader": {
+                              "parameters": [
+                                {
+                                  "value": "ShaderToy File",
+                                  "controlAddress": "/shaderType"
+                                },
+                                {
+                                  "value": "shaders/transitions/burn.frag",
+                                  "controlAddress": "/fragmentShader"
+                                },
+                                {
+                                  "value": "tsXBzS",
+                                  "controlAddress": "/shaderToyID"
+                                },
+                                {
+                                  "value": "Bd8jRr",
+                                  "controlAddress": "/shaderToyKey"
+                                }
+                              ],
+                              "niceName": "Shader",
+                              "containers": {
+                                "mediaParameters": {
+                                },
+                                "sourceMedias": {
+                                  "parameters": [
+                                    {
+                                      "value": "/media/perfJar/sequence/layers/fullSurface/blocks/bal/video",
+                                      "controlAddress": "/mediaIn"
+                                    },
+                                    {
+                                      "value": "/media/perfJar/sequence/layers/fullSurface/blocks/solidColor/solidColor",
+                                      "controlAddress": "/mediaOut"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Shader",
+                              "shaderCache": "uniform float progression;\r\n\r\nfloat Hash( vec2 p)\r\n{\r\n\tvec3 p2 = vec3(p.xy,1.0);\r\n    return fract(sin(dot(p2,vec3(37.1,61.7, 12.4)))*3758.5453123);\r\n}\r\n\r\nfloat noise(in vec2 p)\r\n{\r\n    vec2 i = floor(p);\r\n\tvec2 f = fract(p);\r\n\tf *= f * (3.0-2.0*f);\r\n\r\n    return mix(mix(Hash(i + vec2(0.,0.)), Hash(i + vec2(1.,0.)),f.x),\r\n\t\tmix(Hash(i + vec2(0.,1.)), Hash(i + vec2(1.,1.)),f.x),\r\n\t\tf.y);\r\n}\r\n\r\nfloat fbm(vec2 p) \r\n{\r\n\tfloat v = 0.0;\r\n\tv += noise(p*1.)*.5;\r\n\tv += noise(p*2.)*.25;\r\n\tv += noise(p*4.)*.125;\r\n\treturn v;\r\n}\r\n\r\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\r\n{\r\n\tvec2 uv = fragCoord/iResolution;\r\n\t\r\n\tvec4 src = texture(iChannel0, uv);\r\n\tvec4 tgt = texture(iChannel1, uv);\r\n\tvec4 col = src;\r\n\t\r\n\tuv.x -= 1.5;\r\n\t\r\n    float p = progression*3;\r\n\tif(p < 0.01)\r\n\t{\r\n\t\tfragColor = src;\r\n\t\treturn;\r\n\t}\r\n\t\r\n\t// burn\r\n\tfloat d = uv.x+uv.y*0.5 + 0.5*fbm(uv*15.1) + p*1.3;\r\n\tif (d >0.35) col = clamp(col-(d-0.35)*10.,0.0,1.0);\r\n\tif (d >0.47) {\r\n\t\tif (d < 0.5 ) col += (d-0.4)*33.0*0.5*(0.0+noise(100.*uv+vec2(-p*2.0,0.)))*vec4(1.5,0.5,0.0,tgt.a);\r\n\t\telse col = tgt; }\r\n\t\r\n\tfragColor = col;\r\n}",
+                              "sourceMedias": {
+                                "parameters": [
+                                  {
+                                    "value": "/media/perfJar/sequence/layers/fullSurface/blocks/bal/video",
+                                    "controlAddress": "/mediaIn"
+                                  },
+                                  {
+                                    "value": "/media/perfJar/sequence/layers/fullSurface/blocks/solidColor/solidColor",
+                                    "controlAddress": "/mediaOut"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "type": "Transition"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 441.9600219726562,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 21.97998046875,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Solid Color",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "solidColor": {
+                              "niceName": "Solid Color",
+                              "containers": {
+                                "mediaParameters": {
+                                  "parameters": [
+                                    {
+                                      "value": [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                      ],
+                                      "controlAddress": "/color"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Solid Color"
+                            }
+                          },
+                          "type": "Solid Color"
                         }
                       ],
                       "viewOffset": [
@@ -6535,11 +6813,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 266.3749694824219,
+                "value": 431.1246643066406,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 603.81005859375,
+                "value": 476.5531921386719,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -6572,12 +6850,17 @@
                         {
                           "parameters": [
                             {
-                              "value": 345.0,
+                              "value": 344.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 70.05999755859375,
+                              "value": 113.2200012207031,
                               "controlAddress": "/length"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/fadeOut",
+                              "enabled": false
                             }
                           ],
                           "niceName": "Bal",
@@ -6671,6 +6954,10 @@
                                 {
                                   "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Back_03.mp4",
                                   "controlAddress": "/filePath"
+                                },
+                                {
+                                  "value": true,
+                                  "controlAddress": "/usePreroll"
                                 }
                               ],
                               "niceName": "Video",
@@ -6682,6 +6969,289 @@
                             }
                           },
                           "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 450.2000122070312,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 7.019989013671875,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": "/media/perfBack/sequence/layers/media/blocks/bal",
+                              "controlAddress": "/clipIn"
+                            },
+                            {
+                              "value": "/media/perfBack/sequence/layers/media/blocks/solidColor",
+                              "controlAddress": "/clipOut"
+                            }
+                          ],
+                          "niceName": "Transition",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "shader": {
+                              "parameters": [
+                                {
+                                  "value": "ShaderToy File",
+                                  "controlAddress": "/shaderType"
+                                },
+                                {
+                                  "value": "shaders/transitions/burn.frag",
+                                  "controlAddress": "/fragmentShader"
+                                },
+                                {
+                                  "value": "tsXBzS",
+                                  "controlAddress": "/shaderToyID"
+                                },
+                                {
+                                  "value": "Bd8jRr",
+                                  "controlAddress": "/shaderToyKey"
+                                }
+                              ],
+                              "niceName": "Shader",
+                              "containers": {
+                                "mediaParameters": {
+                                },
+                                "sourceMedias": {
+                                  "parameters": [
+                                    {
+                                      "value": "/media/perfBack/sequence/layers/media/blocks/bal/video",
+                                      "controlAddress": "/mediaIn"
+                                    },
+                                    {
+                                      "value": "/media/perfBack/sequence/layers/media/blocks/solidColor/solidColor",
+                                      "controlAddress": "/mediaOut"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Shader",
+                              "shaderCache": "uniform float progression;\r\n\r\nfloat Hash( vec2 p)\r\n{\r\n\tvec3 p2 = vec3(p.xy,1.0);\r\n    return fract(sin(dot(p2,vec3(37.1,61.7, 12.4)))*3758.5453123);\r\n}\r\n\r\nfloat noise(in vec2 p)\r\n{\r\n    vec2 i = floor(p);\r\n\tvec2 f = fract(p);\r\n\tf *= f * (3.0-2.0*f);\r\n\r\n    return mix(mix(Hash(i + vec2(0.,0.)), Hash(i + vec2(1.,0.)),f.x),\r\n\t\tmix(Hash(i + vec2(0.,1.)), Hash(i + vec2(1.,1.)),f.x),\r\n\t\tf.y);\r\n}\r\n\r\nfloat fbm(vec2 p) \r\n{\r\n\tfloat v = 0.0;\r\n\tv += noise(p*1.)*.5;\r\n\tv += noise(p*2.)*.25;\r\n\tv += noise(p*4.)*.125;\r\n\treturn v;\r\n}\r\n\r\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\r\n{\r\n\tvec2 uv = fragCoord/iResolution;\r\n\t\r\n\tvec4 src = texture(iChannel0, uv);\r\n\tvec4 tgt = texture(iChannel1, uv);\r\n\tvec4 col = src;\r\n\t\r\n\tuv.x -= 1.5;\r\n\t\r\n    float p = progression*3;\r\n\tif(p < 0.01)\r\n\t{\r\n\t\tfragColor = src;\r\n\t\treturn;\r\n\t}\r\n\t\r\n\t// burn\r\n\tfloat d = uv.x+uv.y*0.5 + 0.5*fbm(uv*15.1) + p*1.3;\r\n\tif (d >0.35) col = clamp(col-(d-0.35)*10.,0.0,1.0);\r\n\tif (d >0.47) {\r\n\t\tif (d < 0.5 ) col += (d-0.4)*33.0*0.5*(0.0+noise(100.*uv+vec2(-p*2.0,0.)))*vec4(1.5,0.5,0.0,tgt.a);\r\n\t\telse col = tgt; }\r\n\t\r\n\tfragColor = col;\r\n}",
+                              "sourceMedias": {
+                                "parameters": [
+                                  {
+                                    "value": "/media/perfBack/sequence/layers/media/blocks/bal/video",
+                                    "controlAddress": "/mediaIn"
+                                  },
+                                  {
+                                    "value": "/media/perfBack/sequence/layers/media/blocks/solidColor/solidColor",
+                                    "controlAddress": "/mediaOut"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "type": "Transition"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 450.2000122070312,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 11.72000122070312,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": 0.0,
+                              "controlAddress": "/fadeIn",
+                              "enabled": false
+                            }
+                          ],
+                          "niceName": "Solid Color",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "solidColor": {
+                              "niceName": "Solid Color",
+                              "containers": {
+                                "mediaParameters": {
+                                  "parameters": [
+                                    {
+                                      "value": [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                      ],
+                                      "controlAddress": "/color"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Solid Color"
+                            }
+                          },
+                          "type": "Solid Color"
                         }
                       ],
                       "viewOffset": [
@@ -8434,11 +9004,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 243.2418823242188,
+                "value": 184.288330078125,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 696.1907958984375,
+                "value": 558.3759155273438,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -8616,11 +9186,11 @@
                         {
                           "parameters": [
                             {
-                              "value": 345.0,
+                              "value": 342.6000061035156,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 83.45999908447266,
+                              "value": 114.1800003051758,
                               "controlAddress": "/length"
                             }
                           ],
@@ -8715,6 +9285,10 @@
                                 {
                                   "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Cour_03.mp4",
                                   "controlAddress": "/filePath"
+                                },
+                                {
+                                  "value": false,
+                                  "controlAddress": "/usePreroll"
                                 }
                               ],
                               "niceName": "Video",
@@ -8726,6 +9300,284 @@
                             }
                           },
                           "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 446.2400207519531,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 10.53997802734375,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": "/media/perfXiaomi/sequence/layers/bal/blocks/balCour",
+                              "controlAddress": "/clipIn"
+                            },
+                            {
+                              "value": "/media/perfXiaomi/sequence/layers/bal/blocks/solidColor",
+                              "controlAddress": "/clipOut"
+                            }
+                          ],
+                          "niceName": "Transition",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "shader": {
+                              "parameters": [
+                                {
+                                  "value": "ShaderToy File",
+                                  "controlAddress": "/shaderType"
+                                },
+                                {
+                                  "value": "shaders/transitions/burn.frag",
+                                  "controlAddress": "/fragmentShader"
+                                },
+                                {
+                                  "value": "tsXBzS",
+                                  "controlAddress": "/shaderToyID"
+                                },
+                                {
+                                  "value": "Bd8jRr",
+                                  "controlAddress": "/shaderToyKey"
+                                }
+                              ],
+                              "niceName": "Shader",
+                              "containers": {
+                                "mediaParameters": {
+                                },
+                                "sourceMedias": {
+                                  "parameters": [
+                                    {
+                                      "value": "/media/perfXiaomi/sequence/layers/bal/blocks/balCour/video",
+                                      "controlAddress": "/mediaIn"
+                                    },
+                                    {
+                                      "value": "/media/perfXiaomi/sequence/layers/bal/blocks/solidColor/solidColor",
+                                      "controlAddress": "/mediaOut"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Shader",
+                              "shaderCache": "uniform float progression;\r\n\r\nfloat Hash( vec2 p)\r\n{\r\n\tvec3 p2 = vec3(p.xy,1.0);\r\n    return fract(sin(dot(p2,vec3(37.1,61.7, 12.4)))*3758.5453123);\r\n}\r\n\r\nfloat noise(in vec2 p)\r\n{\r\n    vec2 i = floor(p);\r\n\tvec2 f = fract(p);\r\n\tf *= f * (3.0-2.0*f);\r\n\r\n    return mix(mix(Hash(i + vec2(0.,0.)), Hash(i + vec2(1.,0.)),f.x),\r\n\t\tmix(Hash(i + vec2(0.,1.)), Hash(i + vec2(1.,1.)),f.x),\r\n\t\tf.y);\r\n}\r\n\r\nfloat fbm(vec2 p) \r\n{\r\n\tfloat v = 0.0;\r\n\tv += noise(p*1.)*.5;\r\n\tv += noise(p*2.)*.25;\r\n\tv += noise(p*4.)*.125;\r\n\treturn v;\r\n}\r\n\r\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\r\n{\r\n\tvec2 uv = fragCoord/iResolution;\r\n\t\r\n\tvec4 src = texture(iChannel0, uv);\r\n\tvec4 tgt = texture(iChannel1, uv);\r\n\tvec4 col = src;\r\n\t\r\n\tuv.x -= 1.5;\r\n\t\r\n    float p = progression*3;\r\n\tif(p < 0.01)\r\n\t{\r\n\t\tfragColor = src;\r\n\t\treturn;\r\n\t}\r\n\t\r\n\t// burn\r\n\tfloat d = uv.x+uv.y*0.5 + 0.5*fbm(uv*15.1) + p*1.3;\r\n\tif (d >0.35) col = clamp(col-(d-0.35)*10.,0.0,1.0);\r\n\tif (d >0.47) {\r\n\t\tif (d < 0.5 ) col += (d-0.4)*33.0*0.5*(0.0+noise(100.*uv+vec2(-p*2.0,0.)))*vec4(1.5,0.5,0.0,tgt.a);\r\n\t\telse col = tgt; }\r\n\t\r\n\tfragColor = col;\r\n}",
+                              "sourceMedias": {
+                                "parameters": [
+                                  {
+                                    "value": "/media/perfXiaomi/sequence/layers/bal/blocks/balCour/video",
+                                    "controlAddress": "/mediaIn"
+                                  },
+                                  {
+                                    "value": "/media/perfXiaomi/sequence/layers/bal/blocks/solidColor/solidColor",
+                                    "controlAddress": "/mediaOut"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "type": "Transition"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 446.2400207519531,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 21.60000038146973,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Solid Color",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "solidColor": {
+                              "niceName": "Solid Color",
+                              "containers": {
+                                "mediaParameters": {
+                                  "parameters": [
+                                    {
+                                      "value": [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                      ],
+                                      "controlAddress": "/color"
+                                    }
+                                  ]
+                                }
+                              },
+                              "type": "Solid Color"
+                            }
+                          },
+                          "type": "Solid Color"
                         }
                       ],
                       "viewOffset": [
@@ -10164,7 +11016,7 @@
       {
         "parameters": [
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/enabled"
           },
           {
