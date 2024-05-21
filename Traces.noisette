@@ -178,6 +178,32 @@
   "modules": {
     "items": [
       {
+        "niceName": "Tube Lights",
+        "type": "WebSocket Server",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "containers": {
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+        }
+      },
+      {
         "niceName": "Tapo TD",
         "type": "OSCQuery",
         "scripts": {
@@ -196,6 +222,10 @@
             {
               "value": "TD OSC Query Server",
               "controlAddress": "/serverName"
+            },
+            {
+              "value": true,
+              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -236,7 +266,6 @@
         "values": {
           "containers": {
             "P100_Control_1": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
@@ -245,7 +274,6 @@
                       "controlAddress": "/Ip"
                     }
                   ],
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -254,7 +282,6 @@
               "niceName": "P100_Control_1"
             },
             "P100_Control_2": {
-              "editorIsCollapsed": true,
               "containers": {
                 "Custom": {
                   "parameters": [
@@ -263,7 +290,6 @@
                       "controlAddress": "/Ip"
                     }
                   ],
-                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -442,9 +468,15 @@
             }
           }
         },
-        "hasListenExtension": false
+        "hasListenExtension": true
       },
       {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/logOutgoing"
+          }
+        ],
         "niceName": "Sablier",
         "type": "OSCQuery",
         "scripts": {
@@ -557,6 +589,12 @@
               "niceName": "Gpio"
             },
             "servo": {
+              "parameters": [
+                {
+                  "value": 22.0,
+                  "controlAddress": "/position"
+                }
+              ],
               "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Servo"
@@ -1102,7 +1140,7 @@
             "DCMotor": {
               "parameters": [
                 {
-                  "value": -0.7077444195747375,
+                  "value": 0.0,
                   "controlMode": 2,
                   "reference": {
                     "value": "/customVariables/horloge/variables/speed/speed",
@@ -3432,163 +3470,10 @@
       {
         "parameters": [
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/enabled"
-          },
-          {
-            "value": true,
-            "controlAddress": "/logIncoming"
           }
         ],
-        "niceName": "Serial Debug",
-        "type": "Serial",
-        "scripts": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "params": {
-          "parameters": [
-            {
-              "value": false,
-              "controlAddress": "/autoAdd"
-            },
-            {
-              "value": "Space separated",
-              "controlAddress": "/messageStructure"
-            },
-            {
-              "value": true,
-              "controlAddress": "/firstValueIsTheName"
-            },
-            {
-              "value": "",
-              "controlAddress": "/port"
-            }
-          ],
-          "containers": {
-            "pass_through": {
-            }
-          }
-        },
-        "templates": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "values": {
-        },
-        "portID": ""
-      },
-      {
-        "niceName": "Tube Lights",
-        "type": "WebSocket Server",
-        "scripts": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "params": {
-          "containers": {
-            "pass_through": {
-            }
-          }
-        },
-        "templates": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "values": {
-        }
-      },
-      {
-        "niceName": "TV Sound Card",
-        "type": "Sound Card",
-        "scripts": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "params": {
-          "parameters": [
-            {
-              "value": 0.0,
-              "controlAddress": "/outVolume"
-            }
-          ],
-          "containers": {
-            "inputVolumes": {
-            },
-            "outputVolumes": {
-              "editorIsCollapsed": true
-            },
-            "monitor": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/enabled"
-                }
-              ]
-            },
-            "fftAnalysis": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/enabled"
-                }
-              ],
-              "editorIsCollapsed": true,
-              "viewOffset": [
-                0,
-                0
-              ],
-              "viewZoom": 1.0
-            },
-            "ltc": {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/enabled"
-                }
-              ]
-            }
-          }
-        },
-        "templates": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Haut-parleurs (USB Audio Device)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"48000.0\"/>\r\n",
-        "analyzer": {
-          "parameters": [
-            {
-              "value": false,
-              "controlAddress": "/enabled"
-            }
-          ],
-          "editorIsCollapsed": true,
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        }
-      },
-      {
         "niceName": "RMP",
         "type": "OSCQuery",
         "scripts": {
@@ -3662,6 +3547,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -3889,6 +3780,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -3972,6 +3869,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -4079,6 +3982,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -4175,6 +4084,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -4270,6 +4185,12 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
+                      "parameters": [
+                        {
+                          "value": 493.26,
+                          "controlAddress": "/currentTime"
+                        }
+                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -12400,6 +12321,586 @@
         "hasListenExtension": false
       },
       {
+        "niceName": "Blux",
+        "type": "OSCQuery",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": "Blux - Traces.blux",
+              "controlAddress": "/serverName"
+            },
+            {
+              "value": true,
+              "controlAddress": "/isConnected"
+            }
+          ],
+          "containers": {
+            "output": {
+              "parameters": [
+                {
+                  "value": true,
+                  "controlAddress": "/local"
+                },
+                {
+                  "value": "127.0.0.1",
+                  "controlAddress": "/remoteHost"
+                },
+                {
+                  "value": 45000,
+                  "hexMode": false,
+                  "controlAddress": "/remotePort"
+                },
+                {
+                  "value": 45000,
+                  "hexMode": false,
+                  "controlAddress": "/customOSCPort",
+                  "enabled": false
+                },
+                {
+                  "value": 45000,
+                  "hexMode": false,
+                  "controlAddress": "/customWebsocketPort",
+                  "enabled": false
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "globalSequences": {
+              "containers": {
+                "sequence": {
+                  "parameters": [
+                    {
+                      "value": 493.26,
+                      "controlAddress": "/currentTime"
+                    }
+                  ],
+                  "owned": true,
+                  "niceName": "Sequence"
+                }
+              },
+              "owned": true,
+              "niceName": "Global Sequences"
+            }
+          }
+        },
+        "treeData": {
+          "DESCRIPTION": "Root",
+          "FULL_PATH": "",
+          "ACCESS": 0,
+          "CONTENTS": {
+            "globalSequences": {
+              "DESCRIPTION": "Global Sequences",
+              "FULL_PATH": "/globalSequences",
+              "ACCESS": 0,
+              "CONTENTS": {
+                "playAll": {
+                  "DESCRIPTION": "Play All",
+                  "FULL_PATH": "/globalSequences/playAll",
+                  "ACCESS": 3,
+                  "TYPE": "N"
+                },
+                "stopAll": {
+                  "DESCRIPTION": "Stop All",
+                  "FULL_PATH": "/globalSequences/stopAll",
+                  "ACCESS": 3,
+                  "TYPE": "N"
+                },
+                "onlyOneSequencePlaying": {
+                  "DESCRIPTION": "Only one sequence playing",
+                  "FULL_PATH": "/globalSequences/onlyOneSequencePlaying",
+                  "ACCESS": 3,
+                  "TYPE": "T",
+                  "VALUE": [
+                    false
+                  ],
+                  "RANGE": [
+                    {
+                      "MIN": 0,
+                      "MAX": 1
+                    }
+                  ],
+                  "EXTENDED_TYPE": [
+                    "Boolean"
+                  ]
+                },
+                "isOneSequencePlaying": {
+                  "DESCRIPTION": "Is one sequence playing",
+                  "FULL_PATH": "/globalSequences/isOneSequencePlaying",
+                  "ACCESS": 1,
+                  "TYPE": "T",
+                  "VALUE": [
+                    false
+                  ],
+                  "RANGE": [
+                    {
+                      "MIN": 0,
+                      "MAX": 1
+                    }
+                  ],
+                  "EXTENDED_TYPE": [
+                    "Boolean"
+                  ]
+                },
+                "sequence": {
+                  "DESCRIPTION": "Sequence",
+                  "FULL_PATH": "/globalSequences/sequence",
+                  "ACCESS": 0,
+                  "CONTENTS": {
+                    "enabled": {
+                      "DESCRIPTION": "Enabled",
+                      "FULL_PATH": "/globalSequences/sequence/enabled",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        true
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "isPlaying": {
+                      "DESCRIPTION": "Is Playing",
+                      "FULL_PATH": "/globalSequences/sequence/isPlaying",
+                      "ACCESS": 1,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "play": {
+                      "DESCRIPTION": "Play",
+                      "FULL_PATH": "/globalSequences/sequence/play",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "stop": {
+                      "DESCRIPTION": "Stop",
+                      "FULL_PATH": "/globalSequences/sequence/stop",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "finish": {
+                      "DESCRIPTION": "Finish",
+                      "FULL_PATH": "/globalSequences/sequence/finish",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "pause": {
+                      "DESCRIPTION": "Pause",
+                      "FULL_PATH": "/globalSequences/sequence/pause",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "togglePlay": {
+                      "DESCRIPTION": "TogglePlay",
+                      "FULL_PATH": "/globalSequences/sequence/togglePlay",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "playAtLoad": {
+                      "DESCRIPTION": "Play at Load",
+                      "FULL_PATH": "/globalSequences/sequence/playAtLoad",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "saveCurrentTime": {
+                      "DESCRIPTION": "Save Current Time",
+                      "FULL_PATH": "/globalSequences/sequence/saveCurrentTime",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "currentTime": {
+                      "DESCRIPTION": "Current Time",
+                      "FULL_PATH": "/globalSequences/sequence/currentTime",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1800.0
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "totalTime": {
+                      "DESCRIPTION": "Total Time",
+                      "FULL_PATH": "/globalSequences/sequence/totalTime",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        1800.0
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "playSpeed": {
+                      "DESCRIPTION": "Play Speed",
+                      "FULL_PATH": "/globalSequences/sequence/playSpeed",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        1.0
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "fps": {
+                      "DESCRIPTION": "FPS",
+                      "FULL_PATH": "/globalSequences/sequence/fps",
+                      "ACCESS": 3,
+                      "TYPE": "i",
+                      "VALUE": [
+                        50
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 1,
+                          "MAX": 500
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Integer"
+                      ]
+                    },
+                    "loop": {
+                      "DESCRIPTION": "Loop",
+                      "FULL_PATH": "/globalSequences/sequence/loop",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "bpmPreview": {
+                      "DESCRIPTION": "BPM Preview",
+                      "FULL_PATH": "/globalSequences/sequence/bpmPreview",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "ATTRIBUTES": {
+                        "enabled": false
+                      },
+                      "VALUE": [
+                        120.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 1.0,
+                          "MAX": 999.0
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "beatsPerBar": {
+                      "DESCRIPTION": "Beats Per Bar",
+                      "FULL_PATH": "/globalSequences/sequence/beatsPerBar",
+                      "ACCESS": 3,
+                      "TYPE": "i",
+                      "VALUE": [
+                        4
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 1,
+                          "MAX": 32
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Integer"
+                      ]
+                    },
+                    "autoSnap": {
+                      "DESCRIPTION": "Auto Snap",
+                      "FULL_PATH": "/globalSequences/sequence/autoSnap",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "evaluateOnSeek": {
+                      "DESCRIPTION": "Evaluate on Seek",
+                      "FULL_PATH": "/globalSequences/sequence/evaluateOnSeek",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        true
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "prevCue": {
+                      "DESCRIPTION": "Prev Cue",
+                      "FULL_PATH": "/globalSequences/sequence/prevCue",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "nextCue": {
+                      "DESCRIPTION": "Next Cue",
+                      "FULL_PATH": "/globalSequences/sequence/nextCue",
+                      "ACCESS": 3,
+                      "TYPE": "N"
+                    },
+                    "viewStartTime": {
+                      "DESCRIPTION": "View start time",
+                      "FULL_PATH": "/globalSequences/sequence/viewStartTime",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1799.0
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "viewEndTime": {
+                      "DESCRIPTION": "View end time",
+                      "FULL_PATH": "/globalSequences/sequence/viewEndTime",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        1800.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 1.0,
+                          "MAX": 1800.0
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "minimumViewRange": {
+                      "DESCRIPTION": "Minimum view range",
+                      "FULL_PATH": "/globalSequences/sequence/minimumViewRange",
+                      "ACCESS": 3,
+                      "TYPE": "f",
+                      "VALUE": [
+                        1.0
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Float"
+                      ]
+                    },
+                    "viewFollowTime": {
+                      "DESCRIPTION": "View follow time",
+                      "FULL_PATH": "/globalSequences/sequence/viewFollowTime",
+                      "ACCESS": 3,
+                      "TYPE": "T",
+                      "VALUE": [
+                        false
+                      ],
+                      "RANGE": [
+                        {
+                          "MIN": 0,
+                          "MAX": 1
+                        }
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Boolean"
+                      ]
+                    },
+                    "color": {
+                      "DESCRIPTION": "Color",
+                      "FULL_PATH": "/globalSequences/sequence/color",
+                      "ACCESS": 3,
+                      "TYPE": "r",
+                      "VALUE": [
+                        "ff363636"
+                      ],
+                      "EXTENDED_TYPE": [
+                        "Color"
+                      ]
+                    }
+                  },
+                  "TYPE": "Blux Sequence"
+                }
+              },
+              "TYPE": "Manager",
+              "EXTENDED_TYPE": [
+                "Sequence"
+              ]
+            }
+          },
+          "TYPE": "Container"
+        },
+        "hasListenExtension": true
+      },
+      {
+        "niceName": "TV Sound Card",
+        "type": "Sound Card",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": 0.0,
+              "controlAddress": "/outVolume"
+            }
+          ],
+          "containers": {
+            "inputVolumes": {
+            },
+            "outputVolumes": {
+              "editorIsCollapsed": true
+            },
+            "monitor": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            },
+            "fftAnalysis": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ],
+              "editorIsCollapsed": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "ltc": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Haut-parleurs (USB Audio Device)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"48000.0\"/>\r\n",
+        "analyzer": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/enabled"
+            }
+          ],
+          "editorIsCollapsed": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
         "niceName": "General",
         "type": "Sound Card",
         "scripts": {
@@ -12504,6 +13005,61 @@
             }
           }
         }
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": true,
+            "controlAddress": "/logIncoming"
+          }
+        ],
+        "niceName": "Serial Debug",
+        "type": "Serial",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": "Space separated",
+              "controlAddress": "/messageStructure"
+            },
+            {
+              "value": true,
+              "controlAddress": "/firstValueIsTheName"
+            },
+            {
+              "value": "",
+              "controlAddress": "/port"
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+        },
+        "portID": ""
       }
     ],
     "viewOffset": [
@@ -12524,7 +13080,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 0.118701696395874,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0,
@@ -12567,7 +13123,8 @@
                   "controlAddress": "/defaultLoadTime"
                 }
               ],
-              "niceName": "Preset",
+              "niceName": "Up",
+              "editorIsCollapsed": true,
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -12600,7 +13157,7 @@
                   "controlAddress": "/defaultLoadTime"
                 }
               ],
-              "niceName": "Preset 1",
+              "niceName": "Down",
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -12635,7 +13192,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.94,
+                  "value": 493.26,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -12738,6 +13295,12 @@
             {
               "parameters": [
                 {
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
                   "alwaysNotify": true,
                   "controlAddress": "/lampColor",
                   "feedbackOnly": false,
@@ -12848,7 +13411,7 @@
             {
               "parameters": [
                 {
-                  "value": -0.7077444195747375,
+                  "value": 0.0,
                   "minValue": -1.0,
                   "maxValue": 1.0,
                   "default": -0.381077766418457,
@@ -13073,7 +13636,7 @@
                         },
                         {
                           "value": [
-                            10.0,
+                            5.0,
                             150.0
                           ],
                           "controlAddress": "/targetMin_Max"
@@ -13081,6 +13644,23 @@
                       ],
                       "paramLinks": {
                       }
+                    }
+                  },
+                  {
+                    "niceName": "Convert To Integer",
+                    "type": "Convert To Integer",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "",
+                          "controlAddress": "/retargetComponent"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "ghostOptions": {
+                      "retarget": null
                     }
                   }
                 ],
@@ -13615,7 +14195,7 @@
       {
         "parameters": [
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/enabled"
           },
           {
@@ -13630,7 +14210,7 @@
             "controlAddress": "/active"
           }
         ],
-        "niceName": "RMP Control",
+        "niceName": "Remote Control",
         "type": "State",
         "processors": {
           "items": [
@@ -13756,7 +14336,7 @@
               }
             },
             {
-              "niceName": "CV to RMP",
+              "niceName": "CV to RMP Blux",
               "editorIsCollapsed": true,
               "type": "Mapping",
               "im": {
@@ -13980,6 +14560,36 @@
                         }
                       }
                     }
+                  },
+                  {
+                    "niceName": "Blux",
+                    "editorIsCollapsed": true,
+                    "type": "BaseItem",
+                    "commandModule": "blux",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/globalSequences/sequence/currentTime",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -14044,7 +14654,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 518.24,
+                          "value": 493.26,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -14158,6 +14768,23 @@
                       "paramLinks": {
                       }
                     }
+                  },
+                  {
+                    "niceName": "Blux",
+                    "type": "Consequence",
+                    "commandModule": "blux",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/globalSequences/sequence/play",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
                   }
                 ],
                 "viewOffset": [
@@ -14189,7 +14816,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 518.24,
+                          "value": 493.26,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -14297,6 +14924,23 @@
                       "parameters": [
                         {
                           "value": "/media/perfXiaomi/sequence/pause",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Blux",
+                    "type": "Consequence",
+                    "commandModule": "blux",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/globalSequences/sequence/pause",
                           "controlAddress": "/target"
                         }
                       ],
@@ -15312,6 +15956,132 @@
               }
             },
             {
+              "niceName": "Disc On",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/stagger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "tapoTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_2/Custom/Open",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Disc Off",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/stagger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "tapoTD",
+                    "commandPath": "",
+                    "commandType": "Trigger",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/P100_Control_2/Custom/Open",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
               "niceName": "Disc Lamp On",
               "editorIsCollapsed": true,
               "type": "Action",
@@ -15455,23 +16225,6 @@
                       "paramLinks": {
                       }
                     }
-                  },
-                  {
-                    "niceName": "Consequence 1",
-                    "type": "Consequence",
-                    "commandModule": "tapoTD",
-                    "commandPath": "",
-                    "commandType": "Trigger",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/P100_Control_2/Custom/Open",
-                          "controlAddress": "/target"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
                   }
                 ],
                 "viewOffset": [
@@ -15519,23 +16272,6 @@
                   }
                 ],
                 "items": [
-                  {
-                    "niceName": "Consequence 1",
-                    "type": "Consequence",
-                    "commandModule": "tapoTD",
-                    "commandPath": "",
-                    "commandType": "Trigger",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/P100_Control_2/Custom/Close",
-                          "controlAddress": "/target"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
                   {
                     "niceName": "Consequence",
                     "type": "Consequence",
@@ -15789,8 +16525,8 @@
       }
     ],
     "viewOffset": [
-      -382,
-      -254
+      18,
+      -24
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -15804,8 +16540,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        -382,
-        -254
+        18,
+        -24
       ],
       "viewZoom": 1.0
     }
@@ -15815,15 +16551,15 @@
       {
         "parameters": [
           {
-            "value": 600.0,
+            "value": 1800.0,
             "controlAddress": "/totalTime"
           },
           {
-            "value": 453.9693908691406,
+            "value": 477.9800109863281,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 549.1062622070312,
+            "value": 507.5599975585938,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -15839,6 +16575,10 @@
           "items": [
             {
               "parameters": [
+                {
+                  "value": true,
+                  "controlAddress": "/enabled"
+                },
                 {
                   "value": 100.0,
                   "controlAddress": "/listSize"
@@ -15856,6 +16596,10 @@
                 "items": [
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": [
                           0.4076941013336182,
@@ -15883,6 +16627,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 94.0,
                         "controlAddress": "/time"
                       },
@@ -15903,6 +16651,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 112.0,
                         "controlAddress": "/time"
@@ -15925,6 +16677,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 130.0,
                         "controlAddress": "/time"
                       },
@@ -15945,6 +16701,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 140.0,
                         "controlAddress": "/time"
@@ -15967,6 +16727,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 155.0,
                         "controlAddress": "/time"
                       },
@@ -15987,6 +16751,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 157.0,
                         "controlAddress": "/time"
@@ -16009,6 +16777,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 180.0,
                         "controlAddress": "/time"
                       },
@@ -16029,6 +16801,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 200.0,
                         "controlAddress": "/time"
@@ -16051,6 +16827,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 280.0,
                         "controlAddress": "/time"
                       },
@@ -16072,7 +16852,7 @@
                   {
                     "parameters": [
                       {
-                        "value": false,
+                        "value": true,
                         "controlAddress": "/locked"
                       },
                       {
@@ -16097,6 +16877,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 344.0,
                         "controlAddress": "/time"
                       },
@@ -16117,6 +16901,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 395.0,
                         "controlAddress": "/time"
@@ -16139,6 +16927,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 407.0,
                         "controlAddress": "/time"
                       },
@@ -16159,6 +16951,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 420.0,
                         "controlAddress": "/time"
@@ -16181,6 +16977,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 434.2200012207031,
                         "controlAddress": "/time"
                       },
@@ -16201,6 +17001,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 458.0,
                         "controlAddress": "/time"
@@ -16223,6 +17027,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 472.0,
                         "controlAddress": "/time"
                       },
@@ -16243,6 +17051,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 482.0,
                         "controlAddress": "/time"
@@ -16265,6 +17077,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": 485.0,
                         "controlAddress": "/time"
                       },
@@ -16285,6 +17101,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": 518.0800170898438,
                         "controlAddress": "/time"
@@ -16315,11 +17135,11 @@
             {
               "parameters": [
                 {
-                  "value": 93.0,
+                  "value": 111.0,
                   "controlAddress": "/listSize"
                 },
                 {
-                  "value": 93,
+                  "value": 111,
                   "hexMode": false,
                   "controlAddress": "/uiHeight"
                 }
@@ -16331,6 +17151,10 @@
                 "items": [
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": [
                           0.4076941013336182,
@@ -16352,6 +17176,59 @@
                     "niceName": "INIT",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/fondOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 3",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/discLampOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16362,13 +17239,12 @@
                   {
                     "parameters": [
                       {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      },
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
                       },
                       {
                         "value": 17.0,
@@ -16392,13 +17268,8 @@
                   {
                     "parameters": [
                       {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
+                        "value": true,
+                        "controlAddress": "/locked"
                       },
                       {
                         "value": 42.0,
@@ -16422,10 +17293,14 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
+                          0.125772550702095,
+                          0.2265294045209885,
+                          0.4192313551902771,
                           1.0
                         ],
                         "controlAddress": "/color"
@@ -16439,9 +17314,28 @@
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Tube Fond ?",
+                    "niceName": "Tube Four",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tube2On",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16452,13 +17346,8 @@
                   {
                     "parameters": [
                       {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
+                        "value": true,
+                        "controlAddress": "/locked"
                       },
                       {
                         "value": 69.0,
@@ -16472,6 +17361,25 @@
                     "niceName": "Meuble",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16481,6 +17389,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": [
                           0.09615293890237808,
@@ -16502,6 +17414,25 @@
                     "niceName": "BLACK",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16512,10 +17443,14 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
-                          0.1781137138605118,
+                          0.1121803969144821,
+                          0.2074156850576401,
                           0.2777764797210693,
-                          0.07585490494966507,
                           1.0
                         ],
                         "controlAddress": "/color"
@@ -16532,6 +17467,122 @@
                     "niceName": "Lumiere Disque",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/discLamp/presets/light",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16542,10 +17593,18 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      },
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
-                          0.2777764797210693,
-                          0.08521568775177002,
-                          0.03525489941239357,
+                          0.1478705853223801,
+                          0.3090862929821014,
+                          0.3769215643405914,
                           1.0
                         ],
                         "controlAddress": "/color"
@@ -16562,6 +17621,122 @@
                     "niceName": "Stop Disque",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/discLamp/presets/off",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16572,13 +17747,8 @@
                   {
                     "parameters": [
                       {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
+                        "value": true,
+                        "controlAddress": "/locked"
                       },
                       {
                         "value": 407.0,
@@ -16602,10 +17772,14 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
+                          0.1284901946783066,
+                          0.2713097929954529,
+                          0.3884627521038055,
                           1.0
                         ],
                         "controlAddress": "/color"
@@ -16622,6 +17796,25 @@
                     "niceName": "Tubes 1 et 2",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOn",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16632,10 +17825,67 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
+                          0.1499647051095963,
+                          0.2747803926467896,
+                          0.3576941192150116,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 413.5799865722656,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Fond",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/fondOn",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.1006509810686111,
+                          0.233027458190918,
                           0.4153842926025391,
-                          0.2694745361804962,
-                          0.05750196054577827,
                           1.0
                         ],
                         "controlAddress": "/color"
@@ -16652,6 +17902,42 @@
                     "niceName": "Horlorge et Abat jour seuls",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/fondOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16661,6 +17947,10 @@
                   },
                   {
                     "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
                       {
                         "value": [
                           0.09615293890237808,
@@ -16682,6 +17972,42 @@
                     "niceName": "BLACK 1",
                     "type": "TimeTrigger",
                     "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/fondOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
                       "viewOffset": [
                         0,
                         0
@@ -16717,6 +18043,10 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
                           0.4076941013336182,
                           0.3460156917572021,
@@ -16737,252 +18067,6 @@
                     "niceName": "INIT",
                     "type": "TimeTrigger",
                     "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": 20.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.4166666865348816,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "R. Sablier",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": 82.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.6666666865348816,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Piece",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 92.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.5416666865348816,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "TV",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 306.9200134277344,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.6138375997543335,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Tourne disque",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.2784313857555389,
-                          0.08627451211214066,
-                          0.03529411926865578,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 405.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.5483871102333069,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Stop Disque",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1764705926179886,
-                          0.2784313857555389,
-                          0.07450980693101883,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 450.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.01449275389313698,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Horloge",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.2784313857555389,
-                          0.08627451211214066,
-                          0.03529411926865578,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 458.0,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.358410656452179,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Horloge Fixe",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
-              "parameters": [
-                {
-                  "value": false,
-                  "controlAddress": "/enabled"
-                },
-                {
-                  "value": 60.0,
-                  "controlAddress": "/listSize"
-                }
-              ],
-              "niceName": "Objets",
-              "type": "Trigger",
-              "triggers": {
-                "hideInEditor": true,
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.09935686737298965,
-                          0.1698078364133835,
-                          0.2777764797210693,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 0.3799999952316284,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.05000000074505806,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "INIT",
-                    "type": "TimeTrigger",
-                    "consequences": {
                       "items": [
                         {
                           "niceName": "Consequence",
@@ -16993,11 +18077,11 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/horloge/presets/zero",
+                                "value": "/sablier/presets/up",
                                 "controlAddress": "/targetPreset"
                               },
                               {
-                                "value": 1.0,
+                                "value": 3.0,
                                 "controlAddress": "/interpolationTime",
                                 "enabled": true
                               }
@@ -17107,7 +18191,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/states/conduite/processors/tubeLightsOff",
+                                "value": "/states/conduite/processors/discOff",
                                 "controlAddress": "/target"
                               }
                             ],
@@ -17117,40 +18201,6 @@
                         },
                         {
                           "niceName": "Consequence 2",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/fondOff",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Consequence 3",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/discLampOff",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Consequence 4",
                           "type": "Consequence",
                           "commandModule": "stateMachine",
                           "commandPath": "Action",
@@ -17177,15 +18227,19 @@
                   {
                     "parameters": [
                       {
-                        "value": 9.899999618530273,
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 20.0,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7999999523162842,
+                        "value": 0.4166666865348816,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "H reverse",
+                    "niceName": "R. Sablier",
                     "type": "TimeTrigger",
                     "consequences": {
                       "items": [
@@ -17198,7 +18252,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/horloge/presets/reverse",
+                                "value": "/sablier/presets/down",
                                 "controlAddress": "/targetPreset"
                               },
                               {
@@ -17314,15 +18368,19 @@
                   {
                     "parameters": [
                       {
-                        "value": 9.899999618530273,
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 82.0,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.1749999970197678,
+                        "value": 0.6666666865348816,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Open Tiroir",
+                    "niceName": "Piece",
                     "type": "TimeTrigger",
                     "consequences": {
                       "viewOffset": [
@@ -17335,143 +18393,28 @@
                   {
                     "parameters": [
                       {
-                        "value": 9.899999618530273,
-                        "controlAddress": "/time"
+                        "value": true,
+                        "controlAddress": "/locked"
                       },
-                      {
-                        "value": 0.7749999761581421,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Lache piece",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
                       {
                         "value": [
-                          0.1788156777620316,
-                          0.2777764797210693,
-                          0.06623921543359756,
+                          0.1418274492025375,
+                          0.2738431394100189,
+                          0.3615372478961945,
                           1.0
                         ],
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 9.899999618530273,
+                        "value": 92.0,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.07499998807907104,
+                        "value": 0.5416666865348816,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Disc et lampe On",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "items": [
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/discLampOn",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.2777764797210693,
-                          0.1697372645139694,
-                          0.06623921543359756,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 9.899999618530273,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.824999988079071,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Disc et lampe Off",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "items": [
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/discLampOn",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1628235280513763,
-                          0.2777764797210693,
-                          0.04487058892846107,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 9.899999618530273,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.2749999761581421,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "TV On",
+                    "niceName": "TV",
                     "type": "TimeTrigger",
                     "consequences": {
                       "items": [
@@ -17503,20 +18446,563 @@
                   {
                     "parameters": [
                       {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
                         "value": [
-                          0.2777764797210693,
-                          0.1776901930570602,
-                          0.05982745066285133,
+                          0.1252941191196442,
+                          0.2291372567415237,
+                          0.2784313857555389,
                           1.0
                         ],
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 9.899999618530273,
+                        "value": 306.9200134277344,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7249999642372131,
+                        "value": 0.6138375997543335,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Tourne disque",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/discOn",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.09745097905397415,
+                          0.1642509698867798,
+                          0.2784313857555389,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 405.0,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.5483871102333069,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Stop Disque",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/conduite/processors/discOff",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.1070901975035667,
+                          0.2321019619703293,
+                          0.2784313857555389,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 450.0,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.01449275389313698,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Horloge",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/horloge/presets/forward",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.07067843526601791,
+                          0.2276078462600708,
+                          0.2784313857555389,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 458.0,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.358410656452179,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Horloge Fixe",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/horloge/presets/zero",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.1386549025774002,
+                          0.2668509781360626,
+                          0.3961529433727264,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 657.3600463867188,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.5031753778457642,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Up",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/sablier/presets/up",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 600.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": true,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Linear",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.2777764797210693,
+                          0.01068371813744307,
+                          0.01068371813744307,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 1790.0,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.1657709777355194,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -17534,104 +19020,6 @@
                             "parameters": [
                               {
                                 "value": "/states/conduite/processors/tvOff",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1628235280513763,
-                          0.2777764797210693,
-                          0.04487058892846107,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 9.899999618530273,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.2499999701976776,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Tubes On",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "items": [
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/tubeLightsOn",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.2777764797210693,
-                          0.1776901930570602,
-                          0.05982745066285133,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 9.899999618530273,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.8999999761581421,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Tubes Off",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "items": [
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/conduite/processors/tubeLightsOff",
                                 "controlAddress": "/target"
                               }
                             ],
@@ -17718,6 +19106,22 @@
         },
         "cues": {
           "hideInEditor": true,
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 494.0599975585938,
+                  "controlAddress": "/time"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/loopJumpCue"
+                }
+              ],
+              "niceName": "Sortie",
+              "type": "BaseItem"
+            }
+          ],
           "viewOffset": [
             0,
             0
