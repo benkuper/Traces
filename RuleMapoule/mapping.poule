@@ -52,19 +52,19 @@
           "shifters": [
             {
               "type": 1,
-              "width": 1262,
+              "width": 1602,
               "height": 989,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
-                  "width": 273,
+                  "width": 443,
                   "height": 989,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
-                      "width": 273,
+                      "width": 443,
                       "height": 387,
                       "currentContent": "Screens",
                       "tabs": [
@@ -78,7 +78,7 @@
                     },
                     {
                       "type": 0,
-                      "width": 273,
+                      "width": 443,
                       "height": 596,
                       "currentContent": "Medias",
                       "tabs": [
@@ -91,13 +91,13 @@
                 },
                 {
                   "type": 1,
-                  "width": 983,
+                  "width": 1153,
                   "height": 989,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
-                      "width": 983,
+                      "width": 1153,
                       "height": 574,
                       "currentContent": "Screen Editor",
                       "tabs": [
@@ -108,7 +108,7 @@
                     },
                     {
                       "type": 0,
-                      "width": 983,
+                      "width": 1153,
                       "height": 409,
                       "currentContent": "Sequence Editor",
                       "tabs": [
@@ -126,13 +126,13 @@
             },
             {
               "type": 1,
-              "width": 652,
+              "width": 312,
               "height": 989,
               "direction": 2,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 652,
+                  "width": 312,
                   "height": 713,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -143,7 +143,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 652,
+                  "width": 312,
                   "height": 270,
                   "currentContent": "Logger",
                   "tabs": [
@@ -536,11 +536,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 69.14551544189453,
+                "value": 0.0,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 366.5494995117188,
+                "value": 344.9375305175781,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -770,11 +770,11 @@
                         {
                           "parameters": [
                             {
-                              "value": 88.59999847412109,
+                              "value": 157.0599975585938,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 153.1600341796875,
+                              "value": 94.56003570556641,
                               "controlAddress": "/length"
                             },
                             {
@@ -1073,11 +1073,11 @@
                         {
                           "parameters": [
                             {
-                              "value": 88.44000244140625,
+                              "value": 157.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 262.3400268554688,
+                              "value": 126.3400268554688,
                               "controlAddress": "/length"
                             },
                             {
@@ -1390,11 +1390,11 @@
                         {
                           "parameters": [
                             {
-                              "value": 88.44000244140625,
+                              "value": 157.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 258.8599853515625,
+                              "value": 112.8599700927734,
                               "controlAddress": "/length"
                             },
                             {
@@ -1403,7 +1403,7 @@
                               "enabled": true
                             },
                             {
-                              "value": 0.08001708984375,
+                              "value": 0.0,
                               "controlAddress": "/fadeOut",
                               "enabled": false
                             }
@@ -1522,7 +1522,7 @@
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 0.08001708984375,
+                              "value": 0.0,
                               "controlAddress": "/fadeIn",
                               "enabled": false
                             },
@@ -1707,7 +1707,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 88.44000244140625,
+                              "value": 157.0,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1720,7 +1720,7 @@
                               "enabled": true
                             },
                             {
-                              "value": 0.0,
+                              "value": 10.93997192382812,
                               "controlAddress": "/fadeOut",
                               "enabled": false
                             }
@@ -1831,7 +1831,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 252.6800079345703,
+                              "value": 310.2400207519531,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -1839,7 +1839,7 @@
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 0.0,
+                              "value": 10.93997192382812,
                               "controlAddress": "/fadeIn",
                               "enabled": false
                             },
@@ -2753,7 +2753,8 @@
                 0
               ],
               "viewZoom": 1.0
-            }
+            },
+            "editing": true
           }
         },
         "type": "Sequence"
@@ -3614,7 +3615,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 277.4091491699219,
+                "value": 0.0,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 903.73046875,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -4118,8 +4123,7 @@
                 0
               ],
               "viewZoom": 1.0
-            },
-            "editing": true
+            }
           }
         },
         "type": "Sequence"
@@ -5024,7 +5028,7 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/perfRetroProjection"
+    "editingSequenceMedia": "/media/perfJar"
   },
   "screen": {
     "hideInRemoteControl": true,
