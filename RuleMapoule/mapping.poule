@@ -165,7 +165,7 @@
       {
         "parameters": [
           {
-            "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1920x1080.png",
+            "value": "Images/Golden Gang Ultreia_1920x1080.png",
             "controlAddress": "/filePath"
           }
         ],
@@ -195,7 +195,7 @@
       {
         "parameters": [
           {
-            "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1080x1920.png",
+            "value": "Images/Golden Gang Ultreia_1080x1920.png",
             "controlAddress": "/filePath"
           }
         ],
@@ -210,7 +210,7 @@
       {
         "parameters": [
           {
-            "value": "D:/Documents/Trace 2024/Image/_650x186.png",
+            "value": "Images/_650x186.png",
             "controlAddress": "/filePath"
           }
         ],
@@ -675,7 +675,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Git/Traces/Image/Mire_Jar.png",
+                                  "value": "Images/Mire_Jar.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -1027,7 +1027,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-18-15h39m52s060.png",
+                                  "value": "Images/vlcsnap-2024-05-18-15h39m52s060.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -1151,7 +1151,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Frames/Album de famille_02_V2.mp4",
+                                  "value": "Videos/Frames/Album de famille_02_V2.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -1586,7 +1586,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-21-18h46m54s572.png",
+                                  "value": "Images/vlcsnap-2024-05-21-18h46m54s572.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2081,7 +2081,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-18-21h32m09s955.png",
+                                  "value": "Images/vlcsnap-2024-05-18-21h32m09s955.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2205,7 +2205,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Frames/Mariage_01_v2.mp4",
+                                  "value": "Videos/Frames/Mariage_01_v2.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2645,7 +2645,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-21-18h37m02s973.png",
+                                  "value": "Images/vlcsnap-2024-05-21-18h37m02s973.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -3140,7 +3140,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-19-17h11m52s261.png",
+                                  "value": "Images/vlcsnap-2024-05-19-17h11m52s261.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -3264,7 +3264,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Frames/Mariage_02_V2.mp4",
+                                  "value": "Videos/Frames/Mariage_02_V2.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -3699,7 +3699,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-21-18h24m47s575.png",
+                                  "value": "Images/vlcsnap-2024-05-21-18h24m47s575.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -4194,7 +4194,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-18-16h33m18s281.png",
+                                  "value": "Images/vlcsnap-2024-05-18-16h33m18s281.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -4318,7 +4318,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Frames/Album de famille_01_V2.mp4",
+                                  "value": "Videos/Frames/Album de famille_01_V2.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -4753,7 +4753,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-21-18h20m57s443.png",
+                                  "value": "Images/vlcsnap-2024-05-21-18h20m57s443.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -5401,7 +5401,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Oxipital/Oxipital_Final_Jar.mp4",
+                                  "value": "Videos/Repas de famille_02_V2.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -5556,7 +5556,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Jar_04r.mp4",
+                                  "value": "Videos/Bal/Bal_Jar_04r.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6174,7 +6174,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Git/Traces/Image/Mire_Jar_Frame_mask.png",
+                                  "value": "Images/Mire_Jar_Frame_mask.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6349,7 +6349,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-18-21h56m13s949.png",
+                                  "value": "Images/vlcsnap-2024-05-18-21h56m13s949.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6473,7 +6473,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Frames/Repas de famille_01_v3.mp4",
+                                  "value": "Videos/Frames/Repas de famille_01_v3.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6913,7 +6913,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/vlcsnap-2024-05-21-18h29m29s282.png",
+                                  "value": "Images/vlcsnap-2024-05-21-18h29m29s282.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -7624,7 +7624,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Back_03.mp4",
+                                  "value": "Videos/Bal/Bal_Back_03.mp4",
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -8213,7 +8213,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Git/Traces/Image/Mire_Fonddesc\u00e8ne.png",
+                                  "value": "Images/Mire_Fonddesc\u00e8ne.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -8546,7 +8546,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1920x1080.png",
+                                  "value": "Images/Golden Gang Ultreia_1920x1080.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -8706,7 +8706,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Ruine et deuil_03.mp4",
+                                  "value": "Videos/Ruine et deuil_03.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -8820,7 +8820,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Trace 2024 Ressources/MEDIA_PUB interperf/Montage pub interperf V1.mov",
+                                  "value": "Videos/MEDIA_PUB interperf/Montage pub interperf V1.mov",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -9043,7 +9043,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/Golden Gang Ultreia_1080x1920.png",
+                                  "value": "Images/Golden Gang Ultreia_1080x1920.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -9227,7 +9227,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Ruine et deuil_landscape_02.mp4",
+                                  "value": "Videos/Ruine et deuil_landscape_02.mp4",
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -9355,7 +9355,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Paysages Particules/Paysage Derriere.mp4",
+                                  "value": "Videos/Paysage 02.mp4",
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -9615,7 +9615,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Mariage_04.mp4",
+                                  "value": "Videos/Mariage_04.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -9790,7 +9790,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Mariage_03.mp4",
+                                  "value": "Videos/Mariage_03.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -9935,7 +9935,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Image/_650x186.png",
+                                  "value": "Images/_650x186.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -10124,7 +10124,7 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Git/Traces/Image/Mire_Cour.png",
+                                  "value": "Images/Mire_Cour.png",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -10427,7 +10427,7 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Cour_03.mp4",
+                                  "value": "Videos/Bal/Bal_Cour_03.mp4",
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -11052,7 +11052,7 @@
       {
         "parameters": [
           {
-            "value": "D:/Documents/Trace 2024/Videos/Bal/Bal_Jar_04r.mp4",
+            "value": "Videos/Bal/Bal_Jar_04r.mp4",
             "controlAddress": "/filePath"
           }
         ],

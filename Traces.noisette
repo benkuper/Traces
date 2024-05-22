@@ -268,12 +268,7 @@
             "P100_Control_1": {
               "containers": {
                 "Custom": {
-                  "parameters": [
-                    {
-                      "value": "192.168.1.184",
-                      "controlAddress": "/Ip"
-                    }
-                  ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -284,12 +279,7 @@
             "P100_Control_2": {
               "containers": {
                 "Custom": {
-                  "parameters": [
-                    {
-                      "value": "192.168.1.199",
-                      "controlAddress": "/Ip"
-                    }
-                  ],
+                  "editorIsCollapsed": true,
                   "owned": true,
                   "niceName": "Custom"
                 }
@@ -3392,7 +3382,7 @@
                       "TYPE": "f",
                       "FULL_PATH": "/gpio/gpio1/value",
                       "VALUE": [
-                        0
+                        1
                       ],
                       "RANGE": [
                         {
@@ -3593,7 +3583,7 @@
                 "perfJar": {
                   "parameters": [
                     {
-                      "value": 38.81012725830078,
+                      "value": 53.78174209594727,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -3609,6 +3599,14 @@
                         {
                           "value": 450.08,
                           "controlAddress": "/currentTime"
+                        },
+                        {
+                          "value": 332.6915283203125,
+                          "controlAddress": "/viewStartTime"
+                        },
+                        {
+                          "value": 636.051513671875,
+                          "controlAddress": "/viewEndTime"
                         }
                       ],
                       "editorIsCollapsed": true,
@@ -3634,6 +3632,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -3662,6 +3670,11 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -3971,7 +3984,7 @@
                 "perfBack": {
                   "parameters": [
                     {
-                      "value": 40.35471725463867,
+                      "value": 53.7840576171875,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -3985,8 +3998,16 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 450.08,
+                          "value": 573.1799999999999,
                           "controlAddress": "/currentTime"
+                        },
+                        {
+                          "value": 381.1231384277344,
+                          "controlAddress": "/viewStartTime"
+                        },
+                        {
+                          "value": 628.174072265625,
+                          "controlAddress": "/viewEndTime"
                         }
                       ],
                       "editorIsCollapsed": true,
@@ -4036,6 +4057,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4064,6 +4095,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4158,7 +4199,7 @@
                                         "sharedTexture": {
                                           "parameters": [
                                             {
-                                              "value": 40.33372116088867,
+                                              "value": 53.81355285644531,
                                               "controlAddress": "/currentFPS"
                                             }
                                           ],
@@ -4184,6 +4225,141 @@
                               },
                               "owned": true,
                               "niceName": "Media 1"
+                            },
+                            "oxipital": {
+                              "parameters": [
+                                {
+                                  "value": "Addition",
+                                  "controlAddress": "/blendFunction"
+                                }
+                              ],
+                              "editorIsCollapsed": true,
+                              "containers": {
+                                "positionning": {
+                                  "parameters": [
+                                    {
+                                      "value": false,
+                                      "controlAddress": "/enabled"
+                                    }
+                                  ],
+                                  "editorIsCollapsed": true,
+                                  "owned": true,
+                                  "niceName": "Positionning"
+                                },
+                                "blocks": {
+                                  "editorIsCollapsed": true,
+                                  "containers": {
+                                    "oxipital": {
+                                      "editorIsCollapsed": true,
+                                      "containers": {
+                                        "fadeCurve": {
+                                          "parameters": [
+                                            {
+                                              "value": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "controlAddress": "/viewValueRange"
+                                            },
+                                            {
+                                              "value": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "controlAddress": "/range"
+                                            },
+                                            {
+                                              "value": "Absolute",
+                                              "controlAddress": "/rangeRemapMode"
+                                            }
+                                          ],
+                                          "editorIsCollapsed": true,
+                                          "containers": {
+                                            "key": {
+                                              "parameters": [
+                                                {
+                                                  "value": "Bezier",
+                                                  "controlAddress": "/easingType"
+                                                }
+                                              ],
+                                              "editorIsCollapsed": true,
+                                              "containers": {
+                                                "easing": {
+                                                  "parameters": [
+                                                    {
+                                                      "value": [
+                                                        0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "controlAddress": "/anchor1"
+                                                    },
+                                                    {
+                                                      "value": [
+                                                        -0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "controlAddress": "/anchor2"
+                                                    }
+                                                  ],
+                                                  "editorIsCollapsed": true,
+                                                  "owned": true,
+                                                  "niceName": "Easing"
+                                                }
+                                              },
+                                              "owned": true,
+                                              "niceName": "Key"
+                                            },
+                                            "key1": {
+                                              "parameters": [
+                                                {
+                                                  "value": "Bezier",
+                                                  "controlAddress": "/easingType"
+                                                }
+                                              ],
+                                              "editorIsCollapsed": true,
+                                              "containers": {
+                                                "easing": {
+                                                  "editorIsCollapsed": true,
+                                                  "owned": true,
+                                                  "niceName": "Easing"
+                                                }
+                                              },
+                                              "owned": true,
+                                              "niceName": "Key 1"
+                                            }
+                                          },
+                                          "owned": true,
+                                          "niceName": "Fade Curve"
+                                        },
+                                        "video": {
+                                          "parameters": [
+                                            {
+                                              "value": "File",
+                                              "controlAddress": "/source"
+                                            }
+                                          ],
+                                          "editorIsCollapsed": true,
+                                          "containers": {
+                                            "mediaParameters": {
+                                              "editorIsCollapsed": true,
+                                              "owned": true,
+                                              "niceName": "Media Parameters"
+                                            }
+                                          },
+                                          "owned": true,
+                                          "niceName": "Video"
+                                        }
+                                      },
+                                      "owned": true,
+                                      "niceName": "Oxipital"
+                                    }
+                                  },
+                                  "owned": true,
+                                  "niceName": "Blocks"
+                                }
+                              },
+                              "owned": true,
+                              "niceName": "Oxipital"
                             }
                           },
                           "owned": true,
@@ -4205,7 +4381,7 @@
                 "perfTV": {
                   "parameters": [
                     {
-                      "value": 40.34944152832031,
+                      "value": 53.79022216796875,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4217,12 +4393,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 450.08,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -4246,6 +4416,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4324,7 +4504,7 @@
                 "perfRetroProjection": {
                   "parameters": [
                     {
-                      "value": 40.34942626953125,
+                      "value": 53.80741119384766,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4338,8 +4518,12 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 450.08,
-                          "controlAddress": "/currentTime"
+                          "value": 215.5139770507812,
+                          "controlAddress": "/viewStartTime"
+                        },
+                        {
+                          "value": 817.26416015625,
+                          "controlAddress": "/viewEndTime"
                         }
                       ],
                       "editorIsCollapsed": true,
@@ -4365,6 +4549,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4416,6 +4610,17 @@
                               "editorIsCollapsed": true,
                               "owned": true,
                               "niceName": "Arriv\u00e9e paysage"
+                            },
+                            "cue": {
+                              "parameters": [
+                                {
+                                  "value": "Nothing",
+                                  "controlAddress": "/actionOnCue"
+                                }
+                              ],
+                              "editorIsCollapsed": true,
+                              "owned": true,
+                              "niceName": "Cue"
                             }
                           },
                           "owned": true,
@@ -4432,7 +4637,7 @@
                 "perfFurniture": {
                   "parameters": [
                     {
-                      "value": 40.34709930419922,
+                      "value": 53.80578994750977,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4444,12 +4649,6 @@
                       "niceName": "Media Parameters"
                     },
                     "sequence": {
-                      "parameters": [
-                        {
-                          "value": 450.08,
-                          "controlAddress": "/currentTime"
-                        }
-                      ],
                       "editorIsCollapsed": true,
                       "containers": {
                         "layers": {
@@ -4509,6 +4708,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4539,7 +4748,7 @@
                 "perfXiaomi": {
                   "parameters": [
                     {
-                      "value": 40.33207702636719,
+                      "value": 53.79817962646484,
                       "controlAddress": "/currentFPS"
                     }
                   ],
@@ -4553,11 +4762,11 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 450.08,
-                          "controlAddress": "/currentTime"
+                          "value": 403.2923278808594,
+                          "controlAddress": "/viewStartTime"
                         },
                         {
-                          "value": 918.3239135742188,
+                          "value": 785.1043701171875,
                           "controlAddress": "/viewEndTime"
                         }
                       ],
@@ -4584,6 +4793,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4636,6 +4855,16 @@
                                     {
                                       "value": false,
                                       "controlAddress": "/enabled"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/width"
+                                    },
+                                    {
+                                      "value": 100,
+                                      "hexMode": false,
+                                      "controlAddress": "/height"
                                     }
                                   ],
                                   "editorIsCollapsed": true,
@@ -4730,7 +4959,7 @@
                                         "sharedTexture": {
                                           "parameters": [
                                             {
-                                              "value": 40.33551025390625,
+                                              "value": 53.81737518310547,
                                               "controlAddress": "/currentFPS"
                                             }
                                           ],
@@ -4756,6 +4985,141 @@
                               },
                               "owned": true,
                               "niceName": "Media"
+                            },
+                            "oxipital": {
+                              "parameters": [
+                                {
+                                  "value": "Standard Transparency",
+                                  "controlAddress": "/blendFunction"
+                                }
+                              ],
+                              "editorIsCollapsed": true,
+                              "containers": {
+                                "positionning": {
+                                  "parameters": [
+                                    {
+                                      "value": false,
+                                      "controlAddress": "/enabled"
+                                    }
+                                  ],
+                                  "editorIsCollapsed": true,
+                                  "owned": true,
+                                  "niceName": "Positionning"
+                                },
+                                "blocks": {
+                                  "editorIsCollapsed": true,
+                                  "containers": {
+                                    "video": {
+                                      "editorIsCollapsed": true,
+                                      "containers": {
+                                        "fadeCurve": {
+                                          "parameters": [
+                                            {
+                                              "value": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "controlAddress": "/viewValueRange"
+                                            },
+                                            {
+                                              "value": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "controlAddress": "/range"
+                                            },
+                                            {
+                                              "value": "Absolute",
+                                              "controlAddress": "/rangeRemapMode"
+                                            }
+                                          ],
+                                          "editorIsCollapsed": true,
+                                          "containers": {
+                                            "key": {
+                                              "parameters": [
+                                                {
+                                                  "value": "Bezier",
+                                                  "controlAddress": "/easingType"
+                                                }
+                                              ],
+                                              "editorIsCollapsed": true,
+                                              "containers": {
+                                                "easing": {
+                                                  "parameters": [
+                                                    {
+                                                      "value": [
+                                                        0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "controlAddress": "/anchor1"
+                                                    },
+                                                    {
+                                                      "value": [
+                                                        -0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "controlAddress": "/anchor2"
+                                                    }
+                                                  ],
+                                                  "editorIsCollapsed": true,
+                                                  "owned": true,
+                                                  "niceName": "Easing"
+                                                }
+                                              },
+                                              "owned": true,
+                                              "niceName": "Key"
+                                            },
+                                            "key1": {
+                                              "parameters": [
+                                                {
+                                                  "value": "Bezier",
+                                                  "controlAddress": "/easingType"
+                                                }
+                                              ],
+                                              "editorIsCollapsed": true,
+                                              "containers": {
+                                                "easing": {
+                                                  "editorIsCollapsed": true,
+                                                  "owned": true,
+                                                  "niceName": "Easing"
+                                                }
+                                              },
+                                              "owned": true,
+                                              "niceName": "Key 1"
+                                            }
+                                          },
+                                          "owned": true,
+                                          "niceName": "Fade Curve"
+                                        },
+                                        "video": {
+                                          "parameters": [
+                                            {
+                                              "value": "File",
+                                              "controlAddress": "/source"
+                                            }
+                                          ],
+                                          "editorIsCollapsed": true,
+                                          "containers": {
+                                            "mediaParameters": {
+                                              "editorIsCollapsed": true,
+                                              "owned": true,
+                                              "niceName": "Media Parameters"
+                                            }
+                                          },
+                                          "owned": true,
+                                          "niceName": "Video"
+                                        }
+                                      },
+                                      "owned": true,
+                                      "niceName": "Video"
+                                    }
+                                  },
+                                  "owned": true,
+                                  "niceName": "Blocks"
+                                }
+                              },
+                              "owned": true,
+                              "niceName": "Oxipital"
                             }
                           },
                           "owned": true,
@@ -4885,7 +5249,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        38.81012725830078
+                        53.78174209594727
                       ],
                       "RANGE": [
                         {
@@ -5018,7 +5382,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            166.44
+                            0.0
                           ],
                           "RANGE": [
                             {
@@ -5183,7 +5547,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            0.0
+                            332.6915283203125
                           ],
                           "RANGE": [
                             {
@@ -5201,11 +5565,11 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            1191.57861328125
+                            636.051513671875
                           ],
                           "RANGE": [
                             {
-                              "MIN": 1.0,
+                              "MIN": 333.6915283203125,
                               "MAX": 1800.0
                             }
                           ],
@@ -5462,7 +5826,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        2364
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -5474,7 +5838,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        924
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -5700,7 +6064,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        924
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -8519,7 +8883,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        40.35471725463867
+                        53.7840576171875
                       ],
                       "RANGE": [
                         {
@@ -8652,7 +9016,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            60.6
+                            573.1799999999999
                           ],
                           "RANGE": [
                             {
@@ -8817,7 +9181,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            0.0
+                            381.1231384277344
                           ],
                           "RANGE": [
                             {
@@ -8835,11 +9199,11 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            1167.329833984375
+                            628.174072265625
                           ],
                           "RANGE": [
                             {
-                              "MIN": 1.0,
+                              "MIN": 382.1231384277344,
                               "MAX": 1800.0
                             }
                           ],
@@ -8894,6 +9258,976 @@
                           "FULL_PATH": "/media/perfBack/sequence/layers",
                           "ACCESS": 0,
                           "CONTENTS": {
+                            "oxipital": {
+                              "DESCRIPTION": "Oxipital",
+                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital",
+                              "ACCESS": 0,
+                              "CONTENTS": {
+                                "enabled": {
+                                  "DESCRIPTION": "Enabled",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/enabled",
+                                  "ACCESS": 3,
+                                  "TYPE": "T",
+                                  "VALUE": [
+                                    true
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "MIN": 0,
+                                      "MAX": 1
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Boolean"
+                                  ]
+                                },
+                                "uiHeight": {
+                                  "DESCRIPTION": "UI Height",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/uiHeight",
+                                  "ACCESS": 3,
+                                  "TYPE": "i",
+                                  "VALUE": [
+                                    60
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Integer"
+                                  ]
+                                },
+                                "color": {
+                                  "DESCRIPTION": "Color",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/color",
+                                  "ACCESS": 3,
+                                  "TYPE": "r",
+                                  "VALUE": [
+                                    "ff464646"
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Color"
+                                  ]
+                                },
+                                "backgroundColor": {
+                                  "DESCRIPTION": "Background Color",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/backgroundColor",
+                                  "ACCESS": 3,
+                                  "TYPE": "r",
+                                  "VALUE": [
+                                    "0"
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Color"
+                                  ]
+                                },
+                                "blendFunction": {
+                                  "DESCRIPTION": "Blend function",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blendFunction",
+                                  "ACCESS": 3,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "Addition"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "Standard Transparency",
+                                        "Addition",
+                                        "Multiplication",
+                                        "Screen",
+                                        "Darken",
+                                        "Premultiplied Alpha",
+                                        "Lighten",
+                                        "Inversion",
+                                        "Color Addition",
+                                        "Color Screen",
+                                        "Blur Effect",
+                                        "Inverse Color",
+                                        "Subtraction",
+                                        "Color Difference",
+                                        "Inverse Multiplication",
+                                        "Custom"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "blendSourceFactor": {
+                                  "DESCRIPTION": "Blend source factor",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blendSourceFactor",
+                                  "ACCESS": 1,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "GL_ONE"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "GL_ZERO",
+                                        "GL_ONE",
+                                        "GL_SRC_ALPHA",
+                                        "GL_ONE_MINUS_SRC_ALPHA",
+                                        "GL_DST_ALPHA",
+                                        "GL_ONE_MINUS_DST_ALPHA",
+                                        "GL_SRC_COLOR",
+                                        "GL_ONE_MINUS_SRC_COLOR",
+                                        "GL_DST_COLOR",
+                                        "GL_ONE_MINUS_DST_COLOR"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "blendDestinationFactor": {
+                                  "DESCRIPTION": "Blend destination factor",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blendDestinationFactor",
+                                  "ACCESS": 1,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "GL_ONE"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "GL_ZERO",
+                                        "GL_ONE",
+                                        "GL_SRC_ALPHA",
+                                        "GL_ONE_MINUS_SRC_ALPHA",
+                                        "GL_DST_ALPHA",
+                                        "GL_ONE_MINUS_DST_ALPHA",
+                                        "GL_SRC_COLOR",
+                                        "GL_ONE_MINUS_SRC_COLOR",
+                                        "GL_DST_COLOR",
+                                        "GL_ONE_MINUS_DST_COLOR"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "positionning": {
+                                  "DESCRIPTION": "Positionning",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning",
+                                  "ACCESS": 0,
+                                  "CONTENTS": {
+                                    "enabled": {
+                                      "DESCRIPTION": "Enabled",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning/enabled",
+                                      "ACCESS": 3,
+                                      "TYPE": "T",
+                                      "VALUE": [
+                                        false
+                                      ],
+                                      "RANGE": [
+                                        {
+                                          "MIN": 0,
+                                          "MAX": 1
+                                        }
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Boolean"
+                                      ]
+                                    },
+                                    "x": {
+                                      "DESCRIPTION": "X",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning/x",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        0
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "y": {
+                                      "DESCRIPTION": "Y",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning/y",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        0
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "width": {
+                                      "DESCRIPTION": "Width",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning/width",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        1350
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "height": {
+                                      "DESCRIPTION": "Height",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/positionning/height",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        954
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    }
+                                  },
+                                  "TYPE": "Container"
+                                },
+                                "blocks": {
+                                  "DESCRIPTION": "Blocks",
+                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks",
+                                  "ACCESS": 0,
+                                  "CONTENTS": {
+                                    "oxipital": {
+                                      "DESCRIPTION": "Oxipital",
+                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital",
+                                      "ACCESS": 0,
+                                      "CONTENTS": {
+                                        "enabled": {
+                                          "DESCRIPTION": "Enabled",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/enabled",
+                                          "ACCESS": 3,
+                                          "TYPE": "T",
+                                          "VALUE": [
+                                            true
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 1
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Boolean"
+                                          ]
+                                        },
+                                        "startTime": {
+                                          "DESCRIPTION": "Start Time",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/startTime",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            513.0199584960938
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "length": {
+                                          "DESCRIPTION": "Length",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/length",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            58.20000839233398
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "loopLength": {
+                                          "DESCRIPTION": "Loop Length",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/loopLength",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            0.0
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "isActive": {
+                                          "DESCRIPTION": "Is Active",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/isActive",
+                                          "ACCESS": 1,
+                                          "TYPE": "T",
+                                          "VALUE": [
+                                            false
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 1
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Boolean"
+                                          ]
+                                        },
+                                        "fadeIn": {
+                                          "DESCRIPTION": "Fade In",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeIn",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "ATTRIBUTES": {
+                                            "enabled": true
+                                          },
+                                          "VALUE": [
+                                            2.399999856948853
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 58.20000839233398
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "fadeOut": {
+                                          "DESCRIPTION": "Fade Out",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeOut",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "ATTRIBUTES": {
+                                            "enabled": false
+                                          },
+                                          "VALUE": [
+                                            0.0
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 58.20000839233398
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "fadeCurve": {
+                                          "DESCRIPTION": "Fade Curve",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve",
+                                          "ACCESS": 0,
+                                          "CONTENTS": {
+                                            "length": {
+                                              "DESCRIPTION": "Length",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/length",
+                                              "ACCESS": 1,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "position": {
+                                              "DESCRIPTION": "Position",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/position",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "value": {
+                                              "DESCRIPTION": "Value",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/value",
+                                              "ACCESS": 1,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "viewValueRange": {
+                                              "DESCRIPTION": "View Value Range",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/viewValueRange",
+                                              "ACCESS": 3,
+                                              "TYPE": "ff",
+                                              "VALUE": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                },
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Point2D"
+                                              ]
+                                            },
+                                            "range": {
+                                              "DESCRIPTION": "Range",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/range",
+                                              "ACCESS": 3,
+                                              "TYPE": "ff",
+                                              "ATTRIBUTES": {
+                                                "enabled": true
+                                              },
+                                              "VALUE": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Point2D"
+                                              ]
+                                            },
+                                            "rangeRemapMode": {
+                                              "DESCRIPTION": "Range Remap Mode",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/rangeRemapMode",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "Absolute"
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "VALS": [
+                                                    "Absolute",
+                                                    "Proportional"
+                                                  ]
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Enum"
+                                              ]
+                                            },
+                                            "key": {
+                                              "DESCRIPTION": "Key",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                                "position": {
+                                                  "DESCRIPTION": "Position",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/position",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    0.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "value": {
+                                                  "DESCRIPTION": "Value",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/value",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    0.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0.0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "easingType": {
+                                                  "DESCRIPTION": "Easing Type",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/easingType",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "s",
+                                                  "VALUE": [
+                                                    "Bezier"
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "VALS": [
+                                                        "Linear",
+                                                        "Bezier",
+                                                        "Hold",
+                                                        "Sine",
+                                                        "Elastic",
+                                                        "Bounce",
+                                                        "Steps",
+                                                        "Noise",
+                                                        "Perlin"
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Enum"
+                                                  ]
+                                                },
+                                                "easing": {
+                                                  "DESCRIPTION": "Easing",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/easing",
+                                                  "ACCESS": 0,
+                                                  "CONTENTS": {
+                                                    "anchor1": {
+                                                      "DESCRIPTION": "Anchor 1",
+                                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/easing/anchor1",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "RANGE": [
+                                                        {
+                                                          "MIN": 0.0,
+                                                          "MAX": 1.0
+                                                        },
+                                                        {
+                                                          "MIN": -2.147483648e9,
+                                                          "MAX": 2.147483648e9
+                                                        }
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    },
+                                                    "anchor2": {
+                                                      "DESCRIPTION": "Anchor 2",
+                                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key/easing/anchor2",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        -0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "RANGE": [
+                                                        {
+                                                          "MIN": -1.0,
+                                                          "MAX": 0.0
+                                                        },
+                                                        {
+                                                          "MIN": -2.147483648e9,
+                                                          "MAX": 2.147483648e9
+                                                        }
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "TYPE": "Container"
+                                                }
+                                              },
+                                              "TYPE": "Key"
+                                            },
+                                            "key1": {
+                                              "DESCRIPTION": "Key 1",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                                "position": {
+                                                  "DESCRIPTION": "Position",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/position",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    1.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "value": {
+                                                  "DESCRIPTION": "Value",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/value",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    1.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0.0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "easingType": {
+                                                  "DESCRIPTION": "Easing Type",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/easingType",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "s",
+                                                  "VALUE": [
+                                                    "Bezier"
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "VALS": [
+                                                        "Linear",
+                                                        "Bezier",
+                                                        "Hold",
+                                                        "Sine",
+                                                        "Elastic",
+                                                        "Bounce",
+                                                        "Steps",
+                                                        "Noise",
+                                                        "Perlin"
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Enum"
+                                                  ]
+                                                },
+                                                "easing": {
+                                                  "DESCRIPTION": "Easing",
+                                                  "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/easing",
+                                                  "ACCESS": 0,
+                                                  "CONTENTS": {
+                                                    "anchor1": {
+                                                      "DESCRIPTION": "Anchor 1",
+                                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/easing/anchor1",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.0,
+                                                        0.0
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    },
+                                                    "anchor2": {
+                                                      "DESCRIPTION": "Anchor 2",
+                                                      "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/fadeCurve/key1/easing/anchor2",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.0,
+                                                        0.0
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "TYPE": "Container"
+                                                }
+                                              },
+                                              "TYPE": "Key"
+                                            }
+                                          },
+                                          "TYPE": "Manager",
+                                          "EXTENDED_TYPE": [
+                                            "AutomationKey"
+                                          ]
+                                        },
+                                        "video": {
+                                          "DESCRIPTION": "Video",
+                                          "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video",
+                                          "ACCESS": 0,
+                                          "CONTENTS": {
+                                            "enabled": {
+                                              "DESCRIPTION": "Enabled",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/enabled",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                true
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "color": {
+                                              "DESCRIPTION": "Color",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/color",
+                                              "ACCESS": 3,
+                                              "TYPE": "r",
+                                              "VALUE": [
+                                                "ff666666"
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Color"
+                                              ]
+                                            },
+                                            "currentFPS": {
+                                              "DESCRIPTION": "current FPS",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/currentFPS",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                13.47023010253906
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 60.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "source": {
+                                              "DESCRIPTION": "Source",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/source",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "File"
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "VALS": [
+                                                    "File",
+                                                    "URL"
+                                                  ]
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Enum"
+                                              ]
+                                            },
+                                            "filePath": {
+                                              "DESCRIPTION": "File path",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/filePath",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "D:/Documents/Trace 2024/Videos/Oxipital/Oxipital_final_back.mp4"
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "File"
+                                              ]
+                                            },
+                                            "url": {
+                                              "DESCRIPTION": "URL",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/url",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "String"
+                                              ]
+                                            },
+                                            "loop": {
+                                              "DESCRIPTION": "Loop",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/loop",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "playAtLoad": {
+                                              "DESCRIPTION": "Play at load",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/playAtLoad",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "start": {
+                                              "DESCRIPTION": "start",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/start",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "stop": {
+                                              "DESCRIPTION": "stop",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/stop",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "restart": {
+                                              "DESCRIPTION": "restart",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/restart",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "pause": {
+                                              "DESCRIPTION": "pause",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/pause",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "volume": {
+                                              "DESCRIPTION": "Volume",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/volume",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "seek": {
+                                              "DESCRIPTION": "Seek",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/seek",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 130.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "speedRate": {
+                                              "DESCRIPTION": "Speed rate",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/speedRate",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "beatByCycles": {
+                                              "DESCRIPTION": "Beat by cycles",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/beatByCycles",
+                                              "ACCESS": 3,
+                                              "TYPE": "i",
+                                              "VALUE": [
+                                                1
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 1,
+                                                  "MAX": 2147483647
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Integer"
+                                              ]
+                                            },
+                                            "tapTempo": {
+                                              "DESCRIPTION": "Tap tempo",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/tapTempo",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "usePreroll": {
+                                              "DESCRIPTION": "Use Preroll",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/usePreroll",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "mediaParameters": {
+                                              "DESCRIPTION": "Media Parameters",
+                                              "FULL_PATH": "/media/perfBack/sequence/layers/oxipital/blocks/oxipital/video/mediaParameters",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                              },
+                                              "TYPE": "Container"
+                                            }
+                                          },
+                                          "TYPE": "Video"
+                                        }
+                                      },
+                                      "TYPE": "Video"
+                                    }
+                                  },
+                                  "TYPE": "Manager",
+                                  "EXTENDED_TYPE": [
+                                    "/Reference",
+                                    "Owned/Solid Color",
+                                    "Owned/Picture",
+                                    "Owned/Video",
+                                    "Owned/Webcam",
+                                    "Owned/NDI",
+                                    "Owned/Shared Texture",
+                                    "Owned/Shader",
+                                    "Owned/Composition",
+                                    "Owned/Node",
+                                    "Owned/Sequence",
+                                    "/Transition"
+                                  ]
+                                }
+                              },
+                              "TYPE": "Media"
+                            },
                             "media": {
                               "DESCRIPTION": "Media",
                               "FULL_PATH": "/media/perfBack/sequence/layers/media",
@@ -9322,7 +10656,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1350
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -9334,7 +10668,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        954
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -9548,7 +10882,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1350
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -9560,7 +10894,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        954
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -10076,12 +11410,12 @@
                                               "ACCESS": 3,
                                               "TYPE": "f",
                                               "VALUE": [
-                                                40.33372116088867
+                                                53.81355285644531
                                               ],
                                               "RANGE": [
                                                 {
                                                   "MIN": 0.0,
-                                                  "MAX": 60.0
+                                                  "MAX": 70
                                                 }
                                               ],
                                               "EXTENDED_TYPE": [
@@ -10235,7 +11569,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        40.34944152832031
+                        53.79022216796875
                       ],
                       "RANGE": [
                         {
@@ -10621,7 +11955,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -10812,7 +12146,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1920
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -10824,7 +12158,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1080
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -11317,7 +12651,7 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        40.34942626953125
+                        53.80741119384766
                       ],
                       "RANGE": [
                         {
@@ -11615,7 +12949,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            0.0
+                            215.5139770507812
                           ],
                           "RANGE": [
                             {
@@ -11633,11 +12967,11 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            903.73046875
+                            817.26416015625
                           ],
                           "RANGE": [
                             {
-                              "MIN": 1.0,
+                              "MIN": 216.5139770507812,
                               "MAX": 1800.0
                             }
                           ],
@@ -11703,7 +13037,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -11894,7 +13228,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1920
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -11906,7 +13240,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1080
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -12232,6 +13566,83 @@
                                 }
                               },
                               "TYPE": "BaseItem"
+                            },
+                            "cue": {
+                              "DESCRIPTION": "Cue",
+                              "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue",
+                              "ACCESS": 0,
+                              "CONTENTS": {
+                                "enabled": {
+                                  "DESCRIPTION": "Enabled",
+                                  "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue/enabled",
+                                  "ACCESS": 3,
+                                  "TYPE": "T",
+                                  "VALUE": [
+                                    true
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "MIN": 0,
+                                      "MAX": 1
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Boolean"
+                                  ]
+                                },
+                                "time": {
+                                  "DESCRIPTION": "Time",
+                                  "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue/time",
+                                  "ACCESS": 3,
+                                  "TYPE": "f",
+                                  "VALUE": [
+                                    436.4200134277344
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Float"
+                                  ]
+                                },
+                                "actionOnCue": {
+                                  "DESCRIPTION": "Action on Cue",
+                                  "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue/actionOnCue",
+                                  "ACCESS": 3,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "Nothing"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "Nothing",
+                                        "Pause",
+                                        "Loop Jump"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "loopJumpCue": {
+                                  "DESCRIPTION": "Loop Jump Cue",
+                                  "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue/loopJumpCue",
+                                  "ACCESS": 3,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    ""
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Target"
+                                  ]
+                                },
+                                "playFromHere": {
+                                  "DESCRIPTION": "Play From Here",
+                                  "FULL_PATH": "/media/perfRetroProjection/sequence/cues/cue/playFromHere",
+                                  "ACCESS": 3,
+                                  "TYPE": "N"
+                                }
+                              },
+                              "TYPE": "BaseItem"
                             }
                           },
                           "TYPE": "Manager",
@@ -12322,12 +13733,12 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        40.34709930419922
+                        53.80578994750977
                       ],
                       "RANGE": [
                         {
                           "MIN": 0.0,
-                          "MAX": 70
+                          "MAX": 60.0
                         }
                       ],
                       "EXTENDED_TYPE": [
@@ -13160,7 +14571,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -13351,7 +14762,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        650
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -13363,7 +14774,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        186
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -13476,12 +14887,12 @@
                       "ACCESS": 3,
                       "TYPE": "f",
                       "VALUE": [
-                        40.33207702636719
+                        53.79817962646484
                       ],
                       "RANGE": [
                         {
                           "MIN": 0.0,
-                          "MAX": 70
+                          "MAX": 60.0
                         }
                       ],
                       "EXTENDED_TYPE": [
@@ -13774,7 +15185,7 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            0.0
+                            403.2923278808594
                           ],
                           "RANGE": [
                             {
@@ -13792,11 +15203,11 @@
                           "ACCESS": 3,
                           "TYPE": "f",
                           "VALUE": [
-                            918.3239135742188
+                            785.1043701171875
                           ],
                           "RANGE": [
                             {
-                              "MIN": 1.0,
+                              "MIN": 404.2923278808594,
                               "MAX": 1800.0
                             }
                           ],
@@ -13862,7 +15273,7 @@
                                   "ACCESS": 3,
                                   "TYPE": "T",
                                   "VALUE": [
-                                    true
+                                    false
                                   ],
                                   "RANGE": [
                                     {
@@ -14053,7 +15464,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1920
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -14065,6 +15476,232 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
+                                        100
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    }
+                                  },
+                                  "TYPE": "Container"
+                                }
+                              },
+                              "TYPE": "Media"
+                            },
+                            "oxipital": {
+                              "DESCRIPTION": "Oxipital",
+                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital",
+                              "ACCESS": 0,
+                              "CONTENTS": {
+                                "enabled": {
+                                  "DESCRIPTION": "Enabled",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/enabled",
+                                  "ACCESS": 3,
+                                  "TYPE": "T",
+                                  "VALUE": [
+                                    true
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "MIN": 0,
+                                      "MAX": 1
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Boolean"
+                                  ]
+                                },
+                                "uiHeight": {
+                                  "DESCRIPTION": "UI Height",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/uiHeight",
+                                  "ACCESS": 3,
+                                  "TYPE": "i",
+                                  "VALUE": [
+                                    92
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Integer"
+                                  ]
+                                },
+                                "color": {
+                                  "DESCRIPTION": "Color",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/color",
+                                  "ACCESS": 3,
+                                  "TYPE": "r",
+                                  "VALUE": [
+                                    "ff464646"
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Color"
+                                  ]
+                                },
+                                "backgroundColor": {
+                                  "DESCRIPTION": "Background Color",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/backgroundColor",
+                                  "ACCESS": 3,
+                                  "TYPE": "r",
+                                  "VALUE": [
+                                    "0"
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Color"
+                                  ]
+                                },
+                                "blendFunction": {
+                                  "DESCRIPTION": "Blend function",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blendFunction",
+                                  "ACCESS": 3,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "Standard Transparency"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "Standard Transparency",
+                                        "Addition",
+                                        "Multiplication",
+                                        "Screen",
+                                        "Darken",
+                                        "Premultiplied Alpha",
+                                        "Lighten",
+                                        "Inversion",
+                                        "Color Addition",
+                                        "Color Screen",
+                                        "Blur Effect",
+                                        "Inverse Color",
+                                        "Subtraction",
+                                        "Color Difference",
+                                        "Inverse Multiplication",
+                                        "Custom"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "blendSourceFactor": {
+                                  "DESCRIPTION": "Blend source factor",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blendSourceFactor",
+                                  "ACCESS": 1,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "GL_SRC_ALPHA"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "GL_ZERO",
+                                        "GL_ONE",
+                                        "GL_SRC_ALPHA",
+                                        "GL_ONE_MINUS_SRC_ALPHA",
+                                        "GL_DST_ALPHA",
+                                        "GL_ONE_MINUS_DST_ALPHA",
+                                        "GL_SRC_COLOR",
+                                        "GL_ONE_MINUS_SRC_COLOR",
+                                        "GL_DST_COLOR",
+                                        "GL_ONE_MINUS_DST_COLOR"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "blendDestinationFactor": {
+                                  "DESCRIPTION": "Blend destination factor",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blendDestinationFactor",
+                                  "ACCESS": 1,
+                                  "TYPE": "s",
+                                  "VALUE": [
+                                    "GL_ONE_MINUS_SRC_ALPHA"
+                                  ],
+                                  "RANGE": [
+                                    {
+                                      "VALS": [
+                                        "GL_ZERO",
+                                        "GL_ONE",
+                                        "GL_SRC_ALPHA",
+                                        "GL_ONE_MINUS_SRC_ALPHA",
+                                        "GL_DST_ALPHA",
+                                        "GL_ONE_MINUS_DST_ALPHA",
+                                        "GL_SRC_COLOR",
+                                        "GL_ONE_MINUS_SRC_COLOR",
+                                        "GL_DST_COLOR",
+                                        "GL_ONE_MINUS_DST_COLOR"
+                                      ]
+                                    }
+                                  ],
+                                  "EXTENDED_TYPE": [
+                                    "Enum"
+                                  ]
+                                },
+                                "positionning": {
+                                  "DESCRIPTION": "Positionning",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning",
+                                  "ACCESS": 0,
+                                  "CONTENTS": {
+                                    "enabled": {
+                                      "DESCRIPTION": "Enabled",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning/enabled",
+                                      "ACCESS": 3,
+                                      "TYPE": "T",
+                                      "VALUE": [
+                                        false
+                                      ],
+                                      "RANGE": [
+                                        {
+                                          "MIN": 0,
+                                          "MAX": 1
+                                        }
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Boolean"
+                                      ]
+                                    },
+                                    "x": {
+                                      "DESCRIPTION": "X",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning/x",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        0
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "y": {
+                                      "DESCRIPTION": "Y",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning/y",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        0
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "width": {
+                                      "DESCRIPTION": "Width",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning/width",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
+                                        1920
+                                      ],
+                                      "EXTENDED_TYPE": [
+                                        "Integer"
+                                      ]
+                                    },
+                                    "height": {
+                                      "DESCRIPTION": "Height",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/positionning/height",
+                                      "ACCESS": 3,
+                                      "TYPE": "i",
+                                      "VALUE": [
                                         1080
                                       ],
                                       "EXTENDED_TYPE": [
@@ -14073,6 +15710,750 @@
                                     }
                                   },
                                   "TYPE": "Container"
+                                },
+                                "blocks": {
+                                  "DESCRIPTION": "Blocks",
+                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks",
+                                  "ACCESS": 0,
+                                  "CONTENTS": {
+                                    "video": {
+                                      "DESCRIPTION": "Video",
+                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video",
+                                      "ACCESS": 0,
+                                      "CONTENTS": {
+                                        "enabled": {
+                                          "DESCRIPTION": "Enabled",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/enabled",
+                                          "ACCESS": 3,
+                                          "TYPE": "T",
+                                          "VALUE": [
+                                            true
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 1
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Boolean"
+                                          ]
+                                        },
+                                        "startTime": {
+                                          "DESCRIPTION": "Start Time",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/startTime",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            506.3999938964844
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "length": {
+                                          "DESCRIPTION": "Length",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/length",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            40.00000381469727
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "loopLength": {
+                                          "DESCRIPTION": "Loop Length",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/loopLength",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "VALUE": [
+                                            0.0
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "isActive": {
+                                          "DESCRIPTION": "Is Active",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/isActive",
+                                          "ACCESS": 1,
+                                          "TYPE": "T",
+                                          "VALUE": [
+                                            false
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 1
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Boolean"
+                                          ]
+                                        },
+                                        "fadeIn": {
+                                          "DESCRIPTION": "Fade In",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeIn",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "ATTRIBUTES": {
+                                            "enabled": false
+                                          },
+                                          "VALUE": [
+                                            0.0
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 40.00000381469727
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "fadeOut": {
+                                          "DESCRIPTION": "Fade Out",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeOut",
+                                          "ACCESS": 3,
+                                          "TYPE": "f",
+                                          "ATTRIBUTES": {
+                                            "enabled": false
+                                          },
+                                          "VALUE": [
+                                            0.0
+                                          ],
+                                          "RANGE": [
+                                            {
+                                              "MIN": 0,
+                                              "MAX": 40.00000381469727
+                                            }
+                                          ],
+                                          "EXTENDED_TYPE": [
+                                            "Float"
+                                          ]
+                                        },
+                                        "fadeCurve": {
+                                          "DESCRIPTION": "Fade Curve",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve",
+                                          "ACCESS": 0,
+                                          "CONTENTS": {
+                                            "length": {
+                                              "DESCRIPTION": "Length",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/length",
+                                              "ACCESS": 1,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "position": {
+                                              "DESCRIPTION": "Position",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/position",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "value": {
+                                              "DESCRIPTION": "Value",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/value",
+                                              "ACCESS": 1,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "viewValueRange": {
+                                              "DESCRIPTION": "View Value Range",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/viewValueRange",
+                                              "ACCESS": 3,
+                                              "TYPE": "ff",
+                                              "VALUE": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                },
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Point2D"
+                                              ]
+                                            },
+                                            "range": {
+                                              "DESCRIPTION": "Range",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/range",
+                                              "ACCESS": 3,
+                                              "TYPE": "ff",
+                                              "ATTRIBUTES": {
+                                                "enabled": true
+                                              },
+                                              "VALUE": [
+                                                0.0,
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Point2D"
+                                              ]
+                                            },
+                                            "rangeRemapMode": {
+                                              "DESCRIPTION": "Range Remap Mode",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/rangeRemapMode",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "Absolute"
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "VALS": [
+                                                    "Absolute",
+                                                    "Proportional"
+                                                  ]
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Enum"
+                                              ]
+                                            },
+                                            "key": {
+                                              "DESCRIPTION": "Key",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                                "position": {
+                                                  "DESCRIPTION": "Position",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/position",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    0.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "value": {
+                                                  "DESCRIPTION": "Value",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/value",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    0.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0.0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "easingType": {
+                                                  "DESCRIPTION": "Easing Type",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/easingType",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "s",
+                                                  "VALUE": [
+                                                    "Bezier"
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "VALS": [
+                                                        "Linear",
+                                                        "Bezier",
+                                                        "Hold",
+                                                        "Sine",
+                                                        "Elastic",
+                                                        "Bounce",
+                                                        "Steps",
+                                                        "Noise",
+                                                        "Perlin"
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Enum"
+                                                  ]
+                                                },
+                                                "easing": {
+                                                  "DESCRIPTION": "Easing",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/easing",
+                                                  "ACCESS": 0,
+                                                  "CONTENTS": {
+                                                    "anchor1": {
+                                                      "DESCRIPTION": "Anchor 1",
+                                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/easing/anchor1",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "RANGE": [
+                                                        {
+                                                          "MIN": 0.0,
+                                                          "MAX": 1.0
+                                                        },
+                                                        {
+                                                          "MIN": -2.147483648e9,
+                                                          "MAX": 2.147483648e9
+                                                        }
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    },
+                                                    "anchor2": {
+                                                      "DESCRIPTION": "Anchor 2",
+                                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key/easing/anchor2",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        -0.300000011920929,
+                                                        0.0
+                                                      ],
+                                                      "RANGE": [
+                                                        {
+                                                          "MIN": -1.0,
+                                                          "MAX": 0.0
+                                                        },
+                                                        {
+                                                          "MIN": -2.147483648e9,
+                                                          "MAX": 2.147483648e9
+                                                        }
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "TYPE": "Container"
+                                                }
+                                              },
+                                              "TYPE": "Key"
+                                            },
+                                            "key1": {
+                                              "DESCRIPTION": "Key 1",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                                "position": {
+                                                  "DESCRIPTION": "Position",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/position",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    1.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "value": {
+                                                  "DESCRIPTION": "Value",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/value",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "f",
+                                                  "VALUE": [
+                                                    1.0
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "MIN": 0.0,
+                                                      "MAX": 1.0
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Float"
+                                                  ]
+                                                },
+                                                "easingType": {
+                                                  "DESCRIPTION": "Easing Type",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/easingType",
+                                                  "ACCESS": 3,
+                                                  "TYPE": "s",
+                                                  "VALUE": [
+                                                    "Bezier"
+                                                  ],
+                                                  "RANGE": [
+                                                    {
+                                                      "VALS": [
+                                                        "Linear",
+                                                        "Bezier",
+                                                        "Hold",
+                                                        "Sine",
+                                                        "Elastic",
+                                                        "Bounce",
+                                                        "Steps",
+                                                        "Noise",
+                                                        "Perlin"
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "EXTENDED_TYPE": [
+                                                    "Enum"
+                                                  ]
+                                                },
+                                                "easing": {
+                                                  "DESCRIPTION": "Easing",
+                                                  "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/easing",
+                                                  "ACCESS": 0,
+                                                  "CONTENTS": {
+                                                    "anchor1": {
+                                                      "DESCRIPTION": "Anchor 1",
+                                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/easing/anchor1",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.0,
+                                                        0.0
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    },
+                                                    "anchor2": {
+                                                      "DESCRIPTION": "Anchor 2",
+                                                      "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/fadeCurve/key1/easing/anchor2",
+                                                      "ACCESS": 3,
+                                                      "TYPE": "ff",
+                                                      "VALUE": [
+                                                        0.0,
+                                                        0.0
+                                                      ],
+                                                      "EXTENDED_TYPE": [
+                                                        "Point2D"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "TYPE": "Container"
+                                                }
+                                              },
+                                              "TYPE": "Key"
+                                            }
+                                          },
+                                          "TYPE": "Manager",
+                                          "EXTENDED_TYPE": [
+                                            "AutomationKey"
+                                          ]
+                                        },
+                                        "video": {
+                                          "DESCRIPTION": "Video",
+                                          "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video",
+                                          "ACCESS": 0,
+                                          "CONTENTS": {
+                                            "enabled": {
+                                              "DESCRIPTION": "Enabled",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/enabled",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                true
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "color": {
+                                              "DESCRIPTION": "Color",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/color",
+                                              "ACCESS": 3,
+                                              "TYPE": "r",
+                                              "VALUE": [
+                                                "ff666666"
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Color"
+                                              ]
+                                            },
+                                            "currentFPS": {
+                                              "DESCRIPTION": "current FPS",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/currentFPS",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                0.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 60.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "source": {
+                                              "DESCRIPTION": "Source",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/source",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "File"
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "VALS": [
+                                                    "File",
+                                                    "URL"
+                                                  ]
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Enum"
+                                              ]
+                                            },
+                                            "filePath": {
+                                              "DESCRIPTION": "File path",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/filePath",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                ""
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "File"
+                                              ]
+                                            },
+                                            "url": {
+                                              "DESCRIPTION": "URL",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/url",
+                                              "ACCESS": 3,
+                                              "TYPE": "s",
+                                              "VALUE": [
+                                                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "String"
+                                              ]
+                                            },
+                                            "loop": {
+                                              "DESCRIPTION": "Loop",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/loop",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "playAtLoad": {
+                                              "DESCRIPTION": "Play at load",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/playAtLoad",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "start": {
+                                              "DESCRIPTION": "start",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/start",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "stop": {
+                                              "DESCRIPTION": "stop",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/stop",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "restart": {
+                                              "DESCRIPTION": "restart",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/restart",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "pause": {
+                                              "DESCRIPTION": "pause",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/pause",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "volume": {
+                                              "DESCRIPTION": "Volume",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/volume",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "seek": {
+                                              "DESCRIPTION": "Seek",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/seek",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0.0,
+                                                  "MAX": 1.0
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "speedRate": {
+                                              "DESCRIPTION": "Speed rate",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/speedRate",
+                                              "ACCESS": 3,
+                                              "TYPE": "f",
+                                              "VALUE": [
+                                                1.0
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Float"
+                                              ]
+                                            },
+                                            "beatByCycles": {
+                                              "DESCRIPTION": "Beat by cycles",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/beatByCycles",
+                                              "ACCESS": 3,
+                                              "TYPE": "i",
+                                              "VALUE": [
+                                                1
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 1,
+                                                  "MAX": 2147483647
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Integer"
+                                              ]
+                                            },
+                                            "tapTempo": {
+                                              "DESCRIPTION": "Tap tempo",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/tapTempo",
+                                              "ACCESS": 3,
+                                              "TYPE": "N"
+                                            },
+                                            "usePreroll": {
+                                              "DESCRIPTION": "Use Preroll",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/usePreroll",
+                                              "ACCESS": 3,
+                                              "TYPE": "T",
+                                              "VALUE": [
+                                                false
+                                              ],
+                                              "RANGE": [
+                                                {
+                                                  "MIN": 0,
+                                                  "MAX": 1
+                                                }
+                                              ],
+                                              "EXTENDED_TYPE": [
+                                                "Boolean"
+                                              ]
+                                            },
+                                            "mediaParameters": {
+                                              "DESCRIPTION": "Media Parameters",
+                                              "FULL_PATH": "/media/perfXiaomi/sequence/layers/oxipital/blocks/video/video/mediaParameters",
+                                              "ACCESS": 0,
+                                              "CONTENTS": {
+                                              },
+                                              "TYPE": "Container"
+                                            }
+                                          },
+                                          "TYPE": "Video"
+                                        }
+                                      },
+                                      "TYPE": "Video"
+                                    }
+                                  },
+                                  "TYPE": "Manager",
+                                  "EXTENDED_TYPE": [
+                                    "/Reference",
+                                    "Owned/Solid Color",
+                                    "Owned/Picture",
+                                    "Owned/Video",
+                                    "Owned/Webcam",
+                                    "Owned/NDI",
+                                    "Owned/Shared Texture",
+                                    "Owned/Shader",
+                                    "Owned/Composition",
+                                    "Owned/Node",
+                                    "Owned/Sequence",
+                                    "/Transition"
+                                  ]
                                 }
                               },
                               "TYPE": "Media"
@@ -14505,7 +16886,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1920
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -14517,7 +16898,7 @@
                                       "ACCESS": 3,
                                       "TYPE": "i",
                                       "VALUE": [
-                                        1080
+                                        100
                                       ],
                                       "EXTENDED_TYPE": [
                                         "Integer"
@@ -15033,12 +17414,12 @@
                                               "ACCESS": 3,
                                               "TYPE": "f",
                                               "VALUE": [
-                                                40.33551025390625
+                                                53.81737518310547
                                               ],
                                               "RANGE": [
                                                 {
                                                   "MIN": 0.0,
-                                                  "MAX": 60.0
+                                                  "MAX": 70
                                                 }
                                               ],
                                               "EXTENDED_TYPE": [
@@ -15410,7 +17791,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -15459,18 +17840,6 @@
                     {
                       "value": 450.08,
                       "controlAddress": "/currentTime"
-                    },
-                    {
-                      "value": 1800.02,
-                      "controlAddress": "/totalTime"
-                    },
-                    {
-                      "value": 345.7999877929688,
-                      "controlAddress": "/viewStartTime"
-                    },
-                    {
-                      "value": 474.0599975585938,
-                      "controlAddress": "/viewEndTime"
                     }
                   ],
                   "editorIsCollapsed": true,
@@ -15903,7 +18272,7 @@
           },
           "TYPE": "Container"
         },
-        "hasListenExtension": true
+        "hasListenExtension": false
       },
       {
         "niceName": "TV Sound Card",
@@ -16155,7 +18524,6 @@
             {
               "parameters": [
                 {
-                  "value": 450.08,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -16371,12 +18739,6 @@
             {
               "parameters": [
                 {
-                  "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ],
                   "alwaysNotify": true,
                   "controlAddress": "/lampColor",
                   "feedbackOnly": false,
@@ -17915,7 +20277,6 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 450.08,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -18077,7 +20438,6 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 450.08,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
