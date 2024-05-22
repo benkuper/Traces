@@ -1,4 +1,5 @@
 uniform float progression;
+uniform vec4 burnColor = vec4(1.0,1.0,1.0,1.0);
 
 float Hash( vec2 p)
 {
@@ -28,7 +29,7 @@ float fbm(vec2 p)
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
-	vec2 uv = fragCoord/iResolution;
+	vec2 uv = fragCoord.xy/iResolution.xy;
 	
 	vec4 src = texture(iChannel0, uv);
 	vec4 tgt = texture(iChannel1, uv);
@@ -43,11 +44,12 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 		return;
 	}
 	
+	vec4 burn = vec4(burnColor.r, burnColor.g, burnColor.b,burnColor.a*tgt.a);
 	// burn
 	float d = uv.x+uv.y*0.5 + 0.5*fbm(uv*15.1) + p*1.3;
 	if (d >0.35) col = clamp(col-(d-0.35)*10.,0.0,1.0);
 	if (d >0.47) {
-		if (d < 0.5 ) col += (d-0.4)*33.0*0.5*(0.0+noise(100.*uv+vec2(-p*2.0,0.)))*vec4(1.5,0.5,0.0,tgt.a);
+		if (d < 0.5 ) col += (d-0.4)*33.0*0.5*(0.0+noise(100.*uv+vec2(-p*2.0,0.)))*burn ;
 		else col = tgt; }
 	
 	fragColor = col;
