@@ -14,3 +14,17 @@ RuleMapoule/mapping_autosave/
 Traces_backup*
 
 Ressources/
+
+AfterFX/Adobe After Effects Auto-Save/
+
+AfterFX/Traces After.aep Logs/
+
+AfterFX/Renders/
+
+crashlog.dmp
+
+crashlog.txt
+
+Traces_recovered.noisette
+
+RuleMapoule/Videos/
