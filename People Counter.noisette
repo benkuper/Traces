@@ -246,11 +246,12 @@
             }
           ],
           "viewOffset": [
-            -48,
-            40
+            -70,
+            -53
           ],
           "viewZoom": 0.765625
-        }
+        },
+        "editing": true
       },
       {
         "niceName": "Perf 2",
@@ -1144,8 +1145,7 @@
             -57
           ],
           "viewZoom": 0.53125
-        },
-        "editing": true
+        }
       }
     ],
     "viewOffset": [
@@ -1180,6 +1180,7 @@
             {
               "parameters": [
                 {
+                  "value": 24,
                   "hexMode": false,
                   "controlAddress": "/totalPARJOUR",
                   "feedbackOnly": false,
@@ -1272,27 +1273,27 @@
                     {
                       "parameters": [
                         {
-                          "value": 45,
+                          "value": 10,
                           "hexMode": false,
                           "controlAddress": "/#1"
                         },
                         {
-                          "value": 32,
+                          "value": 3,
                           "hexMode": false,
                           "controlAddress": "/#2"
                         },
                         {
-                          "value": 26,
+                          "value": 3,
                           "hexMode": false,
                           "controlAddress": "/#3"
                         },
                         {
-                          "value": 26,
+                          "value": 5,
                           "hexMode": false,
                           "controlAddress": "/#4"
                         },
                         {
-                          "value": 26,
+                          "value": 3,
                           "hexMode": false,
                           "controlAddress": "/#5"
                         }
@@ -1475,7 +1476,7 @@
                           {
                             "parameters": [
                               {
-                                "value": "",
+                                "value": "/reset",
                                 "controlAddress": "/inputValue"
                               }
                             ],
@@ -1686,11 +1687,23 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": "",
+                          "value": "/total/totalPARJOUR",
                           "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
                         }
                       ],
                       "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
                       }
                     }
                   }
