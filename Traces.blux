@@ -50,14 +50,14 @@
           "shifters": [
             {
               "type": 1,
-              "width": 324,
+              "width": 212,
               "height": 1189,
               "direction": 2,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 324,
-                  "height": 168,
+                  "width": 212,
+                  "height": 107,
                   "currentContent": "Interfaces",
                   "tabs": [
                     {
@@ -67,8 +67,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 324,
-                  "height": 530,
+                  "width": 212,
+                  "height": 469,
                   "currentContent": "Objects",
                   "tabs": [
                     {
@@ -78,8 +78,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 324,
-                  "height": 280,
+                  "width": 212,
+                  "height": 219,
                   "currentContent": "Groups",
                   "tabs": [
                     {
@@ -89,12 +89,23 @@
                 },
                 {
                   "type": 0,
-                  "width": 324,
-                  "height": 193,
+                  "width": 212,
+                  "height": 132,
                   "currentContent": "Global Effects",
                   "tabs": [
                     {
                       "name": "Global Effects"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 212,
+                  "height": 238,
+                  "currentContent": "Global Sequences",
+                  "tabs": [
+                    {
+                      "name": "Global Sequences"
                     }
                   ]
                 }
@@ -102,19 +113,19 @@
             },
             {
               "type": 1,
-              "width": 1314,
+              "width": 1281,
               "height": 1189,
               "direction": 2,
               "shifters": [
                 {
                   "type": 1,
-                  "width": 1314,
+                  "width": 1281,
                   "height": 474,
                   "direction": 1,
                   "shifters": [
                     {
                       "type": 0,
-                      "width": 947,
+                      "width": 914,
                       "height": 474,
                       "currentContent": "Objects Grid View",
                       "tabs": [
@@ -146,32 +157,13 @@
                   ]
                 },
                 {
-                  "type": 1,
-                  "width": 1314,
+                  "type": 0,
+                  "width": 1281,
                   "height": 709,
-                  "direction": 1,
-                  "shifters": [
+                  "currentContent": "Sequence Editor",
+                  "tabs": [
                     {
-                      "type": 0,
-                      "width": 210,
-                      "height": 709,
-                      "currentContent": "Global Sequences",
-                      "tabs": [
-                        {
-                          "name": "Global Sequences"
-                        }
-                      ]
-                    },
-                    {
-                      "type": 0,
-                      "width": 1098,
-                      "height": 709,
-                      "currentContent": "Sequence Editor",
-                      "tabs": [
-                        {
-                          "name": "Sequence Editor"
-                        }
-                      ]
+                      "name": "Sequence Editor"
                     }
                   ]
                 }
@@ -179,13 +171,13 @@
             },
             {
               "type": 1,
-              "width": 396,
+              "width": 541,
               "height": 1189,
               "direction": 2,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 396,
+                  "width": 541,
                   "height": 841,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -196,7 +188,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 396,
+                  "width": 541,
                   "height": 342,
                   "currentContent": "Logger",
                   "tabs": [
@@ -1917,11 +1909,11 @@
             "controlAddress": "/totalTime"
           },
           {
-            "value": 0.0,
+            "value": 441.6141967773438,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 202.1727905273438,
+            "value": 515.4747924804688,
             "controlAddress": "/viewEndTime"
           }
         ],
@@ -2136,11 +2128,11 @@
                     {
                       "parameters": [
                         {
-                          "value": 428.8399963378906,
+                          "value": 412.9599914550781,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 74.20001220703125,
+                          "value": 66.80001068115234,
                           "controlAddress": "/length"
                         },
                         {
@@ -2149,7 +2141,7 @@
                           "enabled": true
                         },
                         {
-                          "value": 13.11616134643555,
+                          "value": 4.61447286605835,
                           "controlAddress": "/fadeOut",
                           "enabled": true
                         }
@@ -2173,7 +2165,7 @@
                             "effectParameters": {
                               "parameters": [
                                 {
-                                  "value": 0.6842489242553711,
+                                  "value": 0.7580950260162354,
                                   "minValue": -1.0,
                                   "maxValue": 1.0,
                                   "default": 0.0,
@@ -2623,152 +2615,6 @@
                         }
                       },
                       "type": "Override (Number)"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 447.1400451660156,
-                          "controlAddress": "/startTime"
-                        },
-                        {
-                          "value": 14.16002655029297,
-                          "controlAddress": "/length"
-                        },
-                        {
-                          "value": 3.633146286010742,
-                          "controlAddress": "/fadeIn",
-                          "enabled": true
-                        },
-                        {
-                          "value": 4.274289608001709,
-                          "controlAddress": "/fadeOut",
-                          "enabled": true
-                        }
-                      ],
-                      "niceName": "Override (Number) 1",
-                      "editorIsCollapsed": true,
-                      "containers": {
-                        "override_Number_": {
-                          "parameters": [
-                            {
-                              "value": false,
-                              "controlAddress": "/enabled"
-                            },
-                            {
-                              "value": "Save weight only",
-                              "controlAddress": "/saveMode"
-                            }
-                          ],
-                          "niceName": "Override (Number)",
-                          "containers": {
-                            "effectParameters": {
-                              "parameters": [
-                                {
-                                  "value": 0.4615384340286255,
-                                  "minValue": -1.0,
-                                  "maxValue": 1.0,
-                                  "default": 0.0,
-                                  "controlAddress": "/value"
-                                }
-                              ],
-                              "paramLinks": {
-                              }
-                            },
-                            "filters": {
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            }
-                          },
-                          "type": "Override (Number)"
-                        },
-                        "fadeCurve": {
-                          "parameters": [
-                            {
-                              "value": 1.0,
-                              "controlAddress": "/length"
-                            },
-                            {
-                              "value": [
-                                0.0,
-                                1.0
-                              ],
-                              "controlAddress": "/viewValueRange"
-                            },
-                            {
-                              "value": [
-                                0.0,
-                                1.0
-                              ],
-                              "controlAddress": "/range",
-                              "enabled": true
-                            }
-                          ],
-                          "hideInRemoteControl": false,
-                          "items": [
-                            {
-                              "parameters": [
-                                {
-                                  "value": "Bezier",
-                                  "controlAddress": "/easingType"
-                                }
-                              ],
-                              "niceName": "Key",
-                              "containers": {
-                                "easing": {
-                                  "parameters": [
-                                    {
-                                      "value": [
-                                        0.300000011920929,
-                                        0.0
-                                      ],
-                                      "controlAddress": "/anchor1"
-                                    },
-                                    {
-                                      "value": [
-                                        -0.300000011920929,
-                                        0.0
-                                      ],
-                                      "controlAddress": "/anchor2"
-                                    }
-                                  ]
-                                }
-                              },
-                              "type": "Key"
-                            },
-                            {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/position"
-                                },
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/value"
-                                },
-                                {
-                                  "value": "Bezier",
-                                  "controlAddress": "/easingType"
-                                }
-                              ],
-                              "niceName": "Key 1",
-                              "containers": {
-                                "easing": {
-                                }
-                              },
-                              "type": "Key"
-                            }
-                          ],
-                          "viewOffset": [
-                            0,
-                            0
-                          ],
-                          "viewZoom": 1.0
-                        }
-                      },
-                      "type": "Override (Number)"
                     }
                   ],
                   "viewOffset": [
@@ -2821,20 +2667,20 @@
                     {
                       "parameters": [
                         {
-                          "value": 408.2400207519531,
+                          "value": 402.800048828125,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 80.3599853515625,
+                          "value": 76.5999755859375,
                           "controlAddress": "/length"
                         },
                         {
-                          "value": 2.208420753479004,
+                          "value": 8.579358100891113,
                           "controlAddress": "/fadeIn",
                           "enabled": true
                         },
                         {
-                          "value": 7.134025573730469,
+                          "value": 4.979728698730469,
                           "controlAddress": "/fadeOut",
                           "enabled": true
                         }
@@ -3497,11 +3343,11 @@
                     {
                       "parameters": [
                         {
-                          "value": 412.3999938964844,
+                          "value": 411.4399719238281,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 92.20002746582031,
+                          "value": 68.00003051757812,
                           "controlAddress": "/length"
                         },
                         {
@@ -3510,7 +3356,7 @@
                           "enabled": true
                         },
                         {
-                          "value": 10.49350357055664,
+                          "value": 4.469830989837646,
                           "controlAddress": "/fadeOut",
                           "enabled": true
                         }
@@ -3534,7 +3380,7 @@
                             "effectParameters": {
                               "parameters": [
                                 {
-                                  "value": 0.2197802066802979,
+                                  "value": 0.1767033338546753,
                                   "minValue": -1.0,
                                   "maxValue": 1.0,
                                   "default": 0.0,
@@ -3979,11 +3825,11 @@
                     {
                       "parameters": [
                         {
-                          "value": 411.3400268554688,
+                          "value": 411.6600036621094,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 93.84001922607422,
+                          "value": 67.60002136230469,
                           "controlAddress": "/length"
                         },
                         {
@@ -3992,7 +3838,7 @@
                           "enabled": true
                         },
                         {
-                          "value": 12.01312065124512,
+                          "value": 4.614084243774414,
                           "controlAddress": "/fadeOut",
                           "enabled": true
                         }
