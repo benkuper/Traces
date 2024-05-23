@@ -255,10 +255,6 @@
             {
               "value": "TD OSC Query Server",
               "controlAddress": "/serverName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -530,7 +526,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": false,
+              "value": true,
               "controlAddress": "/isConnected"
             }
           ],
@@ -628,7 +624,7 @@
             "servo": {
               "parameters": [
                 {
-                  "value": 5.0,
+                  "value": 146.0,
                   "controlAddress": "/position"
                 }
               ],
@@ -1052,7 +1048,7 @@
             }
           }
         },
-        "hasListenExtension": false
+        "hasListenExtension": true
       },
       {
         "niceName": "Horloge",
@@ -1072,7 +1068,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": false,
+              "value": true,
               "controlAddress": "/isConnected"
             }
           ],
@@ -1172,7 +1168,6 @@
             "DCMotor": {
               "parameters": [
                 {
-                  "value": 0.0,
                   "controlMode": 2,
                   "reference": {
                     "value": "/customVariables/horloge/variables/speed/speed",
@@ -1611,7 +1606,7 @@
             }
           }
         },
-        "hasListenExtension": false
+        "hasListenExtension": true
       },
       {
         "niceName": "Ringer",
@@ -3570,10 +3565,6 @@
             {
               "value": "RuleMaPool - mapping.poule",
               "controlAddress": "/serverName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -25850,10 +25841,6 @@
             {
               "value": "Blux - Traces.blux",
               "controlAddress": "/serverName"
-            },
-            {
-              "value": false,
-              "controlAddress": "/isConnected"
             }
           ],
           "containers": {
@@ -26803,12 +26790,6 @@
             {
               "parameters": [
                 {
-                  "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ],
                   "alwaysNotify": true,
                   "controlAddress": "/lampColor",
                   "feedbackOnly": false,
@@ -27071,7 +27052,6 @@
             {
               "parameters": [
                 {
-                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -28484,7 +28464,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 551.5599999999999,
+                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -28663,7 +28643,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 551.5599999999999,
+                          "value": 0.0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -30756,15 +30736,15 @@
       {
         "parameters": [
           {
-            "value": 1800.0,
+            "value": 1801.56,
             "controlAddress": "/totalTime"
           },
           {
-            "value": 0.0,
+            "value": 75.5946044921875,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 1800.0,
+            "value": 387.0346069335938,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -33072,7 +33052,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 154.4200134277344,
+                        "value": 165.02001953125,
                         "controlAddress": "/time"
                       },
                       {
