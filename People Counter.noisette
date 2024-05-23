@@ -1,0 +1,1888 @@
+{
+  "metaData": {
+    "version": "1.9.18b5",
+    "versionNumber": 67858
+  },
+  "projectSettings": {
+    "parameters": [
+      {
+        "value": false,
+        "controlAddress": "/saveLayoutInFile"
+      }
+    ],
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          },
+          {
+            "value": true,
+            "controlAddress": "/enableDashboardServer"
+          },
+          {
+            "value": 9999,
+            "hexMode": false,
+            "controlAddress": "/serverPort"
+          }
+        ]
+      },
+      "customDefinitions": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/editMode"
+      },
+      {
+        "value": true,
+        "controlAddress": "/snapping"
+      },
+      {
+        "value": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "controlAddress": "/tabsBGColor"
+      }
+    ],
+    "items": [
+      {
+        "niceName": "Perf 1",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    440.0,
+                    440.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#1",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Plus",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ],
+                  "controlAddress": "/textColor",
+                  "enabled": false
+                },
+                {
+                  "value": [
+                    0.1948705911636353,
+                    0.2683451175689697,
+                    0.380952924489975,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/processors/add/triggerPreview",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#1"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -120.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    260.0,
+                    60.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/minus/#1",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Moins",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.380952924489975,
+                    0.1759137362241745,
+                    0.03223529458045959,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 2",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/perf1/processors/minus/trigger",
+              "controllable": "/states/counter/processors/multiplex/lists/minus/#1"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    180.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    420.0,
+                    280.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/integerList/#1",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customText",
+                  "enabled": false
+                },
+                {
+                  "value": 163,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/opaqueBackground"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/showValue"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/integerList/#1",
+              "controllable": "/states/counter/processors/multiplex/lists/integerList/#1"
+            }
+          ],
+          "viewOffset": [
+            -70,
+            -53
+          ],
+          "viewZoom": 0.765625
+        },
+        "editing": true
+      },
+      {
+        "niceName": "Perf 2",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    440.0,
+                    440.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#2",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Plus",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ],
+                  "controlAddress": "/textColor",
+                  "enabled": false
+                },
+                {
+                  "value": [
+                    0.1160784363746643,
+                    0.1598470658063889,
+                    0.2269215732812881,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#1",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#2"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -120.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    260.0,
+                    60.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#2",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Moins",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.25,
+                    0.1154431328177452,
+                    0.02115294151008129,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 2",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/minus/#1",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#2"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    180.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    420.0,
+                    280.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/integerList/#2",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customText",
+                  "enabled": false
+                },
+                {
+                  "value": 163,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/integerList/#1",
+              "controllable": "/states/counter/processors/multiplex/lists/integerList/#2"
+            }
+          ],
+          "viewOffset": [
+            -140,
+            -10
+          ],
+          "viewZoom": 0.53125
+        }
+      },
+      {
+        "niceName": "Perf 3",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    440.0,
+                    440.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#3",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Plus",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ],
+                  "controlAddress": "/textColor",
+                  "enabled": false
+                },
+                {
+                  "value": [
+                    0.1134627461433411,
+                    0.1874784231185913,
+                    0.2269215732812881,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#2",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#3"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -120.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    260.0,
+                    60.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#3",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Moins",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.25,
+                    0.1861568689346313,
+                    0.02115294151008129,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 2",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#2",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#3"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    180.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    420.0,
+                    280.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/integerList/#3",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customText",
+                  "enabled": false
+                },
+                {
+                  "value": 163,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/integerList/#2",
+              "controllable": "/states/counter/processors/multiplex/lists/integerList/#3"
+            }
+          ],
+          "viewOffset": [
+            -62,
+            10
+          ],
+          "viewZoom": 0.53125
+        }
+      },
+      {
+        "niceName": "Perf 4",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    440.0,
+                    440.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#4",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Plus",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ],
+                  "controlAddress": "/textColor",
+                  "enabled": false
+                },
+                {
+                  "value": [
+                    0.2038509696722031,
+                    0.3368274569511414,
+                    0.4076941013336182,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#4"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -120.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    260.0,
+                    60.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#4",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Moins",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.5807685852050781,
+                    0.432454913854599,
+                    0.04914117604494095,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 2",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#4"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    180.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    420.0,
+                    280.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/integerList/#4",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customText",
+                  "enabled": false
+                },
+                {
+                  "value": 163,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/integerList/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/integerList/#4"
+            }
+          ],
+          "viewOffset": [
+            -62,
+            10
+          ],
+          "viewZoom": 0.53125
+        }
+      },
+      {
+        "niceName": "Perf 5",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    440.0,
+                    440.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/add/#5",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Plus",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ],
+                  "controlAddress": "/textColor",
+                  "enabled": false
+                },
+                {
+                  "value": [
+                    0.1557725518941879,
+                    0.2573882341384888,
+                    0.3115372657775879,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/add/#5"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -120.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    260.0,
+                    60.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/minus/#5",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Moins",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.3153842985630035,
+                    0.2348431348800659,
+                    0.02668627351522446,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 2",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/add/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/minus/#5"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    180.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    420.0,
+                    280.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/counter/processors/multiplex/lists/integerList/#5",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customText",
+                  "enabled": false
+                },
+                {
+                  "value": 163,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/states/counter/processors/multiplex/lists/integerList/#3",
+              "controllable": "/states/counter/processors/multiplex/lists/integerList/#5"
+            }
+          ],
+          "viewOffset": [
+            -62,
+            10
+          ],
+          "viewZoom": 0.53125
+        }
+      },
+      {
+        "niceName": "Total",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                800.0,
+                1000.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            },
+            {
+              "value": "",
+              "controlAddress": "/backgroundImage"
+            },
+            {
+              "value": true,
+              "controlAddress": "/snapGridMode"
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -200.0,
+                    140.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    400.0,
+                    360.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/total/variables/totalPARJOUR/totalPARJOUR",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/showLabel"
+                },
+                {
+                  "value": 136,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/readOnly"
+                },
+                {
+                  "value": "Horizontal Slider",
+                  "controlAddress": "/style"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/toggleImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardParameterItem",
+              "ghostAddress": "/customVariables/total/variables/totalPARJOUR/totalPARJOUR",
+              "controllable": "/customVariables/total/variables/totalPARJOUR/totalPARJOUR"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -240.0,
+                    -420.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    500.0,
+                    520.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/total/processors/resetAll/trigger",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Reset All",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": 120,
+                  "hexMode": false,
+                  "controlAddress": "/textSize",
+                  "enabled": true
+                },
+                {
+                  "value": [
+                    0.07619216293096542,
+                    0.380952924489975,
+                    0.09450195729732513,
+                    1.0
+                  ],
+                  "controlAddress": "/backgroundColor",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item 1",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/total/processors/resetAll/trigger",
+              "controllable": "/states/total/processors/resetAll/trigger"
+            }
+          ],
+          "viewOffset": [
+            -84,
+            -57
+          ],
+          "viewZoom": 0.53125
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "modules": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "customVariables": {
+    "items": [
+      {
+        "niceName": "Total",
+        "type": "CVGroup",
+        "params": {
+        },
+        "variables": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 24,
+                  "hexMode": false,
+                  "controlAddress": "/totalPARJOUR",
+                  "feedbackOnly": false,
+                  "type": "Integer",
+                  "niceName": "TOTAL PAR JOUR",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Integer",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "TOTAL PAR JOUR",
+              "editorIsCollapsed": true,
+              "type": "Int Parameter"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "presets": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "states": {
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -235.0,
+              -103.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              321.0,
+              290.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "Counter",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 136.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 5,
+                  "hexMode": false,
+                  "controlAddress": "/count"
+                },
+                {
+                  "value": 2,
+                  "hexMode": false,
+                  "controlAddress": "/previewIndex"
+                }
+              ],
+              "niceName": "Multiplex",
+              "containers": {
+                "lists": {
+                  "items": [
+                    {
+                      "parameters": [
+                        {
+                          "value": 10,
+                          "hexMode": false,
+                          "controlAddress": "/#1"
+                        },
+                        {
+                          "value": 3,
+                          "hexMode": false,
+                          "controlAddress": "/#2"
+                        },
+                        {
+                          "value": 3,
+                          "hexMode": false,
+                          "controlAddress": "/#3"
+                        },
+                        {
+                          "value": 5,
+                          "hexMode": false,
+                          "controlAddress": "/#4"
+                        },
+                        {
+                          "value": 3,
+                          "hexMode": false,
+                          "controlAddress": "/#5"
+                        }
+                      ],
+                      "niceName": "Integer List",
+                      "type": "Integer",
+                      "listSize": 5
+                    },
+                    {
+                      "niceName": "Add",
+                      "type": "Trigger",
+                      "listSize": 5
+                    },
+                    {
+                      "niceName": "Minus",
+                      "type": "Trigger",
+                      "listSize": 5
+                    },
+                    {
+                      "niceName": "Reset",
+                      "type": "Trigger",
+                      "listSize": 5
+                    }
+                  ],
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
+                },
+                "processors": {
+                  "hideInEditor": true,
+                  "items": [
+                    {
+                      "niceName": "Add",
+                      "editorIsCollapsed": true,
+                      "type": "Action",
+                      "conditions": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "/add",
+                                "controlAddress": "/inputValue"
+                              }
+                            ],
+                            "niceName": "From Multiplex List",
+                            "type": "From Multiplex List"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequences": {
+                        "items": [
+                          {
+                            "niceName": "Consequence",
+                            "type": "Consequence",
+                            "commandModule": "multiplex",
+                            "commandPath": "",
+                            "commandType": "Set List Value",
+                            "command": {
+                              "parameters": [
+                                {
+                                  "value": "/states/state/processors/multiplex/lists/integerList",
+                                  "controlAddress": "/target"
+                                },
+                                {
+                                  "value": "All",
+                                  "controlAddress": "/component"
+                                },
+                                {
+                                  "value": "Add",
+                                  "controlAddress": "/operator"
+                                },
+                                {
+                                  "value": 1,
+                                  "hexMode": false,
+                                  "controlAddress": "/value"
+                                }
+                              ],
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequencesOff": {
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    },
+                    {
+                      "niceName": "Minus",
+                      "editorIsCollapsed": true,
+                      "type": "Action",
+                      "conditions": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "/minus",
+                                "controlAddress": "/inputValue"
+                              }
+                            ],
+                            "niceName": "From Multiplex List",
+                            "type": "From Multiplex List"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequences": {
+                        "items": [
+                          {
+                            "niceName": "Consequence",
+                            "type": "Consequence",
+                            "commandModule": "multiplex",
+                            "commandPath": "",
+                            "commandType": "Set List Value",
+                            "command": {
+                              "parameters": [
+                                {
+                                  "value": "/states/state/processors/multiplex/lists/integerList",
+                                  "controlAddress": "/target"
+                                },
+                                {
+                                  "value": "All",
+                                  "controlAddress": "/component"
+                                },
+                                {
+                                  "value": "Subtract",
+                                  "controlAddress": "/operator"
+                                },
+                                {
+                                  "value": 1,
+                                  "hexMode": false,
+                                  "controlAddress": "/value"
+                                }
+                              ],
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequencesOff": {
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    },
+                    {
+                      "niceName": "Reset",
+                      "editorIsCollapsed": true,
+                      "type": "Action",
+                      "conditions": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "/reset",
+                                "controlAddress": "/inputValue"
+                              }
+                            ],
+                            "niceName": "From Multiplex List",
+                            "type": "From Multiplex List"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequences": {
+                        "items": [
+                          {
+                            "niceName": "Consequence",
+                            "type": "Consequence",
+                            "commandModule": "multiplex",
+                            "commandPath": "",
+                            "commandType": "Set List Value",
+                            "command": {
+                              "parameters": [
+                                {
+                                  "value": "/states/state/processors/multiplex/lists/integerList",
+                                  "controlAddress": "/target"
+                                },
+                                {
+                                  "value": "All",
+                                  "controlAddress": "/component"
+                                },
+                                {
+                                  "value": "Equals",
+                                  "controlAddress": "/operator"
+                                }
+                              ],
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      },
+                      "consequencesOff": {
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  ],
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
+                }
+              },
+              "type": "Multiplex"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              96.0,
+              -103.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              287.0,
+              290.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "Total",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Total",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/states/counter/processors/multiplex/lists/integerList/#1",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/states/counter/processors/multiplex/lists/integerList/#2",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/states/counter/processors/multiplex/lists/integerList/#3",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 2",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/states/counter/processors/multiplex/lists/integerList/#4",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 3",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/states/counter/processors/multiplex/lists/integerList/#5",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 4",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/sendOnOutputChangeOnly"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "editorIsCollapsed": true,
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Sum",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/total/totalPARJOUR",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Reset All",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/counter/processors/multiplex/lists/reset/#1",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/counter/processors/multiplex/lists/reset/#2",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 2",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/counter/processors/multiplex/lists/reset/#3",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 3",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/counter/processors/multiplex/lists/reset/#4",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 4",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/counter/processors/multiplex/lists/reset/#5",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      -147,
+      -20
+    ],
+    "viewZoom": 1.0,
+    "transitions": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "comments": {
+      "hideInEditor": true,
+      "viewOffset": [
+        -147,
+        -20
+      ],
+      "viewZoom": 1.0
+    }
+  },
+  "sequences": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "routers": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}

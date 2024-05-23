@@ -1265,7 +1265,6 @@
             "DCMotor": {
               "parameters": [
                 {
-                  "value": 0.0,
                   "controlMode": 2,
                   "reference": {
                     "value": "/customVariables/horloge/variables/speed/speed",
@@ -29995,12 +29994,6 @@
             {
               "parameters": [
                 {
-                  "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                  ],
                   "alwaysNotify": true,
                   "controlAddress": "/lampColor",
                   "feedbackOnly": false,
@@ -37140,7 +37133,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 154.4200134277344,
+                        "value": 165.02001953125,
                         "controlAddress": "/time"
                       },
                       {
