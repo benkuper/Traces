@@ -1265,6 +1265,7 @@
             "DCMotor": {
               "parameters": [
                 {
+                  "value": 0.0,
                   "controlMode": 2,
                   "reference": {
                     "value": "/customVariables/horloge/variables/speed/speed",
@@ -3717,7 +3718,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4236,7 +4237,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4853,7 +4854,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5125,7 +5126,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5528,7 +5529,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5635,7 +5636,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -6034,7 +6035,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -27044,7 +27045,7 @@
                 "sequence": {
                   "parameters": [
                     {
-                      "value": 403.98,
+                      "value": 399.5,
                       "controlAddress": "/currentTime"
                     }
                   ],
@@ -27507,7 +27508,7 @@
               "controlAddress": "/onlySyncFromSameName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -29759,7 +29760,7 @@
             {
               "parameters": [
                 {
-                  "value": 403.98,
+                  "value": 399.5,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -29994,6 +29995,12 @@
             {
               "parameters": [
                 {
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
                   "alwaysNotify": true,
                   "controlAddress": "/lampColor",
                   "feedbackOnly": false,
@@ -31461,7 +31468,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -31665,7 +31672,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 403.98,
+                          "value": 399.5,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -37133,7 +37140,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 165.02001953125,
+                        "value": 154.4200134277344,
                         "controlAddress": "/time"
                       },
                       {
