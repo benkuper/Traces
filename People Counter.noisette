@@ -36,14 +36,6 @@
   "dashboardManager": {
     "parameters": [
       {
-        "value": true,
-        "controlAddress": "/editMode"
-      },
-      {
-        "value": true,
-        "controlAddress": "/snapping"
-      },
-      {
         "value": [
           1,
           1,
@@ -218,15 +210,7 @@
                 },
                 {
                   "value": true,
-                  "controlAddress": "/opaqueBackground"
-                },
-                {
-                  "value": true,
                   "controlAddress": "/readOnly"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/showValue"
                 },
                 {
                   "value": "Horizontal Slider",
@@ -1180,7 +1164,7 @@
             {
               "parameters": [
                 {
-                  "value": 24,
+                  "value": 0,
                   "hexMode": false,
                   "controlAddress": "/totalPARJOUR",
                   "feedbackOnly": false,
@@ -1223,10 +1207,6 @@
       {
         "parameters": [
           {
-            "value": true,
-            "controlAddress": "/enabled"
-          },
-          {
             "value": [
               -235.0,
               -103.0
@@ -1252,7 +1232,7 @@
             {
               "parameters": [
                 {
-                  "value": 136.0,
+                  "value": 24.0,
                   "controlAddress": "/listSize"
                 },
                 {
@@ -1267,33 +1247,34 @@
                 }
               ],
               "niceName": "Multiplex",
+              "editorIsCollapsed": true,
               "containers": {
                 "lists": {
                   "items": [
                     {
                       "parameters": [
                         {
-                          "value": 10,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/#1"
                         },
                         {
-                          "value": 3,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/#2"
                         },
                         {
-                          "value": 3,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/#3"
                         },
                         {
-                          "value": 5,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/#4"
                         },
                         {
-                          "value": 3,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/#5"
                         }
@@ -1371,11 +1352,6 @@
                                 {
                                   "value": "Add",
                                   "controlAddress": "/operator"
-                                },
-                                {
-                                  "value": 1,
-                                  "hexMode": false,
-                                  "controlAddress": "/value"
                                 }
                               ],
                               "paramLinks": {
@@ -1441,11 +1417,6 @@
                                 {
                                   "value": "Subtract",
                                   "controlAddress": "/operator"
-                                },
-                                {
-                                  "value": 1,
-                                  "hexMode": false,
-                                  "controlAddress": "/value"
                                 }
                               ],
                               "paramLinks": {
@@ -1501,7 +1472,7 @@
                             "command": {
                               "parameters": [
                                 {
-                                  "value": "/states/state/processors/multiplex/lists/integerList",
+                                  "value": "/states/counter/processors/multiplex/lists/integerList",
                                   "controlAddress": "/target"
                                 },
                                 {
