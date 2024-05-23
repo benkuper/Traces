@@ -514,12 +514,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -673,12 +667,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -819,12 +807,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -972,12 +954,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1125,12 +1101,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1278,12 +1248,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1855,12 +1819,6 @@
             "viewZoom": 1.0
           },
           "effects": {
-            "parameters": [
-              {
-                "value": 1.0,
-                "controlAddress": "/weight"
-              }
-            ],
             "viewOffset": [
               0,
               0
@@ -1909,11 +1867,11 @@
             "controlAddress": "/totalTime"
           },
           {
-            "value": 441.6141967773438,
+            "value": 0.0,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 515.4747924804688,
+            "value": 587.8480834960938,
             "controlAddress": "/viewEndTime"
           }
         ],
@@ -2650,10 +2608,6 @@
             },
             {
               "parameters": [
-                {
-                  "value": true,
-                  "controlAddress": "/enabled"
-                },
                 {
                   "value": 60.0,
                   "controlAddress": "/listSize"
