@@ -536,11 +536,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 110.1559448242188,
+                "value": 0.0,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 749.7984008789062,
+                "value": 1800.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -552,7 +552,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -582,7 +582,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 742.2799682617188,
+                              "value": 1787.139892578125,
                               "controlAddress": "/length"
                             }
                           ],
@@ -1028,20 +1028,20 @@
                         {
                           "parameters": [
                             {
-                              "value": 475.9400024414062,
+                              "value": 466.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 42.20000076293945,
+                              "value": 48.47999954223633,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 2.392289400100708,
+                              "value": 6.68237829208374,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
                             {
-                              "value": 1.688675880432129,
+                              "value": 4.528480052947998,
                               "controlAddress": "/fadeOut",
                               "enabled": true
                             }
@@ -1161,6 +1161,10 @@
                 },
                 {
                   "parameters": [
+                    {
+                      "value": true,
+                      "controlAddress": "/enabled"
+                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -2238,6 +2242,10 @@
                 {
                   "parameters": [
                     {
+                      "value": true,
+                      "controlAddress": "/enabled"
+                    },
+                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
                     },
@@ -2273,7 +2281,7 @@
                           "controlAddress": "/enabled"
                         },
                         {
-                          "value": 805,
+                          "value": 795,
                           "hexMode": false,
                           "controlAddress": "/x"
                         },
@@ -2283,7 +2291,7 @@
                           "controlAddress": "/y"
                         },
                         {
-                          "value": 142,
+                          "value": 151,
                           "hexMode": false,
                           "controlAddress": "/width"
                         },
@@ -3329,6 +3337,10 @@
                 },
                 {
                   "parameters": [
+                    {
+                      "value": true,
+                      "controlAddress": "/enabled"
+                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -4416,6 +4428,10 @@
                 },
                 {
                   "parameters": [
+                    {
+                      "value": true,
+                      "controlAddress": "/enabled"
+                    },
                     {
                       "value": 60.0,
                       "controlAddress": "/listSize"
@@ -5703,7 +5719,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 511.4599914550781,
+                              "value": 510.4800109863281,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -5711,7 +5727,7 @@
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 2.999999523162842,
+                              "value": 11.77669143676758,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
@@ -7188,15 +7204,7 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": false,
-                "controlAddress": "/autoSnap"
-              },
-              {
-                "value": 112.9969787597656,
-                "controlAddress": "/viewStartTime"
-              },
-              {
-                "value": 713.206298828125,
+                "value": 1800.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -7208,7 +7216,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -7239,7 +7247,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 701.7999877929688,
+                              "value": 1728.419921875,
                               "controlAddress": "/length"
                             }
                           ],
@@ -7359,10 +7367,6 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
-                      "controlAddress": "/enabled"
-                    },
-                    {
                       "value": 60.0,
                       "controlAddress": "/listSize"
                     },
@@ -7411,7 +7415,7 @@
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 9.57997989654541,
+                              "value": 7.799980163574219,
                               "controlAddress": "/length"
                             },
                             {
@@ -7420,7 +7424,7 @@
                               "enabled": true
                             },
                             {
-                              "value": 3.486134052276611,
+                              "value": 3.730425357818604,
                               "controlAddress": "/fadeOut",
                               "enabled": true
                             }
@@ -7550,11 +7554,6 @@
                       "controlAddress": "/listSize"
                     },
                     {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
-                    },
-                    {
                       "value": [
                         0.9882352948188782,
                         0.9882352948188782,
@@ -7604,16 +7603,16 @@
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 9.879997253417969,
+                              "value": 7.699997425079346,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 2.400000095367432,
+                              "value": 1.897100806236267,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
                             {
-                              "value": 3.187326192855835,
+                              "value": 3.571013450622559,
                               "controlAddress": "/fadeOut",
                               "enabled": true
                             }
@@ -7778,15 +7777,15 @@
                         {
                           "parameters": [
                             {
-                              "value": 511.4599304199219,
+                              "value": 510.4799194335938,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 105.3200149536133,
+                              "value": 106.3000259399414,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 2.399999856948853,
+                              "value": 5.670534610748291,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
@@ -7941,7 +7940,7 @@
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 67.82000732421875,
+                              "value": 68.04100799560547,
                               "controlAddress": "/length"
                             },
                             {
@@ -8060,15 +8059,15 @@
                         {
                           "parameters": [
                             {
-                              "value": 475.9399719238281,
+                              "value": 466.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 42.19998168945312,
+                              "value": 53.0,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 4.536335468292236,
+                              "value": 8.008489608764648,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
@@ -8382,7 +8381,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -8407,7 +8406,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 710.0400390625,
+                              "value": 1789.56005859375,
                               "controlAddress": "/length"
                             }
                           ],
@@ -9053,11 +9052,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 394.6517639160156,
+                "value": 0.0,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 448.6516723632812,
+                "value": 1800.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -9069,7 +9068,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -9095,7 +9094,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 659.3800048828125,
+                              "value": 1835.43994140625,
                               "controlAddress": "/length"
                             }
                           ],
@@ -9201,326 +9200,6 @@
                             }
                           },
                           "type": "Picture"
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  "type": "Media"
-                },
-                {
-                  "parameters": [
-                    {
-                      "value": 60.0,
-                      "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": [
-                        0.0,
-                        0.0,
-                        0.0,
-                        1.0
-                      ],
-                      "controlAddress": "/backgroundColor"
-                    },
-                    {
-                      "value": "Lighten",
-                      "controlAddress": "/blendFunction"
-                    }
-                  ],
-                  "niceName": "Media",
-                  "containers": {
-                    "positionning": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/enabled"
-                        },
-                        {
-                          "value": 80,
-                          "hexMode": false,
-                          "controlAddress": "/x"
-                        },
-                        {
-                          "value": -225,
-                          "hexMode": false,
-                          "controlAddress": "/y"
-                        },
-                        {
-                          "value": 1593,
-                          "hexMode": false,
-                          "controlAddress": "/width"
-                        },
-                        {
-                          "value": 1366,
-                          "hexMode": false,
-                          "controlAddress": "/height"
-                        }
-                      ]
-                    },
-                    "blocks": {
-                      "hideInEditor": true,
-                      "hideInRemoteControl": true,
-                      "items": [
-                        {
-                          "parameters": [
-                            {
-                              "value": 401.8999938964844,
-                              "controlAddress": "/startTime"
-                            },
-                            {
-                              "value": 9.679998397827148,
-                              "controlAddress": "/length"
-                            },
-                            {
-                              "value": 6.125946044921875,
-                              "controlAddress": "/fadeIn",
-                              "enabled": true
-                            },
-                            {
-                              "value": 5.579986572265625,
-                              "controlAddress": "/fadeOut",
-                              "enabled": false
-                            }
-                          ],
-                          "niceName": "Paysage 1",
-                          "editorIsCollapsed": true,
-                          "containers": {
-                            "fadeCurve": {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/length"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/viewValueRange"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/range",
-                                  "enabled": true
-                                }
-                              ],
-                              "hideInRemoteControl": false,
-                              "items": [
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key",
-                                  "containers": {
-                                    "easing": {
-                                      "parameters": [
-                                        {
-                                          "value": [
-                                            0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor1"
-                                        },
-                                        {
-                                          "value": [
-                                            -0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor2"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "type": "Key"
-                                },
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/position"
-                                    },
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/value"
-                                    },
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key 1",
-                                  "containers": {
-                                    "easing": {
-                                    }
-                                  },
-                                  "type": "Key"
-                                }
-                              ],
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            },
-                            "video": {
-                              "parameters": [
-                                {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Derriere.mp4",
-                                  "controlAddress": "/filePath"
-                                },
-                                {
-                                  "value": true,
-                                  "controlAddress": "/loop"
-                                }
-                              ],
-                              "niceName": "Video",
-                              "containers": {
-                                "mediaParameters": {
-                                }
-                              },
-                              "type": "Video"
-                            }
-                          },
-                          "type": "Video"
-                        },
-                        {
-                          "parameters": [
-                            {
-                              "value": 406.0,
-                              "controlAddress": "/startTime"
-                            },
-                            {
-                              "value": 96.19999694824219,
-                              "controlAddress": "/length"
-                            },
-                            {
-                              "value": 5.579986572265625,
-                              "controlAddress": "/fadeIn",
-                              "enabled": false
-                            },
-                            {
-                              "value": 14.19999980926514,
-                              "controlAddress": "/fadeOut",
-                              "enabled": true
-                            }
-                          ],
-                          "niceName": "Paysage",
-                          "editorIsCollapsed": true,
-                          "containers": {
-                            "fadeCurve": {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/length"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/viewValueRange"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/range",
-                                  "enabled": true
-                                }
-                              ],
-                              "hideInRemoteControl": false,
-                              "items": [
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key",
-                                  "containers": {
-                                    "easing": {
-                                      "parameters": [
-                                        {
-                                          "value": [
-                                            0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor1"
-                                        },
-                                        {
-                                          "value": [
-                                            -0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor2"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "type": "Key"
-                                },
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/position"
-                                    },
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/value"
-                                    },
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key 1",
-                                  "containers": {
-                                    "easing": {
-                                    }
-                                  },
-                                  "type": "Key"
-                                }
-                              ],
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            },
-                            "video": {
-                              "parameters": [
-                                {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Derriere.mp4",
-                                  "controlAddress": "/filePath"
-                                },
-                                {
-                                  "value": true,
-                                  "controlAddress": "/loop"
-                                }
-                              ],
-                              "niceName": "Video",
-                              "containers": {
-                                "mediaParameters": {
-                                }
-                              },
-                              "type": "Video"
-                            }
-                          },
-                          "type": "Video"
                         }
                       ],
                       "viewOffset": [
@@ -9690,6 +9369,322 @@
                                 {
                                   "value": "Videos/Ruine et deuil_landscape_02.mp4",
                                   "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                },
+                {
+                  "parameters": [
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    },
+                    {
+                      "value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "controlAddress": "/backgroundColor"
+                    },
+                    {
+                      "value": "Lighten",
+                      "controlAddress": "/blendFunction"
+                    }
+                  ],
+                  "niceName": "Media",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/enabled"
+                        },
+                        {
+                          "value": 24,
+                          "hexMode": false,
+                          "controlAddress": "/x"
+                        },
+                        {
+                          "value": -225,
+                          "hexMode": false,
+                          "controlAddress": "/y"
+                        },
+                        {
+                          "value": 1923,
+                          "hexMode": false,
+                          "controlAddress": "/width"
+                        },
+                        {
+                          "value": 1366,
+                          "hexMode": false,
+                          "controlAddress": "/height"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "hideInRemoteControl": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 401.8999938964844,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 19.05999755859375,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": 6.125946044921875,
+                              "controlAddress": "/fadeIn",
+                              "enabled": true
+                            },
+                            {
+                              "value": 5.819976806640625,
+                              "controlAddress": "/fadeOut",
+                              "enabled": false
+                            }
+                          ],
+                          "niceName": "Paysage 1",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Derriere.mp4",
+                                  "controlAddress": "/filePath"
+                                },
+                                {
+                                  "value": true,
+                                  "controlAddress": "/loop"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        },
+                        {
+                          "parameters": [
+                            {
+                              "value": 415.1400146484375,
+                              "controlAddress": "/startTime"
+                            },
+                            {
+                              "value": 104.8000030517578,
+                              "controlAddress": "/length"
+                            },
+                            {
+                              "value": 5.819976806640625,
+                              "controlAddress": "/fadeIn",
+                              "enabled": false
+                            },
+                            {
+                              "value": 3.073741912841797,
+                              "controlAddress": "/fadeOut",
+                              "enabled": true
+                            }
+                          ],
+                          "niceName": "Paysage",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Derriere.mp4",
+                                  "controlAddress": "/filePath"
                                 },
                                 {
                                   "value": true,
@@ -9730,6 +9725,10 @@
                         1.0
                       ],
                       "controlAddress": "/backgroundColor"
+                    },
+                    {
+                      "value": "Addition",
+                      "controlAddress": "/blendFunction"
                     }
                   ],
                   "niceName": "Media 2",
@@ -9772,7 +9771,7 @@
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 74.78004455566406,
+                              "value": 71.10004425048828,
                               "controlAddress": "/length"
                             },
                             {
@@ -10104,6 +10103,20 @@
                   ],
                   "niceName": "Cue",
                   "type": "BaseItem"
+                },
+                {
+                  "parameters": [
+                    {
+                      "value": 517.0599975585938,
+                      "controlAddress": "/time"
+                    },
+                    {
+                      "value": "",
+                      "controlAddress": "/loopJumpCue"
+                    }
+                  ],
+                  "niceName": "Cue 1",
+                  "type": "BaseItem"
                 }
               ],
               "viewOffset": [
@@ -10140,11 +10153,7 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 401.260009765625,
-                "controlAddress": "/viewStartTime"
-              },
-              {
-                "value": 412.7200012207031,
+                "value": 768.0252075195312,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -10501,7 +10510,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -10822,7 +10831,7 @@
         "type": "Sequence"
       },
       {
-        "niceName": "Perf Cour",
+        "niceName": "Perf Xiaomi",
         "containers": {
           "mediaParameters": {
           },
@@ -10837,7 +10846,7 @@
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 1150.102783203125,
+                "value": 1800.0,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -10849,7 +10858,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -10874,7 +10883,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 629.3999633789062,
+                              "value": 1697.080078125,
                               "controlAddress": "/length"
                             }
                           ],
@@ -10995,149 +11004,6 @@
                 {
                   "parameters": [
                     {
-                      "value": 60.0,
-                      "controlAddress": "/listSize"
-                    },
-                    {
-                      "value": 60,
-                      "hexMode": false,
-                      "controlAddress": "/uiHeight"
-                    }
-                  ],
-                  "niceName": "Media 1",
-                  "containers": {
-                    "positionning": {
-                      "parameters": [
-                        {
-                          "value": false,
-                          "controlAddress": "/enabled"
-                        }
-                      ]
-                    },
-                    "blocks": {
-                      "hideInEditor": true,
-                      "items": [
-                        {
-                          "parameters": [
-                            {
-                              "value": 0.0,
-                              "controlAddress": "/startTime"
-                            },
-                            {
-                              "value": 621.219970703125,
-                              "controlAddress": "/length"
-                            }
-                          ],
-                          "niceName": "Picture",
-                          "editorIsCollapsed": true,
-                          "containers": {
-                            "fadeCurve": {
-                              "parameters": [
-                                {
-                                  "value": 1.0,
-                                  "controlAddress": "/length"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/viewValueRange"
-                                },
-                                {
-                                  "value": [
-                                    0.0,
-                                    1.0
-                                  ],
-                                  "controlAddress": "/range",
-                                  "enabled": true
-                                }
-                              ],
-                              "hideInRemoteControl": false,
-                              "items": [
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key",
-                                  "containers": {
-                                    "easing": {
-                                      "parameters": [
-                                        {
-                                          "value": [
-                                            0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor1"
-                                        },
-                                        {
-                                          "value": [
-                                            -0.300000011920929,
-                                            0.0
-                                          ],
-                                          "controlAddress": "/anchor2"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "type": "Key"
-                                },
-                                {
-                                  "parameters": [
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/position"
-                                    },
-                                    {
-                                      "value": 1.0,
-                                      "controlAddress": "/value"
-                                    },
-                                    {
-                                      "value": "Bezier",
-                                      "controlAddress": "/easingType"
-                                    }
-                                  ],
-                                  "niceName": "Key 1",
-                                  "containers": {
-                                    "easing": {
-                                    }
-                                  },
-                                  "type": "Key"
-                                }
-                              ],
-                              "viewOffset": [
-                                0,
-                                0
-                              ],
-                              "viewZoom": 1.0
-                            },
-                            "picture": {
-                              "niceName": "Picture",
-                              "containers": {
-                                "mediaParameters": {
-                                }
-                              },
-                              "type": "Picture"
-                            }
-                          },
-                          "type": "Picture"
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  "type": "Media"
-                },
-                {
-                  "parameters": [
-                    {
                       "value": 92.0,
                       "controlAddress": "/listSize"
                     },
@@ -11167,7 +11033,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 511.4599990844727,
+                              "value": 510.4800109863281,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -11175,7 +11041,7 @@
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 5.699998378753662,
+                              "value": 7.860000610351562,
                               "controlAddress": "/fadeIn",
                               "enabled": true
                             },
@@ -11446,20 +11312,20 @@
                         {
                           "parameters": [
                             {
-                              "value": 475.939998626709,
+                              "value": 466.0,
                               "controlAddress": "/startTime"
                             },
                             {
-                              "value": 42.20000076293945,
+                              "value": 53.58000183105469,
                               "controlAddress": "/length"
                             },
                             {
-                              "value": 0.0,
+                              "value": 9.30000114440918,
                               "controlAddress": "/fadeIn",
-                              "enabled": false
+                              "enabled": true
                             },
                             {
-                              "value": 2.299999952316284,
+                              "value": 5.241757869720459,
                               "controlAddress": "/fadeOut",
                               "enabled": true
                             }
@@ -11800,7 +11666,7 @@
                 {
                   "parameters": [
                     {
-                      "value": false,
+                      "value": true,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -11809,6 +11675,7 @@
                     }
                   ],
                   "niceName": "Debug",
+                  "editorIsCollapsed": true,
                   "containers": {
                     "positionning": {
                       "parameters": [
@@ -11964,7 +11831,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 511.4599914550781,
+                              "value": 510.4799995422363,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -12127,6 +11994,34 @@
           }
         },
         "type": "Solid Color"
+      },
+      {
+        "niceName": "Sequence",
+        "containers": {
+          "mediaParameters": {
+          },
+          "sequence": {
+            "niceName": "Sequence",
+            "type": "Sequence",
+            "layers": {
+              "hideInEditor": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "cues": {
+              "hideInEditor": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            }
+          }
+        },
+        "type": "Sequence"
       }
     ],
     "viewOffset": [
@@ -12134,7 +12029,7 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/perfCour"
+    "editingSequenceMedia": "/media/perfXiaomi"
   },
   "screen": {
     "hideInRemoteControl": true,
@@ -12146,7 +12041,7 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 5,
+            "value": 3,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -12249,7 +12144,7 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 2,
+            "value": 1,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -12358,6 +12253,11 @@
           {
             "value": true,
             "controlAddress": "/enabled"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/screenNumber"
           }
         ],
         "niceName": "3-Fond De sc\u00e8ne",
@@ -12376,115 +12276,44 @@
               {
                 "parameters": [
                   {
-                    "value": "/perfFurniture",
-                    "controlAddress": "/media"
-                  }
-                ],
-                "niceName": "Papier Mask",
-                "containers": {
-                  "positionning": {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.1198929473757744,
-                          0.6107566952705383
-                        ],
-                        "controlAddress": "/topLeft"
-                      },
-                      {
-                        "value": [
-                          0.3462363183498383,
-                          0.631162703037262
-                        ],
-                        "controlAddress": "/topRight"
-                      },
-                      {
-                        "value": [
-                          0.1172322556376457,
-                          -0.004098072648048401
-                        ],
-                        "controlAddress": "/bottomLeft"
-                      },
-                      {
-                        "value": [
-                          0.3441928625106812,
-                          0.179687112569809
-                        ],
-                        "controlAddress": "/bottomRight"
-                      }
-                    ],
-                    "editorIsCollapsed": true,
-                    "containers": {
-                      "bezier": {
-                        "editorIsCollapsed": true
-                      }
-                    }
+                    "value": true,
+                    "controlAddress": "/enabled"
                   },
-                  "adjustments": {
-                    "parameters": [
-                      {
-                        "value": 1.0,
-                        "controlAddress": "/cropTop"
-                      },
-                      {
-                        "value": 1.0,
-                        "controlAddress": "/cropRight"
-                      },
-                      {
-                        "value": "",
-                        "controlAddress": "/mask"
-                      }
-                    ],
-                    "editorIsCollapsed": true
-                  },
-                  "aspectRatio": {
-                  },
-                  "pins": {
-                    "viewOffset": [
-                      0,
-                      0
-                    ],
-                    "viewZoom": 1.0
-                  }
-                },
-                "type": "Surface"
-              },
-              {
-                "parameters": [
                   {
                     "value": "/perfFurniture",
                     "controlAddress": "/media"
                   }
                 ],
                 "niceName": "Furniture Back",
+                "editorIsCollapsed": true,
                 "containers": {
                   "positionning": {
                     "parameters": [
                       {
                         "value": [
-                          0.310146301984787,
+                          0.2924382388591766,
                           0.6264023780822754
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.3337879478931427,
-                          0.6306689977645874
+                          0.3332671225070953,
+                          0.6288172006607056
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.2915804982185364,
-                          0.4929538369178772
+                          0.2905388474464417,
+                          0.4911019802093506
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.3316363394260406,
-                          0.504447340965271
+                          0.3311155140399933,
+                          0.5072250366210938
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -12585,6 +12414,90 @@
               },
               {
                 "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": "/perfFurniture",
+                    "controlAddress": "/media"
+                  }
+                ],
+                "niceName": "Papier Mask",
+                "containers": {
+                  "positionning": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1198929473757744,
+                          0.6107566952705383
+                        ],
+                        "controlAddress": "/topLeft"
+                      },
+                      {
+                        "value": [
+                          0.3462363183498383,
+                          0.631162703037262
+                        ],
+                        "controlAddress": "/topRight"
+                      },
+                      {
+                        "value": [
+                          0.1172322556376457,
+                          -0.004098072648048401
+                        ],
+                        "controlAddress": "/bottomLeft"
+                      },
+                      {
+                        "value": [
+                          0.3441928625106812,
+                          0.179687112569809
+                        ],
+                        "controlAddress": "/bottomRight"
+                      }
+                    ],
+                    "editorIsCollapsed": true,
+                    "containers": {
+                      "bezier": {
+                        "editorIsCollapsed": true
+                      }
+                    }
+                  },
+                  "adjustments": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/cropTop"
+                      },
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/cropRight"
+                      },
+                      {
+                        "value": "",
+                        "controlAddress": "/mask"
+                      }
+                    ],
+                    "editorIsCollapsed": true
+                  },
+                  "aspectRatio": {
+                  },
+                  "pins": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Surface"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
                   {
                     "value": "/black",
                     "controlAddress": "/media"
@@ -12712,6 +12625,10 @@
               {
                 "parameters": [
                   {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
                     "value": "/black",
                     "controlAddress": "/media"
                   }
@@ -12780,6 +12697,10 @@
               {
                 "parameters": [
                   {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
                     "value": "/perfJar",
                     "controlAddress": "/media"
                   }
@@ -12790,8 +12711,8 @@
                     "parameters": [
                       {
                         "value": [
-                          0.1725699156522751,
-                          0.9983869194984436
+                          0.171528235077858,
+                          0.9974610209465027
                         ],
                         "controlAddress": "/topLeft"
                       },
@@ -12804,15 +12725,15 @@
                       },
                       {
                         "value": [
-                          0.1534637659788132,
-                          0.08276655524969101
+                          0.1414844393730164,
+                          0.07813691347837448
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.3598329722881317,
-                          0.2166272550821304
+                          0.3593121469020844,
+                          0.2629236578941345
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -13083,7 +13004,7 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 6,
+            "value": 5,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           },
@@ -13108,6 +13029,10 @@
               {
                 "parameters": [
                   {
+                    "value": true,
+                    "controlAddress": "/locked"
+                  },
+                  {
                     "value": "/perfFurniture",
                     "controlAddress": "/media"
                   }
@@ -13118,8 +13043,8 @@
                     "parameters": [
                       {
                         "value": [
-                          0.6256777048110962,
-                          0.1540218740701675
+                          0.6314067840576172,
+                          0.1530959457159042
                         ],
                         "controlAddress": "/topLeft"
                       },
@@ -13132,7 +13057,7 @@
                       },
                       {
                         "value": [
-                          0.6254438161849976,
+                          0.6306520700454712,
                           -0.02914466150105
                         ],
                         "controlAddress": "/bottomLeft"
@@ -13148,6 +13073,64 @@
                     "editorIsCollapsed": true,
                     "containers": {
                       "bezier": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              1.0
+                            ],
+                            "controlAddress": "/handleTopLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              1.0
+                            ],
+                            "controlAddress": "/handleTopRight"
+                          },
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              0.0
+                            ],
+                            "controlAddress": "/handleBottomLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              0.0
+                            ],
+                            "controlAddress": "/handleBottomRight"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.6666666865348816
+                            ],
+                            "controlAddress": "/handleLeftTop"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.3333333432674408
+                            ],
+                            "controlAddress": "/handleLeftBottom"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.6666666865348816
+                            ],
+                            "controlAddress": "/handleRightTop"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.3333333432674408
+                            ],
+                            "controlAddress": "/handleRightBottom"
+                          }
+                        ],
                         "editorIsCollapsed": true
                       }
                     }
@@ -13155,92 +13138,36 @@
                   "adjustments": {
                     "parameters": [
                       {
-                        "value": 1.0,
-                        "controlAddress": "/cropTop"
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeTop"
                       },
                       {
-                        "value": 1.0,
-                        "controlAddress": "/cropRight"
-                      },
-                      {
-                        "value": "",
-                        "controlAddress": "/mask"
-                      }
-                    ],
-                    "editorIsCollapsed": true
-                  },
-                  "aspectRatio": {
-                  },
-                  "pins": {
-                    "viewOffset": [
-                      0,
-                      0
-                    ],
-                    "viewZoom": 1.0
-                  }
-                },
-                "type": "Surface"
-              },
-              {
-                "parameters": [
-                  {
-                    "value": "/perfFurniture",
-                    "controlAddress": "/media"
-                  }
-                ],
-                "niceName": "Funr Mask 1",
-                "containers": {
-                  "positionning": {
-                    "parameters": [
-                      {
-                        "value": [
-                          0.6497029662132263,
-                          0.4961709678173065
-                        ],
-                        "controlAddress": "/topLeft"
-                      },
-                      {
-                        "value": [
-                          0.9995079040527344,
-                          0.4439122974872589
-                        ],
-                        "controlAddress": "/topRight"
-                      },
-                      {
-                        "value": [
-                          0.648962676525116,
-                          -0.08604183793067932
-                        ],
-                        "controlAddress": "/bottomLeft"
-                      },
-                      {
-                        "value": [
-                          0.9995863437652588,
-                          -0.08490707725286484
-                        ],
-                        "controlAddress": "/bottomRight"
-                      }
-                    ],
-                    "editorIsCollapsed": true,
-                    "containers": {
-                      "bezier": {
-                        "editorIsCollapsed": true
-                      }
-                    }
-                  },
-                  "adjustments": {
-                    "parameters": [
-                      {
-                        "value": 0.336760938167572,
+                        "value": 0.0,
                         "controlAddress": "/softEdgeRight"
                       },
                       {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeBottom"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeLeft"
+                      },
+                      {
                         "value": 1.0,
                         "controlAddress": "/cropTop"
                       },
                       {
                         "value": 1.0,
                         "controlAddress": "/cropRight"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/cropBottom"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/cropLeft"
                       },
                       {
                         "value": "",
@@ -13265,6 +13192,176 @@
                 "parameters": [
                   {
                     "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/locked"
+                  },
+                  {
+                    "value": "/perfFurniture",
+                    "controlAddress": "/media"
+                  }
+                ],
+                "niceName": "Funr Mask 1",
+                "containers": {
+                  "positionning": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.6538695693016052,
+                          0.5026524066925049
+                        ],
+                        "controlAddress": "/topLeft"
+                      },
+                      {
+                        "value": [
+                          0.9995079040527344,
+                          0.4485419392585754
+                        ],
+                        "controlAddress": "/topRight"
+                      },
+                      {
+                        "value": [
+                          0.6562542319297791,
+                          -0.08604183793067932
+                        ],
+                        "controlAddress": "/bottomLeft"
+                      },
+                      {
+                        "value": [
+                          0.9995863437652588,
+                          -0.08490707725286484
+                        ],
+                        "controlAddress": "/bottomRight"
+                      }
+                    ],
+                    "editorIsCollapsed": true,
+                    "containers": {
+                      "bezier": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              1.0
+                            ],
+                            "controlAddress": "/handleTopLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              1.0
+                            ],
+                            "controlAddress": "/handleTopRight"
+                          },
+                          {
+                            "value": [
+                              0.3333333432674408,
+                              0.0
+                            ],
+                            "controlAddress": "/handleBottomLeft"
+                          },
+                          {
+                            "value": [
+                              0.6666666865348816,
+                              0.0
+                            ],
+                            "controlAddress": "/handleBottomRight"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.6666666865348816
+                            ],
+                            "controlAddress": "/handleLeftTop"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.3333333432674408
+                            ],
+                            "controlAddress": "/handleLeftBottom"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.6666666865348816
+                            ],
+                            "controlAddress": "/handleRightTop"
+                          },
+                          {
+                            "value": [
+                              1.0,
+                              0.3333333432674408
+                            ],
+                            "controlAddress": "/handleRightBottom"
+                          }
+                        ],
+                        "editorIsCollapsed": true
+                      }
+                    }
+                  },
+                  "adjustments": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeTop"
+                      },
+                      {
+                        "value": 0.336760938167572,
+                        "controlAddress": "/softEdgeRight"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeBottom"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeLeft"
+                      },
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/cropTop"
+                      },
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/cropRight"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/cropBottom"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/cropLeft"
+                      },
+                      {
+                        "value": "",
+                        "controlAddress": "/mask"
+                      }
+                    ],
+                    "editorIsCollapsed": true
+                  },
+                  "aspectRatio": {
+                  },
+                  "pins": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Surface"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": false,
                     "controlAddress": "/locked"
                   },
                   {
@@ -13278,29 +13375,29 @@
                     "parameters": [
                       {
                         "value": [
-                          0.6467776298522949,
-                          0.5019802451133728
+                          0.6523938179016113,
+                          0.5049515962600708
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          1.000936031341553,
-                          0.4439881443977356
+                          1.008635520935059,
+                          0.4432557821273804
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.6468995213508606,
-                          0.3398835957050323
+                          0.6519948840141296,
+                          0.3410030901432037
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          1.003942131996155,
-                          0.2253707349300385
+                          1.009558320045471,
+                          0.2301939427852631
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -13311,57 +13408,57 @@
                         "parameters": [
                           {
                             "value": [
-                              0.3339864611625671,
-                              1.006962299346924
+                              0.3401235044002533,
+                              1.009007692337036
                             ],
                             "controlAddress": "/handleTopLeft"
                           },
                           {
                             "value": [
-                              0.6673198342323303,
-                              1.006962299346924
+                              0.6734568476676941,
+                              1.009007692337036
                             ],
                             "controlAddress": "/handleTopRight"
                           },
                           {
                             "value": [
-                              0.3339864611625671,
-                              0.006962323561310768
+                              0.3401235044002533,
+                              0.009007752873003483
                             ],
                             "controlAddress": "/handleBottomLeft"
                           },
                           {
                             "value": [
-                              0.6673198342323303,
-                              0.006962323561310768
+                              0.6734568476676941,
+                              0.009007752873003483
                             ],
                             "controlAddress": "/handleBottomRight"
                           },
                           {
                             "value": [
-                              0.0006531211547553539,
-                              0.6736289858818054
+                              0.006790150888264179,
+                              0.6756744384765625
                             ],
                             "controlAddress": "/handleLeftTop"
                           },
                           {
                             "value": [
-                              0.0006531211547553539,
-                              0.340295672416687
+                              0.006790150888264179,
+                              0.3423410952091217
                             ],
                             "controlAddress": "/handleLeftBottom"
                           },
                           {
                             "value": [
-                              1.000653147697449,
-                              0.6736289858818054
+                              1.006790161132812,
+                              0.6756744384765625
                             ],
                             "controlAddress": "/handleRightTop"
                           },
                           {
                             "value": [
-                              1.000653147697449,
-                              0.340295672416687
+                              1.006790161132812,
+                              0.3423410952091217
                             ],
                             "controlAddress": "/handleRightBottom"
                           }
@@ -13427,6 +13524,10 @@
                 "parameters": [
                   {
                     "value": true,
+                    "controlAddress": "/enabled"
+                  },
+                  {
+                    "value": false,
                     "controlAddress": "/locked"
                   },
                   {
@@ -13440,29 +13541,29 @@
                     "parameters": [
                       {
                         "value": [
-                          0.01943951845169067,
-                          0.8472830057144165
+                          0.02583865262567997,
+                          0.8523356914520264
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.6740541458129883,
-                          0.928659200668335
+                          0.6804532408714294,
+                          0.9337118864059448
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.0274557713419199,
-                          0.1399902403354645
+                          0.03385490551590919,
+                          0.1450429409742355
                         ],
                         "controlAddress": "/bottomLeft"
                       },
                       {
                         "value": [
-                          0.6633239984512329,
-                          -0.05158890038728714
+                          0.6660773158073425,
+                          -0.04653620347380638
                         ],
                         "controlAddress": "/bottomRight"
                       }
@@ -13473,57 +13574,57 @@
                         "parameters": [
                           {
                             "value": [
-                              0.3333333432674408,
-                              1.015810251235962
+                              0.339732438325882,
+                              1.020862936973572
                             ],
                             "controlAddress": "/handleTopLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              1.015810251235962
+                              0.6730657815933228,
+                              1.020862936973572
                             ],
                             "controlAddress": "/handleTopRight"
                           },
                           {
                             "value": [
-                              0.3333333432674408,
-                              0.015810277312994
+                              0.339732438325882,
+                              0.02086297422647476
                             ],
                             "controlAddress": "/handleBottomLeft"
                           },
                           {
                             "value": [
-                              0.6666666865348816,
-                              0.015810277312994
+                              0.6730657815933228,
+                              0.02086297422647476
                             ],
                             "controlAddress": "/handleBottomRight"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.6824769377708435
+                              0.006399134639650583,
+                              0.6875296235084534
                             ],
                             "controlAddress": "/handleLeftTop"
                           },
                           {
                             "value": [
-                              0.0,
-                              0.3491436243057251
+                              0.006399134639650583,
+                              0.354196310043335
                             ],
                             "controlAddress": "/handleLeftBottom"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.6824769377708435
+                              1.006399154663086,
+                              0.6875296235084534
                             ],
                             "controlAddress": "/handleRightTop"
                           },
                           {
                             "value": [
-                              1.0,
-                              0.3491436243057251
+                              1.006399154663086,
+                              0.354196310043335
                             ],
                             "controlAddress": "/handleRightBottom"
                           }
@@ -13588,7 +13689,7 @@
               {
                 "parameters": [
                   {
-                    "value": true,
+                    "value": false,
                     "controlAddress": "/locked"
                   },
                   {
@@ -13602,21 +13703,21 @@
                     "parameters": [
                       {
                         "value": [
-                          0.6740541458129883,
-                          0.928659200668335
+                          0.6797832250595093,
+                          0.9323627948760986
                         ],
                         "controlAddress": "/topLeft"
                       },
                       {
                         "value": [
-                          0.9962636828422546,
-                          0.9793921113014221
+                          0.996784508228302,
+                          0.9867992997169495
                         ],
                         "controlAddress": "/topRight"
                       },
                       {
                         "value": [
-                          0.660494863986969,
+                          0.6615365147590637,
                           -0.06284551322460175
                         ],
                         "controlAddress": "/bottomLeft"
@@ -13764,7 +13865,7 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 4,
+            "value": 6,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -13790,7 +13891,7 @@
               {
                 "parameters": [
                   {
-                    "value": "/perfCour",
+                    "value": "/perfXiaomi",
                     "controlAddress": "/media"
                   }
                 ],
@@ -13837,6 +13938,14 @@
                   "adjustments": {
                     "parameters": [
                       {
+                        "value": 0.08226221054792404,
+                        "controlAddress": "/softEdgeRight"
+                      },
+                      {
+                        "value": 0.04627249389886856,
+                        "controlAddress": "/softEdgeBottom"
+                      },
+                      {
                         "value": "",
                         "controlAddress": "/mask"
                       }
@@ -13872,7 +13981,7 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 3,
+            "value": 4,
             "hexMode": false,
             "controlAddress": "/screenNumber"
           }
@@ -13940,11 +14049,26 @@
                   "adjustments": {
                     "parameters": [
                       {
+                        "value": 0.0771208256483078,
+                        "controlAddress": "/softEdgeTop"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeRight"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/softEdgeLeft"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/cropRight"
+                      },
+                      {
                         "value": "",
                         "controlAddress": "/mask"
                       }
-                    ],
-                    "editorIsCollapsed": true
+                    ]
                   },
                   "aspectRatio": {
                   },
@@ -14051,6 +14175,6 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingScreen": "3_FondDeScne"
+    "editingScreen": "4_Jar"
   }
 }

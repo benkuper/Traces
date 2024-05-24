@@ -1399,12 +1399,6 @@
           "components": {
             "items": [
               {
-                "parameters": [
-                  {
-                    "value": 0.0,
-                    "controlAddress": "/value"
-                  }
-                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1867,10 +1861,6 @@
             "controlAddress": "/totalTime"
           },
           {
-            "value": 0.0,
-            "controlAddress": "/viewStartTime"
-          },
-          {
             "value": 587.8480834960938,
             "controlAddress": "/viewEndTime"
           }
@@ -1896,11 +1886,11 @@
                     {
                       "parameters": [
                         {
-                          "value": 344.7400207519531,
+                          "value": 285.8800354003906,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 281.7799682617188,
+                          "value": 340.6399536132812,
                           "controlAddress": "/length"
                         },
                         {
