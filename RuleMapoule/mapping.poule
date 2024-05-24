@@ -552,7 +552,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -7216,7 +7216,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -8381,7 +8381,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -9068,7 +9068,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -10153,7 +10153,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 768.0252075195312,
+                "value": 35.34026718139648,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 473.7002868652344,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -10178,12 +10182,12 @@
                           "controlAddress": "/enabled"
                         },
                         {
-                          "value": 323,
+                          "value": 319,
                           "hexMode": false,
                           "controlAddress": "/x"
                         },
                         {
-                          "value": -1,
+                          "value": 0,
                           "hexMode": false,
                           "controlAddress": "/y"
                         },
@@ -10358,7 +10362,7 @@
                           "controlAddress": "/y"
                         },
                         {
-                          "value": 324,
+                          "value": 317,
                           "hexMode": false,
                           "controlAddress": "/width"
                         },
@@ -10510,7 +10514,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -10825,7 +10829,8 @@
                 0
               ],
               "viewZoom": 1.0
-            }
+            },
+            "editing": true
           }
         },
         "type": "Sequence"
@@ -10858,7 +10863,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -10867,6 +10872,7 @@
                     }
                   ],
                   "niceName": "Debug",
+                  "editorIsCollapsed": true,
                   "containers": {
                     "positionning": {
                       "parameters": [
@@ -11601,8 +11607,7 @@
                 0
               ],
               "viewZoom": 1.0
-            },
-            "editing": true
+            }
           }
         },
         "type": "Sequence"
@@ -11666,7 +11671,7 @@
                 {
                   "parameters": [
                     {
-                      "value": true,
+                      "value": false,
                       "controlAddress": "/enabled"
                     },
                     {
@@ -12029,7 +12034,7 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/perfXiaomi"
+    "editingSequenceMedia": "/media/perfFurniture"
   },
   "screen": {
     "hideInRemoteControl": true,

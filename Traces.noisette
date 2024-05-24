@@ -581,7 +581,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -932,6 +932,12 @@
               "niceName": "Gpio"
             },
             "servo": {
+              "parameters": [
+                {
+                  "value": 5.0,
+                  "controlAddress": "/position"
+                }
+              ],
               "editorIsCollapsed": true,
               "owned": true,
               "niceName": "Servo"
@@ -1472,6 +1478,7 @@
             "DCMotor": {
               "parameters": [
                 {
+                  "value": 0.0,
                   "controlMode": 2,
                   "reference": {
                     "value": "/customVariables/horloge/variables/speed/speed",
@@ -3867,7 +3874,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -3928,7 +3935,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -4451,7 +4458,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5076,7 +5083,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -5348,7 +5355,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         },
                         {
@@ -5774,7 +5781,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -6016,7 +6023,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         },
                         {
@@ -6427,7 +6434,7 @@
                     "sequence": {
                       "parameters": [
                         {
-                          "value": 1796.32,
+                          "value": 312.42,
                           "controlAddress": "/currentTime"
                         }
                       ],
@@ -28758,7 +28765,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -28805,7 +28812,7 @@
                 "sequence": {
                   "parameters": [
                     {
-                      "value": 1796.32,
+                      "value": 312.42,
                       "controlAddress": "/currentTime"
                     }
                   ],
@@ -29258,7 +29265,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -30987,7 +30994,7 @@
         "params": {
           "parameters": [
             {
-              "value": 2.236649513244629,
+              "value": 2.322899580001831,
               "controlAddress": "/outVolume"
             }
           ],
@@ -31065,7 +31072,7 @@
         "params": {
           "parameters": [
             {
-              "value": 2.236649513244629,
+              "value": 2.322899580001831,
               "controlAddress": "/outVolume"
             }
           ],
@@ -31256,7 +31263,7 @@
             {
               "parameters": [
                 {
-                  "value": 1796.32,
+                  "value": 312.42,
                   "controlAddress": "/playHead",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -31295,7 +31302,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.7455498596821122,
+                  "value": 0.7742998600006104,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -31338,7 +31345,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0,
@@ -31493,9 +31500,9 @@
               "parameters": [
                 {
                   "value": [
-                    0.5307685732841492,
-                    0.4847804009914398,
-                    0.1612705886363983,
+                    0.0,
+                    0.0,
+                    0.0,
                     1.0
                   ],
                   "alwaysNotify": true,
@@ -31760,7 +31767,7 @@
             {
               "parameters": [
                 {
-                  "value": true,
+                  "value": false,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": false,
@@ -32133,9 +32140,9 @@
                             "parameters": [
                               {
                                 "value": [
-                                  0.5307685732841492,
-                                  0.4847804009914398,
-                                  0.1612705886363983,
+                                  0.0,
+                                  0.0,
+                                  0.0,
                                   1.0
                                 ],
                                 "controlAddress": "/#1"
@@ -32145,9 +32152,9 @@
                             "type": "Color",
                             "param": {
                               "value": [
-                                0.5307685732841492,
-                                0.4847804009914398,
-                                0.1612705886363983,
+                                0.0,
+                                0.0,
+                                0.0,
                                 1.0
                               ],
                               "controlAddress": "/states/objects/processors/lampColor/outputs/mappingOutput/command/arguments/#1/#1"
@@ -32931,7 +32938,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1781.12,
+                          "value": 562.54,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -33110,7 +33117,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1781.12,
+                          "value": 562.54,
                           "controlMode": 2,
                           "reference": {
                             "value": "/sequences/main/currentTime",
@@ -35201,7 +35208,7 @@
             "controlAddress": "/viewUIPosition"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
@@ -35777,7 +35784,7 @@
             "controlAddress": "/viewUIPosition"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
@@ -35905,8 +35912,8 @@
       }
     ],
     "viewOffset": [
-      123,
-      -75
+      285,
+      -57
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -35920,8 +35927,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        123,
-        -75
+        285,
+        -57
       ],
       "viewZoom": 1.0
     }
@@ -36105,6 +36112,69 @@
                             "parameters": [
                               {
                                 "value": "/media/sequence/sequence/play",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 5.780002593994141,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.574999988079071,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "reset tuya server",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": 2.0,
+                          "controlAddress": "/stagger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/externalApp/processors/killEdgeAndServer",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/externalApp/processors/launchTubesServer",
                                 "controlAddress": "/target"
                               }
                             ],
@@ -40005,8 +40075,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       },
       {
         "parameters": [
@@ -40054,7 +40123,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 48.43999862670898,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -40535,7 +40604,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       }
     ],
     "viewOffset": [
