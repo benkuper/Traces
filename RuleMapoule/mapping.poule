@@ -536,7 +536,7 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 0.0,
+                "value": 926.16943359375,
                 "controlAddress": "/viewStartTime"
               },
               {
@@ -887,7 +887,8 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Frame Last Sequence_v5.mp4",
+                                  "value": "Videos/Frame Last Sequence_v5.mp4",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -1320,7 +1321,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/frame still (4).png",
+                                  "value": "Image/frame still (4).png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -2416,7 +2418,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/frame still (5).png",
+                                  "value": "Image/frame still (5).png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -3512,7 +3515,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/frame still (2).png",
+                                  "value": "Image/frame still (2).png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -4599,7 +4603,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/frame still (3).png",
+                                  "value": "Image/frame still (3).png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6207,7 +6212,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/frame still (1).png",
+                                  "value": "Image/frame still (1).png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -6781,7 +6787,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Image/Frame_Portrait_2.png",
+                                  "value": "Image/Frame_Portrait_2.png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -7204,7 +7211,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 1800.0,
+                "value": 388.5209350585938,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 421.2937927246094,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -8658,7 +8669,8 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/MEDIA_PUB interperf/TELE interperf V2 avec mix.mp4",
+                                  "value": "Videos/MEDIA_PUB interperf/TELE interperf V2 avec mix.mp4",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -9683,7 +9695,8 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Derriere.mp4",
+                                  "value": "Videos/Paysages Particules/Paysage Derriere.mp4",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -9874,7 +9887,8 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/particules couleur Dalida.mp4",
+                                  "value": "Videos/particules couleur Dalida.mp4",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 },
                                 {
@@ -10042,7 +10056,8 @@
                             "picture": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/TOURNAGE RUE/vlcsnap-2024-05-23-03h07m06s725.png",
+                                  "value": "Videos/TOURNAGE RUE/vlcsnap-2024-05-23-03h07m06s725.png",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -10153,11 +10168,11 @@
                 "controlAddress": "/totalTime"
               },
               {
-                "value": 35.34026718139648,
+                "value": 282.9832458496094,
                 "controlAddress": "/viewStartTime"
               },
               {
-                "value": 473.7002868652344,
+                "value": 613.34326171875,
                 "controlAddress": "/viewEndTime"
               }
             ],
@@ -10829,8 +10844,7 @@
                 0
               ],
               "viewZoom": 1.0
-            },
-            "editing": true
+            }
           }
         },
         "type": "Sequence"
@@ -11425,7 +11439,8 @@
                             "video": {
                               "parameters": [
                                 {
-                                  "value": "D:/Projects/Ultreia/Traces/RuleMapoule/Videos/Paysages Particules/Paysage Cour.mp4",
+                                  "value": "Videos/Paysages Particules/Paysage Cour.mp4",
+                                  "relative": true,
                                   "controlAddress": "/filePath"
                                 }
                               ],
@@ -11836,7 +11851,7 @@
                         {
                           "parameters": [
                             {
-                              "value": 510.4799995422363,
+                              "value": 510.4800109863281,
                               "controlAddress": "/startTime"
                             },
                             {
@@ -12023,7 +12038,8 @@
                 0
               ],
               "viewZoom": 1.0
-            }
+            },
+            "editing": true
           }
         },
         "type": "Sequence"
@@ -12034,7 +12050,7 @@
       0
     ],
     "viewZoom": 1.0,
-    "editingSequenceMedia": "/media/perfFurniture"
+    "editingSequenceMedia": "/media/sequence"
   },
   "screen": {
     "hideInRemoteControl": true,
