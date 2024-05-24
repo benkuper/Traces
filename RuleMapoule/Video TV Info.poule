@@ -1,0 +1,431 @@
+{
+  "metaData": {
+    "version": "1.0.0",
+    "versionNumber": 65536
+  },
+  "projectSettings": {
+    "hideInRemoteControl": true,
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          }
+        ]
+      },
+      "customDefinitions": {
+      },
+      "rmpSettings": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1920,
+      "height": 989,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1920,
+          "height": 989,
+          "direction": 1,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1379,
+              "height": 989,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 343,
+                  "height": 989,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 343,
+                      "height": 387,
+                      "currentContent": "Screens",
+                      "tabs": [
+                        {
+                          "name": "Screens"
+                        },
+                        {
+                          "name": "Outliner"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 343,
+                      "height": 596,
+                      "currentContent": "Medias",
+                      "tabs": [
+                        {
+                          "name": "Medias"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 1,
+                  "width": 1030,
+                  "height": 989,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 1030,
+                      "height": 541,
+                      "currentContent": "Screen Editor",
+                      "tabs": [
+                        {
+                          "name": "Screen Editor"
+                        },
+                        {
+                          "name": "Online Explorer"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 1030,
+                      "height": 442,
+                      "currentContent": "Sequence Editor",
+                      "tabs": [
+                        {
+                          "name": "Sequence Editor"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 535,
+              "height": 989,
+              "direction": 2,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 535,
+                  "height": 713,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 535,
+                  "height": 270,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Logger"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "media": {
+    "items": [
+      {
+        "niceName": "Sequence",
+        "containers": {
+          "mediaParameters": {
+          },
+          "sequence": {
+            "parameters": [
+              {
+                "value": 1800.0,
+                "controlAddress": "/totalTime"
+              },
+              {
+                "value": 4.109100341796875,
+                "controlAddress": "/viewStartTime"
+              },
+              {
+                "value": 1800.0,
+                "controlAddress": "/viewEndTime"
+              }
+            ],
+            "niceName": "Sequence",
+            "type": "Sequence",
+            "layers": {
+              "hideInEditor": true,
+              "items": [
+                {
+                  "parameters": [
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    }
+                  ],
+                  "niceName": "Media",
+                  "containers": {
+                    "positionning": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/enabled"
+                        }
+                      ]
+                    },
+                    "blocks": {
+                      "hideInEditor": true,
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": 2074.739990234375,
+                              "controlAddress": "/length"
+                            }
+                          ],
+                          "niceName": "Video",
+                          "editorIsCollapsed": true,
+                          "containers": {
+                            "fadeCurve": {
+                              "parameters": [
+                                {
+                                  "value": 1.0,
+                                  "controlAddress": "/length"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/viewValueRange"
+                                },
+                                {
+                                  "value": [
+                                    0.0,
+                                    1.0
+                                  ],
+                                  "controlAddress": "/range",
+                                  "enabled": true
+                                }
+                              ],
+                              "hideInRemoteControl": false,
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key",
+                                  "containers": {
+                                    "easing": {
+                                      "parameters": [
+                                        {
+                                          "value": [
+                                            0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor1"
+                                        },
+                                        {
+                                          "value": [
+                                            -0.300000011920929,
+                                            0.0
+                                          ],
+                                          "controlAddress": "/anchor2"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "type": "Key"
+                                },
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/position"
+                                    },
+                                    {
+                                      "value": 1.0,
+                                      "controlAddress": "/value"
+                                    },
+                                    {
+                                      "value": "Bezier",
+                                      "controlAddress": "/easingType"
+                                    }
+                                  ],
+                                  "niceName": "Key 1",
+                                  "containers": {
+                                    "easing": {
+                                    }
+                                  },
+                                  "type": "Key"
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            },
+                            "video": {
+                              "parameters": [
+                                {
+                                  "value": "D:/Documents/Trace 2024/Trace 2024 Ressources/decompte V1.mp4",
+                                  "controlAddress": "/filePath"
+                                }
+                              ],
+                              "niceName": "Video",
+                              "containers": {
+                                "mediaParameters": {
+                                }
+                              },
+                              "type": "Video"
+                            }
+                          },
+                          "type": "Video"
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  "type": "Media"
+                }
+              ],
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "cues": {
+              "hideInEditor": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "editing": true
+          }
+        },
+        "type": "Sequence"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0,
+    "editingSequenceMedia": "/media/sequence"
+  },
+  "screen": {
+    "hideInRemoteControl": true,
+    "items": [
+      {
+        "niceName": "Screen",
+        "containers": {
+          "positionning": {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/enabled"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          "surface": {
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": "/sequence",
+                    "controlAddress": "/media"
+                  }
+                ],
+                "niceName": "Surface",
+                "containers": {
+                  "positionning": {
+                    "editorIsCollapsed": true,
+                    "containers": {
+                      "bezier": {
+                        "editorIsCollapsed": true
+                      }
+                    }
+                  },
+                  "adjustments": {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/mask"
+                      }
+                    ],
+                    "editorIsCollapsed": true
+                  },
+                  "aspectRatio": {
+                  },
+                  "pins": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Surface"
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          }
+        },
+        "type": "Screen"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0,
+    "editingScreen": "screen"
+  }
+}

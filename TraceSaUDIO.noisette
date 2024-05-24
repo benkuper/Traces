@@ -1,0 +1,794 @@
+{
+  "metaData": {
+    "version": "1.9.18b5",
+    "versionNumber": 67858
+  },
+  "projectSettings": {
+    "hideInRemoteControl": true,
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          }
+        ]
+      },
+      "customDefinitions": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1920,
+      "height": 989,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1920,
+          "height": 989,
+          "direction": 2,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1920,
+              "height": 461,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 364,
+                  "height": 461,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 364,
+                      "height": 260,
+                      "currentContent": "Modules",
+                      "tabs": [
+                        {
+                          "name": "Modules"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 364,
+                      "height": 195,
+                      "currentContent": "Custom Variables",
+                      "tabs": [
+                        {
+                          "name": "Custom Variables"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 1051,
+                  "height": 461,
+                  "currentContent": "State Machine",
+                  "tabs": [
+                    {
+                      "name": "State Machine"
+                    },
+                    {
+                      "name": "Module Router"
+                    },
+                    {
+                      "name": "Morpher"
+                    },
+                    {
+                      "name": "Dashboard"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 493,
+                  "height": 461,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 1920,
+              "height": 521,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 295,
+                  "height": 521,
+                  "currentContent": "Sequences",
+                  "tabs": [
+                    {
+                      "name": "Sequences"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 1325,
+                  "height": 521,
+                  "currentContent": "Sequence Editor",
+                  "tabs": [
+                    {
+                      "name": "Sequence Editor"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 288,
+                  "height": 521,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Help"
+                    },
+                    {
+                      "name": "Logger"
+                    },
+                    {
+                      "name": "Warnings"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "modules": {
+    "hideInRemoteControl": true,
+    "items": [
+      {
+        "niceName": "Sound Card",
+        "type": "Sound Card",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "containers": {
+            "inputVolumes": {
+            },
+            "outputVolumes": {
+              "editorIsCollapsed": true
+            },
+            "monitor": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            },
+            "fftAnalysis": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ],
+              "editorIsCollapsed": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "ltc": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Haut-parleurs (Scarlett 18i20 USB)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"44100.0\" audioDeviceOutChans=\"1111111\"/>\r\n",
+        "analyzer": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/enabled"
+            }
+          ],
+          "editorIsCollapsed": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "customVariables": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "states": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0,
+    "transitions": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "comments": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    }
+  },
+  "sequences": {
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": 1800.0,
+            "controlAddress": "/totalTime"
+          },
+          {
+            "value": 1800.0,
+            "controlAddress": "/viewEndTime"
+          },
+          {
+            "value": "",
+            "controlAddress": "/ltcSyncModule",
+            "enabled": false
+          }
+        ],
+        "niceName": "Main",
+        "type": "Sequence",
+        "layers": {
+          "hideInEditor": true,
+          "hideInRemoteControl": true,
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "Audio/Tracks/Traces V9 A-1-FOH JAR.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio 1",
+              "editorIsCollapsed": true,
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "D:/Documents/Trace 2024/Git/Traces/Audio/Tracks/Traces V9 B-2-FOH COUR.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio 2",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "D:/Documents/Trace 2024/Git/Traces/Audio/Tracks/Traces V9 C-3-REAR JAR.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": 1.044642806053162,
+                  "controlAddress": "/volume"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio 3",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "D:/Documents/Trace 2024/Git/Traces/Audio/Tracks/Traces V9 D-4-REAR COUR.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio 4",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "D:/Documents/Trace 2024/Git/Traces/Audio/Tracks/Traces V9 E-5-BOSE PLATINE.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBip",
+                  "enabled": false
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customBop",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Audio 5",
+              "editorIsCollapsed": true,
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "D:/Documents/Trace 2024/Git/Traces/Audio/Tracks/Traces V9 G-7-SUB.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "cues": {
+          "hideInEditor": true,
+          "hideInRemoteControl": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "editing": true
+      },
+      {
+        "parameters": [
+          {
+            "value": 513.5,
+            "controlAddress": "/totalTime"
+          },
+          {
+            "value": true,
+            "controlAddress": "/loop"
+          },
+          {
+            "value": 513.5,
+            "controlAddress": "/viewEndTime"
+          },
+          {
+            "value": "",
+            "controlAddress": "/ltcSyncModule",
+            "enabled": false
+          }
+        ],
+        "niceName": "Telephone",
+        "type": "Sequence",
+        "layers": {
+          "hideInEditor": true,
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                }
+              ],
+              "niceName": "Audio",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "Audio/Tracks/Traces V9 F-6-TELEPHONE.wav",
+                        "controlAddress": "/filePath"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "cues": {
+          "hideInEditor": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "routers": {
+    "hideInRemoteControl": true,
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}
