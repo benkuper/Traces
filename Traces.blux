@@ -1399,6 +1399,12 @@
           "components": {
             "items": [
               {
+                "parameters": [
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/value"
+                  }
+                ],
                 "niceName": "Dimmer",
                 "containers": {
                   "dmxParameters": {
@@ -1538,6 +1544,10 @@
     "items": [
       {
         "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
           {
             "value": "sACN/E1.31",
             "controlAddress": "/dmxType"
@@ -1861,7 +1871,11 @@
             "controlAddress": "/totalTime"
           },
           {
-            "value": 587.8480834960938,
+            "value": 0.0,
+            "controlAddress": "/viewStartTime"
+          },
+          {
+            "value": 1800.02001953125,
             "controlAddress": "/viewEndTime"
           }
         ],
@@ -1890,7 +1904,7 @@
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 340.6399536132812,
+                          "value": 1141.119873046875,
                           "controlAddress": "/length"
                         },
                         {
@@ -2222,15 +2236,15 @@
                     {
                       "parameters": [
                         {
-                          "value": 625.0399780273438,
+                          "value": 612.9999389648438,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 1161.140014648438,
+                          "value": 1173.18017578125,
                           "controlAddress": "/length"
                         },
                         {
-                          "value": 8.063383102416992,
+                          "value": 9.583495140075684,
                           "controlAddress": "/fadeIn",
                           "enabled": true
                         },
@@ -2757,15 +2771,15 @@
                     {
                       "parameters": [
                         {
-                          "value": 624.2999877929688,
+                          "value": 613.0,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 1159.93994140625,
+                          "value": 1171.239990234375,
                           "controlAddress": "/length"
                         },
                         {
-                          "value": 9.676059722900391,
+                          "value": 9.530223846435547,
                           "controlAddress": "/fadeIn",
                           "enabled": true
                         },
@@ -3433,11 +3447,11 @@
                     {
                       "parameters": [
                         {
-                          "value": 624.7799682617188,
+                          "value": 613.0400390625,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 1159.920043945312,
+                          "value": 1171.660034179688,
                           "controlAddress": "/length"
                         },
                         {
@@ -3915,15 +3929,15 @@
                     {
                       "parameters": [
                         {
-                          "value": 624.719970703125,
+                          "value": 613.1199951171875,
                           "controlAddress": "/startTime"
                         },
                         {
-                          "value": 1159.160034179688,
+                          "value": 1170.760009765625,
                           "controlAddress": "/length"
                         },
                         {
-                          "value": 10.28491592407227,
+                          "value": 9.609914779663086,
                           "controlAddress": "/fadeIn",
                           "enabled": true
                         },
